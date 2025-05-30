@@ -1,0 +1,1769 @@
+.pantry-co-pilot {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .pantry-co-pilot .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1200px;
+    height: 14891px;
+    position: relative;
+  }
+  
+  .pantry-co-pilot .line {
+    width: 1200px;
+    top: 100px;
+    left: 0;
+    position: absolute;
+    height: 1px;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .img {
+    width: 1200px;
+    top: 756px;
+    left: 0;
+    position: absolute;
+    height: 1px;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .line-2 {
+    width: 1200px;
+    top: 2006px;
+    left: 0;
+    position: absolute;
+    height: 1px;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .text-wrapper {
+    position: absolute;
+    width: 587px;
+    top: 306px;
+    left: 605px;
+    font-family: "Instrument Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 100px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .google-UX {
+    position: absolute;
+    width: 221px;
+    top: 150px;
+    left: 887px;
+    font-family: "Instrument Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #676767;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .group {
+    position: absolute;
+    width: 472px;
+    height: 474px;
+    top: 218px;
+    left: 100px;
+  }
+  
+  .pantry-co-pilot .overlap-group {
+    position: relative;
+    height: 474px;
+  }
+  
+  .pantry-co-pilot .rectangle {
+    position: absolute;
+    width: 472px;
+    height: 469px;
+    top: 5px;
+    left: 0;
+  }
+  
+  .pantry-co-pilot .rectangle-2 {
+    position: absolute;
+    width: 472px;
+    height: 93px;
+    top: 377px;
+    left: 0;
+    background-color: #000000;
+  }
+  
+  .pantry-co-pilot .rectangle-3 {
+    position: absolute;
+    width: 472px;
+    height: 108px;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+  }
+  
+  .pantry-co-pilot .app-prototype {
+    position: absolute;
+    width: 162px;
+    height: 44px;
+    top: 592px;
+    left: 605px;
+  }
+  
+  .pantry-co-pilot .overlap {
+    position: relative;
+    width: 160px;
+    height: 44px;
+    background-color: #ededed;
+  }
+  
+  .pantry-co-pilot .text-wrapper-2 {
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    font-family: "Instrument Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pantry-co-pilot .overlap-wrapper {
+    position: absolute;
+    width: 192px;
+    height: 44px;
+    top: 592px;
+    left: 816px;
+  }
+  
+  .pantry-co-pilot .div-wrapper {
+    position: relative;
+    width: 190px;
+    height: 44px;
+    background-color: #ededed;
+  }
+  
+  .pantry-co-pilot .text-wrapper-3 {
+    width: 181px;
+    top: 10px;
+    left: 4px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    font-family: "Instrument Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-2 {
+    position: absolute;
+    width: 1133px;
+    height: 1169px;
+    top: 800px;
+    left: 67px;
+  }
+  
+  .pantry-co-pilot .overlap-3 {
+    position: absolute;
+    width: 359px;
+    height: 62px;
+    top: 43px;
+    left: 33px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-4 {
+    position: absolute;
+    width: 357px;
+    top: 17px;
+    left: 0;
+    font-family: "Instrument Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pantry-co-pilot .untitled-artwork {
+    width: 54px;
+    height: 54px;
+    left: 305px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .pantry-co-pilot .p {
+    position: absolute;
+    width: 561px;
+    top: 170px;
+    left: 33px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-5 {
+    width: 242px;
+    top: 474px;
+    left: 0;
+    white-space: nowrap;
+    position: absolute;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-6 {
+    position: absolute;
+    width: 554px;
+    top: 539px;
+    left: 33px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-4 {
+    position: absolute;
+    width: 1100px;
+    height: 1169px;
+    top: 0;
+    left: 33px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-7 {
+    position: absolute;
+    width: 420px;
+    top: 869px;
+    left: 555px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .scene-natural {
+    position: absolute;
+    width: 539px;
+    height: 800px;
+    top: 0;
+    left: 561px;
+  }
+  
+  .pantry-co-pilot .overlap-5 {
+    position: absolute;
+    width: 749px;
+    height: 375px;
+    top: 794px;
+    left: 0;
+  }
+  
+  .pantry-co-pilot .text-wrapper-8 {
+    width: 258px;
+    top: 21px;
+    left: 491px;
+    position: absolute;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .mockup {
+    position: absolute;
+    width: 500px;
+    height: 375px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .overlap-6 {
+    position: absolute;
+    width: 357px;
+    height: 60px;
+    top: 2063px;
+    left: 100px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-9 {
+    position: absolute;
+    width: 357px;
+    top: 15px;
+    left: 0;
+    font-family: "Instrument Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pantry-co-pilot .untitled-artwork-2 {
+    width: 42px;
+    height: 45px;
+    left: 258px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .pantry-co-pilot .text-wrapper-10 {
+    position: absolute;
+    width: 242px;
+    top: 2362px;
+    left: 67px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-7 {
+    position: absolute;
+    width: 1130px;
+    height: 412px;
+    top: 2842px;
+    left: 41px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-11 {
+    position: absolute;
+    width: 242px;
+    top: 0;
+    left: 0;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-12 {
+    position: absolute;
+    width: 461px;
+    top: 52px;
+    left: 59px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .image {
+    width: 619px;
+    height: 346px;
+    top: 66px;
+    left: 511px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .overlap-8 {
+    position: absolute;
+    width: 1033px;
+    height: 384px;
+    top: 3275px;
+    left: 67px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-13 {
+    position: absolute;
+    width: 375px;
+    top: 86px;
+    left: 646px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .image-2 {
+    width: 685px;
+    height: 384px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .text-wrapper-14 {
+    position: absolute;
+    width: 329px;
+    top: 139px;
+    left: 704px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .from-speaking-with {
+    position: absolute;
+    width: 676px;
+    top: 2148px;
+    left: 100px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .group-2 {
+    position: absolute;
+    width: 303px;
+    height: 365px;
+    top: 2420px;
+    left: 150px;
+  }
+  
+  .pantry-co-pilot .overlap-9 {
+    position: absolute;
+    width: 93px;
+    height: 87px;
+    top: 0;
+    left: 104px;
+    background-color: #d9d9d9;
+    border-radius: 46.5px/43.5px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-15 {
+    width: 68px;
+    top: 22px;
+    left: 11px;
+    font-size: 40px;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-16 {
+    position: absolute;
+    width: 293px;
+    top: 99px;
+    left: 4px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pantry-co-pilot .text-wrapper-17 {
+    position: absolute;
+    width: 283px;
+    top: 155px;
+    left: 0;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .group-3 {
+    position: absolute;
+    width: 299px;
+    height: 370px;
+    top: 2420px;
+    left: 486px;
+  }
+  
+  .pantry-co-pilot .overlap-10 {
+    position: absolute;
+    width: 93px;
+    height: 87px;
+    top: 0;
+    left: 100px;
+    background-color: #d9d9d9;
+    border-radius: 46.5px/43.5px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-18 {
+    position: absolute;
+    width: 68px;
+    top: 17px;
+    left: 13px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pantry-co-pilot .text-wrapper-19 {
+    position: absolute;
+    width: 293px;
+    top: 99px;
+    left: 0;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pantry-co-pilot .text-wrapper-20 {
+    position: absolute;
+    width: 218px;
+    top: 155px;
+    left: 38px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .group-4 {
+    position: absolute;
+    width: 299px;
+    height: 323px;
+    top: 2420px;
+    left: 819px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-21 {
+    position: absolute;
+    width: 218px;
+    top: 153px;
+    left: 38px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-11 {
+    position: absolute;
+    width: 429px;
+    height: 62px;
+    top: 3807px;
+    left: 67px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-22 {
+    position: absolute;
+    width: 429px;
+    top: 17px;
+    left: 0;
+    font-family: "Instrument Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pantry-co-pilot .untitled-artwork-3 {
+    width: 54px;
+    height: 54px;
+    left: 355px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .pantry-co-pilot .overlap-12 {
+    position: absolute;
+    width: 566px;
+    height: 261px;
+    top: 3942px;
+    left: 39px;
+  }
+  
+  .pantry-co-pilot .i-made-it-my-focus {
+    position: absolute;
+    width: 505px;
+    top: 50px;
+    left: 61px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-23 {
+    position: absolute;
+    width: 366px;
+    top: 4332px;
+    left: 76px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-24 {
+    position: absolute;
+    width: 484px;
+    top: 5570px;
+    left: 100px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-25 {
+    position: absolute;
+    width: 334px;
+    top: 6866px;
+    left: 100px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-26 {
+    position: absolute;
+    width: 323px;
+    top: 8559px;
+    left: 106px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-27 {
+    position: absolute;
+    width: 762px;
+    top: 9771px;
+    left: 100px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-28 {
+    position: absolute;
+    width: 161px;
+    top: 8670px;
+    left: 100px;
+    font-family: "Instrument Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-29 {
+    position: absolute;
+    width: 161px;
+    top: 9226px;
+    left: 106px;
+    font-family: "Instrument Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .users-when-clicking {
+    position: absolute;
+    width: 994px;
+    top: 9289px;
+    left: 106px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-30 {
+    width: 215px;
+    top: 9454px;
+    left: 106px;
+    font-size: 24px;
+    position: absolute;
+    font-family: "Instrument Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .users-feel-like-the {
+    position: absolute;
+    width: 994px;
+    top: 9517px;
+    left: 106px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .screenshot {
+    position: absolute;
+    width: 605px;
+    height: 687px;
+    top: 7047px;
+    left: 298px;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .i-first-focused-on {
+    position: absolute;
+    width: 410px;
+    top: 4445px;
+    left: 690px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .star {
+    position: absolute;
+    width: 29px;
+    height: 27px;
+    top: 4736px;
+    left: 657px;
+  }
+  
+  .pantry-co-pilot .line-3 {
+    position: absolute;
+    width: 1200px;
+    height: 1px;
+    top: 3749px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .line-4 {
+    width: 1200px;
+    top: 9599px;
+    left: 0;
+    position: absolute;
+    height: 1px;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .image-3 {
+    width: 550px;
+    height: 369px;
+    top: 3911px;
+    left: 622px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .image-4 {
+    width: 560px;
+    height: 608px;
+    top: 4390px;
+    left: 73px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .when-focusing-on {
+    position: absolute;
+    width: 528px;
+    top: 5170px;
+    left: 73px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .image-5 {
+    width: 485px;
+    height: 393px;
+    top: 5100px;
+    left: 659px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .rectangle-wrapper {
+    position: absolute;
+    width: 672px;
+    height: 572px;
+    top: 5628px;
+    left: 265px;
+    background-image: url(./img/image-20.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .pantry-co-pilot .rectangle-4 {
+    position: relative;
+    width: 78px;
+    height: 27px;
+    top: 537px;
+    left: 584px;
+    background-color: #ffffff;
+  }
+  
+  .pantry-co-pilot .overlap-group-wrapper {
+    position: absolute;
+    width: 628px;
+    height: 572px;
+    top: 6228px;
+    left: 295px;
+  }
+  
+  .pantry-co-pilot .overlap-13 {
+    position: relative;
+    height: 572px;
+  }
+  
+  .pantry-co-pilot .screenshot-2 {
+    position: absolute;
+    width: 613px;
+    height: 572px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .rectangle-5 {
+    position: absolute;
+    width: 39px;
+    height: 40px;
+    top: 532px;
+    left: 589px;
+    background-color: #ffffff;
+  }
+  
+  .pantry-co-pilot .screenshot-3 {
+    position: absolute;
+    width: 859px;
+    height: 602px;
+    top: 7858px;
+    left: 171px;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .image-wrapper {
+    position: absolute;
+    width: 113px;
+    height: 106px;
+    top: 8711px;
+    left: 347px;
+    background-color: #d9d9d9;
+    border-radius: 56.5px/53px;
+  }
+  
+  .pantry-co-pilot .image-6 {
+    width: 67px;
+    height: 67px;
+    top: 19px;
+    left: 30px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .img-wrapper {
+    position: absolute;
+    width: 113px;
+    height: 106px;
+    top: 8711px;
+    left: 741px;
+    background-color: #d9d9d9;
+    border-radius: 56.5px/53px;
+  }
+  
+  .pantry-co-pilot .image-7 {
+    width: 67px;
+    height: 67px;
+    top: 19px;
+    left: 23px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .overlap-14 {
+    position: absolute;
+    width: 113px;
+    height: 106px;
+    top: 8969px;
+    left: 741px;
+    background-color: #d9d9d9;
+    border-radius: 56.5px/53px;
+  }
+  
+  .pantry-co-pilot .overlap-15 {
+    position: absolute;
+    width: 113px;
+    height: 106px;
+    top: 8969px;
+    left: 347px;
+    background-color: #d9d9d9;
+    border-radius: 56.5px/53px;
+  }
+  
+  .pantry-co-pilot .study-type-moderated {
+    position: absolute;
+    width: 194px;
+    top: 8839px;
+    left: 306px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .span {
+    font-weight: 600;
+  }
+  
+  .pantry-co-pilot .text-wrapper-31 {
+    font-family: "Instrument Sans-Regular", Helvetica;
+  }
+  
+  .pantry-co-pilot .location-san {
+    position: absolute;
+    width: 194px;
+    top: 8831px;
+    left: 700px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .participants {
+    position: absolute;
+    width: 194px;
+    top: 9097px;
+    left: 306px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .length-mintues {
+    position: absolute;
+    width: 194px;
+    top: 9089px;
+    left: 700px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-16 {
+    position: absolute;
+    width: 390px;
+    height: 60px;
+    top: 9643px;
+    left: 100px;
+  }
+  
+  .pantry-co-pilot .untitled-artwork-4 {
+    width: 42px;
+    height: 45px;
+    left: 348px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .pantry-co-pilot .line-5 {
+    width: 1198px;
+    top: 13099px;
+    left: 2px;
+    position: absolute;
+    height: 1px;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .overlap-17 {
+    position: absolute;
+    width: 313px;
+    height: 71px;
+    top: 13135px;
+    left: 100px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-32 {
+    position: absolute;
+    width: 286px;
+    top: 26px;
+    left: 0;
+    font-family: "Instrument Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pantry-co-pilot .untitled-artwork-5 {
+    width: 54px;
+    height: 54px;
+    left: 259px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .pantry-co-pilot .overlap-18 {
+    position: absolute;
+    width: 1000px;
+    height: 814px;
+    top: 9839px;
+    left: 100px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-33 {
+    position: absolute;
+    width: 1000px;
+    top: 0;
+    left: 0;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .group-5 {
+    position: absolute;
+    width: 850px;
+    height: 743px;
+    top: 71px;
+    left: 113px;
+    background-image: url(./img/screenshot-2025-05-06-at-3-14-19-PM-1.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .pantry-co-pilot .rectangle-6 {
+    position: relative;
+    width: 84px;
+    height: 37px;
+    top: 700px;
+    left: 741px;
+    background-color: #ffffff;
+  }
+  
+  .pantry-co-pilot .text-wrapper-34 {
+    position: absolute;
+    width: 762px;
+    top: 11620px;
+    left: 100px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-35 {
+    position: absolute;
+    width: 762px;
+    top: 12707px;
+    left: 100px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-36 {
+    position: absolute;
+    width: 168px;
+    top: 13268px;
+    left: 100px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-37 {
+    position: absolute;
+    width: 168px;
+    top: 13870px;
+    left: 102px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-19 {
+    position: absolute;
+    width: 1001px;
+    height: 436px;
+    top: 11681px;
+    left: 99px;
+  }
+  
+  .pantry-co-pilot .based-on-usability {
+    position: absolute;
+    width: 1000px;
+    top: 0;
+    left: 1px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .screenshot-4 {
+    position: absolute;
+    width: 1001px;
+    height: 326px;
+    top: 110px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .screenshot-5 {
+    position: absolute;
+    width: 598px;
+    height: 845px;
+    top: 10700px;
+    left: 300px;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .screenshot-6 {
+    position: absolute;
+    width: 776px;
+    height: 494px;
+    top: 12138px;
+    left: 224px;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .group-6 {
+    position: absolute;
+    width: 815px;
+    height: 275px;
+    top: 12798px;
+    left: 205px;
+  }
+  
+  .pantry-co-pilot .overlap-20 {
+    position: absolute;
+    width: 106px;
+    height: 100px;
+    top: 0;
+    left: 37px;
+    background-color: #d9d9d9;
+    border-radius: 53px/50px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-38 {
+    top: 28px;
+    left: 46px;
+    font-size: 36px;
+    position: absolute;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-21 {
+    position: absolute;
+    width: 106px;
+    height: 100px;
+    top: 0;
+    left: 341px;
+    background-color: #d9d9d9;
+    border-radius: 53px/50px;
+  }
+  
+  .pantry-co-pilot .overlap-22 {
+    position: absolute;
+    width: 106px;
+    height: 100px;
+    top: 0;
+    left: 645px;
+    background-color: #d9d9d9;
+    border-radius: 53px/50px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-39 {
+    top: 28px;
+    left: 43px;
+    font-size: 36px;
+    position: absolute;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-40 {
+    position: absolute;
+    width: 194px;
+    top: 132px;
+    left: 0;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .for-the-app-there-is {
+    position: absolute;
+    width: 219px;
+    top: 128px;
+    left: 288px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-41 {
+    position: absolute;
+    width: 210px;
+    top: 128px;
+    left: 593px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-23 {
+    position: absolute;
+    width: 92px;
+    height: 86px;
+    top: 13359px;
+    left: 321px;
+    background-color: #d9d9d9;
+    border-radius: 46px/43px;
+  }
+  
+  .pantry-co-pilot .image-8 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 20px;
+    left: 24px;
+    object-fit: cover;
+  }
+  
+  .pantry-co-pilot .overlap-24 {
+    position: absolute;
+    width: 92px;
+    height: 86px;
+    top: 13359px;
+    left: 792px;
+    background-color: #d9d9d9;
+    border-radius: 46px/43px;
+  }
+  
+  .pantry-co-pilot .impact-many-of-our {
+    position: absolute;
+    width: 362px;
+    top: 13470px;
+    left: 186px;
+    font-family: "Instrument Sans-Medium", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-42 {
+    font-weight: 500;
+  }
+  
+  .pantry-co-pilot .text-wrapper-43 {
+    font-family: "Instrument Sans-Italic", Helvetica;
+    font-style: italic;
+  }
+  
+  .pantry-co-pilot .what-i-learned-the {
+    position: absolute;
+    width: 362px;
+    top: 13470px;
+    left: 657px;
+    font-family: "Instrument Sans-Medium", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-25 {
+    position: absolute;
+    width: 61px;
+    height: 58px;
+    top: 13942px;
+    left: 119px;
+    background-color: #d9d9d9;
+    border-radius: 30.5px/29px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-44 {
+    width: 16px;
+    top: 16px;
+    left: 22px;
+    font-size: 24px;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-26 {
+    position: absolute;
+    width: 61px;
+    height: 58px;
+    top: 14025px;
+    left: 119px;
+    background-color: #d9d9d9;
+    border-radius: 30.5px/29px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-45 {
+    width: 16px;
+    top: 16px;
+    left: 22px;
+    font-size: 24px;
+    white-space: nowrap;
+    position: absolute;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-27 {
+    position: absolute;
+    width: 61px;
+    height: 58px;
+    top: 14108px;
+    left: 119px;
+    background-color: #d9d9d9;
+    border-radius: 30.5px/29px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-46 {
+    position: absolute;
+    top: 13957px;
+    left: 200px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pantry-co-pilot .text-wrapper-47 {
+    position: absolute;
+    top: 14041px;
+    left: 201px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pantry-co-pilot .text-wrapper-48 {
+    position: absolute;
+    width: 823px;
+    top: 14124px;
+    left: 200px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-28 {
+    position: absolute;
+    width: 61px;
+    height: 58px;
+    top: 14200px;
+    left: 119px;
+    background-color: #d9d9d9;
+    border-radius: 30.5px/29px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-49 {
+    position: absolute;
+    width: 823px;
+    top: 14216px;
+    left: 200px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .footer {
+    position: absolute;
+    width: 1296px;
+    height: 487px;
+    top: 14413px;
+    left: -43px;
+    background-color: transparent;
+  }
+  
+  .pantry-co-pilot .overlap-29 {
+    position: relative;
+    width: 1286px;
+    height: 487px;
+    background-color: #353535;
+  }
+  
+  .pantry-co-pilot .group-7 {
+    position: absolute;
+    width: 148px;
+    height: 44px;
+    top: 269px;
+    left: 154px;
+  }
+  
+  .pantry-co-pilot .overlap-group-2 {
+    position: relative;
+    width: 146px;
+    height: 44px;
+    background-color: #ededed;
+  }
+  
+  .pantry-co-pilot .text-wrapper-50 {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    font-family: "Instrument Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pantry-co-pilot .want-to-work {
+    position: absolute;
+    width: 978px;
+    top: 124px;
+    left: 129px;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .overlap-30 {
+    position: absolute;
+    width: 176px;
+    height: 20px;
+    top: 281px;
+    left: 348px;
+  }
+  
+  .pantry-co-pilot .ellipse {
+    filter: blur(2.5px);
+    position: absolute;
+    width: 14px;
+    height: 13px;
+    top: 3px;
+    left: 0;
+    background-color: #79c778;
+    border-radius: 7px/6.5px;
+  }
+  
+  .pantry-co-pilot .ellipse-2 {
+    position: absolute;
+    width: 14px;
+    height: 13px;
+    top: 3px;
+    left: 0;
+    background-color: #79c778;
+    border-radius: 7px/6.5px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-51 {
+    position: absolute;
+    width: 173px;
+    top: 0;
+    left: 3px;
+    font-family: "Instrument Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .contact-links {
+    position: absolute;
+    width: 247px;
+    height: 69px;
+    top: 16px;
+    left: 962px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .pantry-co-pilot .property-linkedin {
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-52 {
+    position: absolute;
+    width: 100px;
+    top: -1px;
+    left: 0;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .property-github {
+    position: absolute;
+    width: 82px;
+    height: 29px;
+    top: 20px;
+    left: 145px;
+  }
+  
+  .pantry-co-pilot .text-wrapper-53 {
+    position: absolute;
+    width: 82px;
+    top: -1px;
+    left: 0;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .element {
+    position: absolute;
+    width: 233px;
+    top: 429px;
+    left: 110px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .designed-developed {
+    position: absolute;
+    width: 233px;
+    top: 429px;
+    left: 410px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .all-rights-reserved {
+    position: absolute;
+    width: 233px;
+    top: 424px;
+    left: 1047px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .the-navigation-on {
+    position: absolute;
+    width: 978px;
+    top: 6927px;
+    left: 98px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pantry-co-pilot .text-wrapper-54 {
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+  
+  .pantry-co-pilot .text-wrapper-55 {
+    font-family: "Instrument Sans-Medium", Helvetica;
+    font-weight: 500;
+  }
+  
+  .pantry-co-pilot .text-wrapper-56 {
+    position: absolute;
+    width: 978px;
+    top: 7771px;
+    left: 111px;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
