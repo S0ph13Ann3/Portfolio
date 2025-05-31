@@ -4,80 +4,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>Sophie Anne Hernandez - UX Designer</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- Instrument Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="home_global.css"> -->
+    <link rel="stylesheet" href="globals.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            // Remove the 'inter' font family as it's no longer used
+            // and 'instrument-sans' is now the default via globals.css
+            fontFamily: {
+              // You can keep 'instrument-sans' here if you want to explicitly use it in some places,
+              // but it's not strictly necessary if globals.css sets it on body.
+              // If you only want to use the default 'sans' for Instrument Sans, you can remove this extend.
+              // Example: sans: ['Instrument Sans', 'sans-serif'],
+              // For now, let's keep it to ensure weights work correctly
+              'instrument-sans': ['Instrument Sans', 'Helvetica'],
+            },
+          }
+        }
+      }
+    </script>
   </head>
-  <body>
-    <main class="home">
-      <div class="content">
-        <header class="header">
-          <div class="grid grid-cols-12">
-            <div class="h-16 col-span-12"></div>
-            
-            <h1 class="text-black text-[clamp(0rem,8vw,8rem)] leading-[clamp(0rem,8vw,100rem)] font-bold col-start-1 col-span-8 self-center text-right">SOPHIE ANNE<br/>HERNANDEZ&nbsp;&nbsp;
-            <img  src = "../images/Star.png" class ="relative w-[4vw] top-[-18.8vw] right-[-38vw]"/>
-            </h1> 
-            <img class="profile-pic w-72 col-start-9 col-span-3" src="../images/Me.png" alt="Sophie Anne Hernandez" />
-        </div>
-         <p class="tagline">
-            Hello, my name is Sophie Anne Hernandez, a UX designer specializing in bridging the gap between design ✏️️
-            and code 💻
+  <body class="bg-white flex flex-col items-center w-full">
+    <main class="home bg-white flex flex-col items-center w-full">
+      <div class="content bg-white w-full max-w-[1200px] px-5 sm:px-10">
+        <header class="header mt-36 mb-24">
+          <div class="name-and-pic grid grid-cols-12 items-center justify-between mb-10">
+            <h1 class="name font-bold text-black text-[7vw] leading-[8vw] col-start-1 md:col-span-8 self-center text-left -translate-x-1">
+              SOPHIE ANNE<br/>HERNANDEZ&nbsp;&nbsp;
+              <img  src = "../images/Star.png" class ="relative w-[4vw] top-[-18.8vw] right-[-18vw]"/>
+            </h1>
+            <img class="profile-pic w-[19vw] col-start-9 col-span-3 text-left" src="../images/Me.png" alt="Sophie Anne Hernandez" />
+          </div>
+
+          <div class="contact flex items-center mb-10">
+            <a href="mailto:zednan863@gmail.com" class="email font-medium text-black text-[1.8vw] no-underline mr-2.5">zednan863@gmail.com</a>
+            <img class="email-icon w-5 h-5" src="../images/copy.png" alt="Email icon" />
+          </div>
+          <!-- <p class="tagline font-medium text-black text-[2.1vw] leading-[1.3]">
+            UX designer bridging the gap between design ✏️ and code 💻 by day | Lost in books 📚 with matcha 🍵 in hand by night 
+          </p> -->
+          <p class="tagline font-medium text-black text-[2.1vw] leading-[1.3]">
+            UX designer bridging the gap between design 
+            <img src="../images/design.png" alt="design" class="inline w-[3.5vw] h-[3.5vw] mx-1"> 
+            and code 
+            <img src="../images/Smiski laptop.png" alt="code" class="inline w-[3.5vw] h-[3.5vw] mx-1"> 
+            by day | Lost in books 
+            <img src="../images/book.png" alt="books" class="inline w-[3.5vw] h-[3.5vw] mx-1"> 
+            with matcha 
+            <img src="../images/matcha.png" alt="matcha" class="inline w-[3.5vw] h-[3.5vw] mx-1"> 
+            in hand by night 
           </p>
-          <div class="contact">
-            <a href="mailto:zednan863@gmail.com" class="email">zednan863@gmail.com</a>
-            <img class="email-icon" src="img/image-99.png" alt="Email icon" />
-          </div>
         </header>
-        <section class="projects" aria-labelledby="projects-heading">
-          <h2 id="projects-heading" class="section-heading">projects</h2>
-          <div class="project-grid">
-            <article class="project">
-              <img src="img/rectangle-5.png" alt="Pantry Co-Pilot Project" class="project-image" />
-              <h3 class="project-title">PANTRY CO-PILOT</h3>
+
+        <hr class="relative border-neutral-100 -ml-[13vw] -mr-[12.8vw] -mt-[3rem] mb-10 p-0 border-o">
+        
+        <section class="projects mb-24" aria-labelledby="projects-heading">
+          <div class="section-header flex items-center mb-10">
+            <h2 id="projects-heading" class="section-title font-bold text-black text-[2.5rem] mr-5">projects</h2>
+            <img class="section-icon w-[36px] h-[37px]" src="img/untitled-artwork-1-6.png" alt="Projects icon" />
+          </div>
+          <div class="project-grid grid grid-cols-1 gap-5 mb-10 md:grid-cols-2">
+            <article class="project relative h-[500px] overflow-hidden">
+              <img src="../images/pantry.png " class="project-image w-full h-full object-cover" />
             </article>
-            <article class="project">
-              <img src="img/rectangle-6.png" alt="Spotify Replica Project" class="project-image" />
-              <div class="project-overlay">
-                <span class="project-label">SPOTIFY</span>
-                <span class="project-label">REPLICA</span>
-              </div>
+            <article class="project relative h-[500px] overflow-hidden">
+              <!-- <div class="project-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 hover:opacity-100"> -->
+                <img src="../images/Spotify.png " class="project-image w-full h-full object-cover" />
             </article>
-            <article class="project">
-              <img src="img/rectangle-7.png" alt="EduConnect Project" class="project-image" />
-              <h3 class="project-title">EDUCONNECT</h3>
+            <article class="project relative h-[500px] overflow-hidden">
+              <!-- <div class="project-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 hover:opacity-100"> -->
+                <img src="../images/Spotify.png " class="project-image w-full h-full object-cover" />
             </article>
-            <article class="project">
-              <img src="img/frame-4.png" alt="Quilly Project" class="project-image" />
-              <h3 class="project-title">QUILLY</h3>
+            <article class="project relative h-[500px] overflow-hidden">
+              <!-- <div class="project-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 hover:opacity-100"> -->
+                <img src="../images/Spotify.png " class="project-image w-full h-full object-cover" />
             </article>
           </div>
-          <a href="#" class="button">Show More</a>
+          <a href="#" class="show-more inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded transition-colors duration-300 hover:bg-[#d0d0d0]">Show More</a>
         </section>
-        <section class="about" aria-labelledby="about-heading">
-          <h2 id="about-heading" class="section-heading">about</h2>
-          <div class="bio">
-            <img class="photo-strip" src="img/photo-strip-1.png" alt="Photo strip of Sophie" />
-            <dl class="bio-details">
-              <dt>🗣️ Name:</dt>
-              <dd>Sophie Anne S. Hernandez</dd>
-              <dt>💼 Current Job:</dt>
-              <dd>Data Center Technician Level 2 at Google</dd>
-              <dt>👩🏻‍🎓 College &amp; Major:</dt>
-              <dd>University of California - Santa Cruz, majored in Computer Science</dd>
-              <dt>🧸 Hobbies:</dt>
-              <dd>
-                Traveling, reading, playing video games, playing volleyball, baking, cooking, collecting blind boxes,
-                &amp; drawing
+
+        <hr class="relative border-neutral-100 -ml-[13vw] -mr-[12.8vw] -mt-[3rem] mb-10 p-0 border-o">
+
+        <section class="about mb-24" aria-labelledby="about-heading">
+          <div class="section-header flex items-center mb-10">
+            <h2 id="about-heading" class="section-title font-bold text-black text-[2.5rem] mr-5">about</h2>
+            <img class="section-icon w-[54px] h-[54px]" src="../images/Heart.png" alt="About icon" />
+            <div class=" flex-item ml-auto"><a href="#" class="learn-more inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded transition-colors duration-300 hover:bg-[#d0d0d0]">Learn More</a></div>
+          </div>
+          <div class="bio grid grid-cols-12 gap-10 mb-10 md:flex-row">
+            <img class="photo-strip col-span-5 col-start-1 w-full max-w-[35vw] h-auto mx-auto md:mx-0" src="../images/Photo_Strp.png" alt="Photo strip of Sophie" />
+            <dl class="bio-details col-span-7 col-start-6 font-medium text-[1.375rem] leading-[1.5] flex flex-col">
+              <!-- <dt class="font-bold mt-5">🗣️ Name:</dt>
+              <dd class="ml-5">Sophie Anne S. Hernandez</dd> -->
+              <dt class="font-bold mt-5">💼 Current Job:</dt>
+              <dd class="ml-5"> Level 2 Data Center Technician at Google</dd>
+              <dt class="font-bold mt-5">👩🏻‍🎓 College &amp; Major:</dt>
+              <dd class="ml-5">University of California - Santa Cruz, majored in Computer Science</dd>
+              <dt class="font-bold mt-5">🧸 Hobbies:</dt>
+              <dd class="ml-5">
+                Traveling, reading, video games, volleyball, baking, &amp; drawing
               </dd>
-              <dt>🖍️ UX Specialization:</dt>
-              <dd>I blend UX designs with front-end code and personal, hand-drawn visuals.</dd>
-              <dt>👩🏻‍💻 My Story:</dt>
-              <dd>
+              <dt class="font-bold mt-5">🖍️ UX Specialization:</dt>
+              <dd class="ml-5">I blend UX designs with front-end code and personal, hand-drawn visuals.</dd>
+              <dt class="font-bold mt-5">👩🏻‍💻 My Story:</dt>
+              <dd class="ml-5">
                 In college, I gained a strong foundation in development and explored various programming languages.
                 While building web apps, I discovered my passion for front-end development—especially designing
                 intuitive, user-friendly interfaces.
@@ -87,25 +118,25 @@
               </dd>
             </dl>
           </div>
-          <a href="#" class="button">Learn More</a>
         </section>
-        <footer class="footer">
-          <h2>Want to work together to bring your designs to life?<br />Let's bridge the gap!</h2>
-          <a href="#" class="cta-button">Get in Touch</a>
-          <div class="availability">
-            <span class="status-indicator"></span>
+
+        <footer class="footer bg-[#353535] text-white py-16 text-center">
+          <h2 class="font-semibold text-4xl mb-10">Want to work together to bring your designs to life?<br />Let's bridge the gap!</h2>
+          <a href="#" class="cta-button inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded mb-5">Get in Touch</a>
+          <div class="availability flex items-center justify-center mb-5">
+            <span class="status-indicator w-2.5 h-2.5 bg-[#79c778] animate-ping rounded-full mr-2.5"></span>
             Available for Work
           </div>
-          <div class="contact-info">
+          <div class="contact-info mb-5">
             <p>(510) 439-7534<br />zednan863@gmail.com</p>
           </div>
-          <nav class="social-links">
-            <a href="#" class="social-link">Linkedin</a>
-            <a href="#" class="social-link">GitHub</a>
+          <nav class="social-links mb-5">
+            <a href="#" class="social-link text-white no-underline mx-2.5">Linkedin</a>
+            <a href="#" class="social-link text-white no-underline mx-2.5">GitHub</a>
           </nav>
-          <div class="footer-bottom">
-            <p>Designed &amp; Developed by Sophie Hernandez</p>
-            <p>All rights reserved, SOPHIE ANNE © 2025</p>
+          <div class="footer-bottom flex justify-between text-sm opacity-80 px-5 max-w-[1200px] mx-auto">
+            <p>Designed &amp; Developed<br />by Sophie Hernandez</p>
+            <p>All rights reserved,<br />SOPHIE ANNE © 2025</p>
           </div>
         </footer>
       </div>
