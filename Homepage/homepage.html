@@ -10,15 +10,12 @@
       tailwind.config = {
         theme: {
           extend: {
-            // Remove the 'inter' font family as it's no longer used
-            // and 'instrument-sans' is now the default via globals.css
             fontFamily: {
-              // You can keep 'instrument-sans' here if you want to explicitly use it in some places,
-              // but it's not strictly necessary if globals.css sets it on body.
-              // If you only want to use the default 'sans' for Instrument Sans, you can remove this extend.
-              // Example: sans: ['Instrument Sans', 'sans-serif'],
-              // For now, let's keep it to ensure weights work correctly
               'instrument-sans': ['Instrument Sans', 'Helvetica'],
+            },
+            // --- CHANGE 1: ADD THIS SHADOW CONFIGURATION ---
+            dropShadow: {
+              'green': '0 0 5px rgba(121, 199, 120, 0.7)',
             },
           }
         }
@@ -26,7 +23,8 @@
     </script>
   </head>
   <body class="bg-white flex flex-col items-center w-full">
-    <main class="home bg-white flex flex-col items-center w-full">
+    <main class="home bg-white flex flex-col items-center w-full relative">
+
       <div class="content bg-white w-full max-w-[1200px] px-5 sm:px-10">
         <header class="header mt-36 mb-24">
           <div class="name-and-pic grid grid-cols-12 items-center justify-between mb-10">
@@ -34,16 +32,23 @@
               SOPHIE ANNE<br/>HERNANDEZ&nbsp;&nbsp;
               <img  src = "../images/Star.png" class ="relative w-[4vw] top-[-18.8vw] right-[-18vw]"/>
             </h1>
-            <img class="profile-pic w-[19vw] col-start-9 col-span-3 text-left" src="../images/Me.png" alt="Sophie Anne Hernandez" />
+            <img class="profile-pic w-[19vw] col-start-9 col-span-3 text-left" src="../images/chibi_me.png" alt="Sophie Anne Hernandez" />
           </div>
 
           <div class="contact flex items-center mb-10">
-            <a href="mailto:zednan863@gmail.com" class="email font-medium text-black text-[1.8vw] no-underline mr-2.5">zednan863@gmail.com</a>
-            <img class="email-icon w-5 h-5" src="../images/copy.png" alt="Email icon" />
+          <a href="mailto:zednan863@gmail.com" id="emailAddress" class="email font-medium text-black text-[1.8vw] no-underline mr-2.5">zednan863@gmail.com</a>
+          
+          <div class="relative flex items-center">
+            <img class="email-icon w-5 h-5 cursor-pointer" src="../images/copy.png" alt="Email icon" onclick="copyEmailToClipboard()" />
+            <div id="copiedPopup"
+              class="absolute hidden bg-stone-700 text-white text-xs px-2 py-1 rounded-full shadow-md
+              left-full ml-1 top-1/2 -translate-y-1/2 whitespace-nowrap
+              z-10 opacity-0 transition-opacity duration-300 pointer-events-none">
+            Copied!
+            </div>
           </div>
-          <!-- <p class="tagline font-medium text-black text-[2.1vw] leading-[1.3]">
-            UX designer bridging the gap between design ✏️ and code 💻 by day | Lost in books 📚 with matcha 🍵 in hand by night 
-          </p> -->
+         </div>
+
           <p class="tagline font-medium text-black text-[2.1vw] leading-[1.3]">
             UX designer bridging the gap between design 
             <img src="../images/design.png" alt="design" class="inline w-[3.5vw] h-[3.5vw] mx-1"> 
@@ -56,47 +61,43 @@
             in hand by night 
           </p>
         </header>
-
-        <hr class="relative border-neutral-100 -ml-[13vw] -mr-[12.8vw] -mt-[3rem] mb-10 p-0 border-o">
-        
+      </div> <hr class="border-neutral-100 w-full my-10 border-t"> 
+      
+      <div class="content bg-white w-full max-w-[1200px] px-5 sm:px-10">
         <section class="projects mb-24" aria-labelledby="projects-heading">
           <div class="section-header flex items-center mb-10">
             <h2 id="projects-heading" class="section-title font-bold text-black text-[2.5rem] mr-5">projects</h2>
-            <img class="section-icon w-[36px] h-[37px]" src="img/untitled-artwork-1-6.png" alt="Projects icon" />
+            <img class="section-icon w-[36px] h-[37px] mr-0.5" src="../images/message_heart.png" alt="Projects icon" />
+            <div class=" flex-item ml-auto"><a href="#" class="learn-more inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded transition-colors duration-300 hover:bg-[#d0d0d0]">Show More</a></div>
+
           </div>
           <div class="project-grid grid grid-cols-1 gap-5 mb-10 md:grid-cols-2">
             <article class="project relative h-[500px] overflow-hidden">
               <img src="../images/pantry.png " class="project-image w-full h-full object-cover" />
             </article>
             <article class="project relative h-[500px] overflow-hidden">
-              <!-- <div class="project-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 hover:opacity-100"> -->
                 <img src="../images/Spotify.png " class="project-image w-full h-full object-cover" />
             </article>
             <article class="project relative h-[500px] overflow-hidden">
-              <!-- <div class="project-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 hover:opacity-100"> -->
                 <img src="../images/Spotify.png " class="project-image w-full h-full object-cover" />
             </article>
             <article class="project relative h-[500px] overflow-hidden">
-              <!-- <div class="project-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 hover:opacity-100"> -->
                 <img src="../images/Spotify.png " class="project-image w-full h-full object-cover" />
             </article>
           </div>
-          <a href="#" class="show-more inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded transition-colors duration-300 hover:bg-[#d0d0d0]">Show More</a>
         </section>
+      </div> <hr class="border-neutral-100 w-full my-10 border-t">
 
-        <hr class="relative border-neutral-100 -ml-[13vw] -mr-[12.8vw] -mt-[3rem] mb-10 p-0 border-o">
-
+      <div class="content bg-white w-full max-w-[1200px] px-5 sm:px-10">
         <section class="about mb-24" aria-labelledby="about-heading">
           <div class="section-header flex items-center mb-10">
             <h2 id="about-heading" class="section-title font-bold text-black text-[2.5rem] mr-5">about</h2>
-            <img class="section-icon w-[54px] h-[54px]" src="../images/Heart.png" alt="About icon" />
+            <img class="section-icon w-[54px] h-[54px] mr-0.5" src="../images/Heart.png" alt="About icon" />
             <div class=" flex-item ml-auto"><a href="#" class="learn-more inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded transition-colors duration-300 hover:bg-[#d0d0d0]">Learn More</a></div>
           </div>
           <div class="bio grid grid-cols-12 gap-10 mb-10 md:flex-row">
             <img class="photo-strip col-span-5 col-start-1 w-full max-w-[35vw] h-auto mx-auto md:mx-0" src="../images/Photo_Strp.png" alt="Photo strip of Sophie" />
             <dl class="bio-details col-span-7 col-start-6 font-medium text-[1.375rem] leading-[1.5] flex flex-col">
-              <!-- <dt class="font-bold mt-5">🗣️ Name:</dt>
-              <dd class="ml-5">Sophie Anne S. Hernandez</dd> -->
               <dt class="font-bold mt-5">💼 Current Job:</dt>
               <dd class="ml-5"> Level 2 Data Center Technician at Google</dd>
               <dt class="font-bold mt-5">👩🏻‍🎓 College &amp; Major:</dt>
@@ -119,27 +120,36 @@
             </dl>
           </div>
         </section>
-
-        <footer class="footer bg-[#353535] text-white py-16 text-center">
-          <h2 class="font-semibold text-4xl mb-10">Want to work together to bring your designs to life?<br />Let's bridge the gap!</h2>
-          <a href="#" class="cta-button inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded mb-5">Get in Touch</a>
-          <div class="availability flex items-center justify-center mb-5">
-            <span class="status-indicator w-2.5 h-2.5 bg-[#79c778] animate-ping rounded-full mr-2.5"></span>
-            Available for Work
-          </div>
-          <div class="contact-info mb-5">
-            <p>(510) 439-7534<br />zednan863@gmail.com</p>
-          </div>
-          <nav class="social-links mb-5">
-            <a href="#" class="social-link text-white no-underline mx-2.5">Linkedin</a>
-            <a href="#" class="social-link text-white no-underline mx-2.5">GitHub</a>
+        </div>
+      <footer class="footer bg-[#353535] text-white py-16 text-center w-full relative">
+          <nav class="absolute top-0 right-0 p-5 z-20">
+            <a href="https://www.linkedin.com/in/sophie-anne-hernandez" target="_blank" rel="noopener noreferrer" class="text-white no-underline mx-2.5 hover:underline">Linkedin</a>
+            <a href="https://github.com/S0ph13Ann3" target="_blank" rel="noopener noreferrer" class="text-white no-underline mx-2.5 hover:underline">GitHub</a>
           </nav>
-          <div class="footer-bottom flex justify-between text-sm opacity-80 px-5 max-w-[1200px] mx-auto">
-            <p>Designed &amp; Developed<br />by Sophie Hernandez</p>
-            <p>All rights reserved,<br />SOPHIE ANNE © 2025</p>
+          <h2 class="font-semibold text-4xl mb-10">Want to work together to bring your designs to life?<br />Let's bridge the gap!</h2>
+          
+          <div class="flex items-center justify-center mb-5 space-x-4 max-w-[1200px] mx-auto px-5 sm:px-10">
+            <a href="#" class="cta-button inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded">Get in Touch</a>
+            
+            <div class="availability flex items-center">
+              <span class="status-indicator w-2.5 h-2.5 bg-[#79c778] animate-pulse rounded-full mr-2.5 drop-shadow-green"></span>
+              Available for Work
+            </div>
+            
+          </div>
+
+          <div class="footer-bottom flex flex-col sm:flex-row sm:justify-between text-sm opacity-80 px-5 max-w-[1200px] mx-auto mt-16">
+            <div class="text-sm mb-2 sm:mb-0 sm:text-left">
+              <p>(510) 439-7534</p>
+              <p>zednan863@gmail.com</p>
+            </div>
+            
+            <p class="text-sm mb-2 sm:mb-0 sm:text-left">Designed &amp; Developed<br />by Sophie Hernandez</p>
+            
+            <p class="text-sm sm:text-left">All rights reserved,<br />SOPHIE ANNE © 2025</p>
           </div>
         </footer>
-      </div>
     </main>
+    <script src="./functionality.js"></script>
   </body>
 </html>

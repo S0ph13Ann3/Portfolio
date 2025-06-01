@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Tamagotchi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .tamagotchi-frame {
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="bg-fuchsia-100 flex items-center justify-center min-h-screen font-sans">
+  <div class="relative w-[400px] h-[450px]">
+
+    <!-- Character Display -->
+    <div id="tamagotchi-screen" class="absolute top-[21%] left-[50%] -translate-x-1/2 w-[52%] h-[46%] flex items-center justify-center overflow-hidden">
+      <img id="character-image" src="./images/chibi_me.png" alt="A cute character" class="h-full w-full object-contain transition-transform duration-300 ease-in-out">
+    </div>
+
+    <!-- Frame Image -->
+    <img src="./images/2697732_21c66.png" alt="Tamagotchi frame" class="absolute top-0 left-0 w-full h-full z-20 tamagotchi-frame">
+
+    <!-- Buttons: A, B, C, D -->
+    <div id="button-a" title="Character 1" class="absolute bottom-[8%] left-[10%] w-[13%] h-[9%] rounded-full cursor-pointer z-10 bg-blue-300 opacity-40"></div>
+    <div id="button-b" title="Character 2" class="absolute bottom-[8%] left-[33%] w-[13%] h-[9%] rounded-full cursor-pointer z-10 bg-green-300 opacity-40"></div>
+    <div id="button-c" title="Character 3" class="absolute bottom-[8%] left-[56%] w-[13%] h-[9%] rounded-full cursor-pointer z-10 bg-yellow-300 opacity-40"></div>
+    <div id="button-d" title="Character 4" class="absolute bottom-[8%] left-[79%] w-[13%] h-[9%] rounded-full cursor-pointer z-10 bg-red-300 opacity-40"></div>
+
+  </div>
+
+  <script>
+    const characters = [
+      './images/chibi_me.png',     // Character 1
+      './images/cry_baby.png',     // Character 2
+      './images/labubu.png',   // Character 3 (add this image)
+      './images/sony_angel.png'     // Character 4 (add this image)
+    ];
+
+    const characterImage = document.getElementById('character-image');
+
+    const updateCharacter = (index) => {
+      characterImage.src = characters[index];
+    };
+
+    // Assign character change to each button
+    document.getElementById('button-a').addEventListener('click', () => updateCharacter(0));
+    document.getElementById('button-b').addEventListener('click', () => updateCharacter(1));
+    document.getElementById('button-c').addEventListener('click', () => updateCharacter(2));
+    document.getElementById('button-d').addEventListener('click', () => updateCharacter(3));
+  </script>
+</body>
+</html>
