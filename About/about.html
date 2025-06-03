@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Sophie Anne Hernandez - About</title>
+    <link rel="stylesheet" href="globals.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'instrument-sans': ['Instrument Sans', 'Helvetica'],
+            },
+            dropShadow: {
+              'green': '0 0 5px rgba(121, 199, 120, 0.7)',
+            },
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white flex flex-col items-center w-full">
+
+    <nav class="bg-white/90 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
+      <div class="w-full px-2 sm:px-6">
+        <div class="relative flex items-center h-20">
+          <a href="../Homepage/homepage.html" class="font-bold text-xl text-black no-underline ml-2">SOPHIE ANNE</a>
+          <div class="flex-grow"></div>
+          <div class="relative flex items-center space-x-2 mr-2 sm:mr-6">
+            <div id="mobile-menu" class="transform translate-x-0 opacity-0 scale-95 transition-all duration-300 ease-in-out absolute top-full right-10 bg-white px-6 py-4 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 flex flex-row items-center space-x-6 pointer-events-none z-40">
+              <a href="#projects-heading" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline">Projects</a>
+              <a href="../About/about.html" class="text-lg font-bold text-black hover:underline">About</a>
+              <a href="#contact" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="focus:outline-none z-50">
+              <img src="../images/square.png" alt="Menu" class="h-8 w-8" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="bg-white flex flex-col items-center w-full relative pt-20">
+      <div class="content bg-white w-full max-w-[1200px] px-5 sm:px-10">
+        
+        <header class="my-16">
+          <h1 class="text-5xl md:text-7xl font-bold text-center text-black">SOPHIE ANNE <br/> HERNANDEZ</h1>
+        </header>
+        
+        <section class="intro mb-16">
+          <div class="section-header flex items-center mb-10">
+            <h2 class="section-title font-bold text-black text-[2.5rem] mr-5">about</h2>
+            <img class="section-icon w-[54px] h-[54px]" src="../images/Heart.png" alt="About icon" />
+            <div class="flex-item ml-auto">
+              <a href="#" class="learn-more inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded transition-colors duration-300 hover:bg-[#d0d0d0]">Resume</a>
+            </div>
+          </div>
+          
+          <div class="bio grid grid-cols-1 md:grid-cols-12 gap-x-12 items-start">
+            
+            <img class="md:col-span-5 w-full h-auto object-cover" src="../images/google.jpeg" alt="Sophie Anne Hernandez" />
+            
+            <p class="md:col-span-6 text-2xl leading-relaxed">
+              I have always loved arts &amp; crafts ever since a young age, this creative side of me has guided me throughout my time as a coder and as a designer. <br /><br />Whenever I was a part of a group project in college, I would always volunteer to lead the front end development since I felt that was where my creative side can be unleashed while also bringing to life my group's design. <br /><br />My main goal as a UX designer is to create technical designs that can be achieved through code that embodies both the user's needs and the main goals of the product while also including a personal artistic touch. <br /><br />I am excited to embark on this new career journey and I can not wait to bring you all along with me!!
+            </p>
+
+            <dl class="md:col-span-5 font-medium text-md leading-relaxed -mt-20">
+              <dt class="font-bold">👩🏻‍🎓 College &amp; Major:</dt>
+              <dd class="ml-5">University of California - Santa Cruz, majored in Computer Science</dd>
+              
+              <dt class="font-bold mt-5">💼 Current Job:</dt>
+              <dd class="ml-5">Level 2 Data Center Technician at Google</dd>
+              
+              <dt class="font-bold mt-5">🧸 Hobbies:</dt>
+              <dd class="ml-5">Traveling, reading, playing video games, playing volleyball, baking, cooking, collecting blind boxes, &amp; drawing</dd>
+              
+              <dt class="font-bold mt-5">🖍️ UX Specialization:</dt>
+              <dd class="ml-5">I blend UX designs with front-end code and personal, hand-drawn visuals.</dd>
+            </dl>
+            
+          </div>
+        </section>
+
+        <hr class="border-neutral-100 w-full my-10 border-t">
+        
+        <section class="fun-facts mb-16">
+           <div class="section-header flex items-center mb-10">
+            <h2 class="section-title font-bold text-black text-[2.5rem] mr-5">fun facts</h2>
+            <img class="section-icon w-[42px] h-[45px]" src="../images/fun-facts-icon.png" alt="Fun facts icon" />
+          </div>
+
+          <div class="experience-item flex flex-col md:flex-row gap-12 items-center my-16">
+            <div class="md:w-1/2">
+              <p class="text-xl leading-relaxed">
+                Spoke at the 2024 RSA Conference on The Female Quotient x Kode with Klossy panel about women in cybersecurity and tech.
+              </p>
+              <div class="flex items-center gap-8 mt-8">
+                  <img src="../images/rsa-logo.png" alt="RSA Conference logo" class="h-24 object-contain" />
+                  <img src="../images/fq-logo.png" alt="The Female Quotient logo" class="h-16 object-contain" />
+                  <img src="../images/kwk-logo.png" alt="Kode with Klossy logo" class="h-8 object-contain" />
+              </div>
+            </div>
+            <div class="md:w-1/2">
+              <img class="w-full h-auto object-cover rounded-lg shadow-lg" src="../images/rsa-panel.png" alt="RSA Conference panel" />
+            </div>
+          </div>
+
+          <div class="experience-item flex flex-col md:flex-row-reverse gap-12 items-center my-16">
+             <div class="md:w-1/2">
+              <p class="text-xl leading-relaxed">
+                As an alumni of Kode with Klossy, I became a Data Science Instructor Assistant for their summer program, where I delivered lessons, provided technical support, and built an empowering learning environment.
+              </p>
+              <div class="flex items-center gap-8 mt-8">
+                <img src="../images/kwk-logo-large.png" alt="Kode with Klossy logo" class="h-24 object-contain" />
+              </div>
+            </div>
+            <div class="md:w-1/2">
+              <img class="w-full h-auto object-cover rounded-lg shadow-lg" src="../images/kwk-group.png" alt="Kode with Klossy group photo" />
+            </div>
+          </div>
+
+          <div class="experience-item flex flex-col md:flex-row gap-12 items-center my-16">
+             <div class="md:w-1/2">
+              <p class="text-xl leading-relaxed">
+                During my time as a Residential Network Technician at UCSC Information Technology Services, I increased in-office visits by ∼30% through initiating merchandise &amp; social media campaigns.
+              </p>
+              <div class="flex items-center gap-8 mt-8">
+                 <img src="../images/ucsc-logo.png" alt="UCSC logo" class="h-24 object-contain" />
+                 <img src="../images/its-logo.png" alt="ITS logo" class="h-20 object-contain" />
+              </div>
+            </div>
+            <div class="md:w-1/2 flex gap-4">
+              <img class="w-1/2 h-auto object-cover rounded-lg shadow-lg" src="../images/resnet-merch.png" alt="ResNet merchandise" />
+              <img class="w-1/2 h-auto object-cover rounded-lg shadow-lg" src="../images/resnet-social.png" alt="ResNet social media campaign" />
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="footer bg-[#353535] text-white py-16 w-full relative">
+      <nav class="absolute top-0 right-0 p-5 z-20">
+        <a href="https://www.linkedin.com/in/sophie-anne-hernandez" target="_blank" rel="noopener noreferrer" class="text-white no-underline mx-2.5 hover:underline">Linkedin</a>
+        <a href="https://github.com/S0ph13Ann3" target="_blank" rel="noopener noreferrer" class="text-white no-underline mx-2.5 hover:underline">GitHub</a>
+      </nav>
+      <div class="max-w-[1200px] mx-auto px-5 sm:px-10 flex flex-col items-center">
+        <h2 class="font-semibold text-4xl mb-10 text-center">
+          Want to work together to bring your designs to life?<br />Let's bridge the gap!
+        </h2>
+        <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-8 mb-10 max-w-[400px]">
+          <a href="#" class="cta-button inline-block w-fit px-6 py-3 bg-[#ededed] text-black font-medium text-xl no-underline rounded mb-4 sm:mb-0">
+            Get in Touch
+          </a>
+          <div class="availability flex items-center text-lg">
+            <span class="status-indicator w-3 h-3 bg-[#79c778] animate-pulse rounded-full mr-3 drop-shadow-green"></span>
+            Available for Work
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm opacity-80 px-5 max-w-[1200px] mx-auto mt-20 pt-4">
+        <div class="text-sm text-left justify-self-start sm:ml-8">
+          <p>(510) 439-7534</p>
+          <p>zednan863@gmail.com</p>
+        </div>
+        <p class="text-sm text-center justify-self-center">
+          Designed &amp; Developed<br />by Sophie Hernandez
+        </p>
+        <p class="text-sm text-right justify-self-end">
+          All rights reserved,<br />SOPHIE ANNE © 2025
+        </p>
+      </div>
+    </footer>
+
+    <script src="../Homepage/functionality.js"></script>
+  </body>
+</html>
