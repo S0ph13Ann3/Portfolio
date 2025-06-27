@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Sophie Anne Hernandez - Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'instrument-sans': ['Instrument Sans', 'Helvetica'],
+            },
+            dropShadow: {
+              'green': '0 0 5px rgba(121, 199, 120, 0.7)',
+            },
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white flex flex-col items-center w-full font-instrument-sans">
+
+    <nav class="bg-white/90 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
+      <div class="w-full px-2 sm:px-6">
+        <div class="relative flex items-center h-20">
+          <a href="../Homepage/homepage.html" class="font-bold text-xl text-black no-underline ml-2">SOPHIE ANNE</a>
+          <div class="flex-grow"></div>
+          <div class="relative flex items-center space-x-2 mr-2 sm:mr-6">
+            <div id="mobile-menu" class="transform translate-x-0 opacity-0 scale-95 transition-all duration-300 ease-in-out absolute top-full right-10 bg-white px-6 py-4 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 flex flex-row items-center space-x-6 pointer-events-none z-40">
+              <a href="../Homepage/homepage.html" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline">Home</a>
+              <a href="../Projects/projects.html" class="text-lg font-bold text-black hover:underline">Projects</a>
+              <a href="../About/about.html" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline">About</a>
+              <a href="#contact" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="focus:outline-none z-50">
+              <img src="../images/square.png" alt="Menu" class="h-8 w-8" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="bg-white flex flex-col items-center w-full relative pt-20">
+      <div id="projects" class="content bg-white w-full max-w-[1200px] px-5 sm:px-10">
+        
+        <header class="my-16">
+          <h1 class="text-5xl md:text-7xl font-bold text-center text-black">PROJECTS</h1>
+        </header>
+        
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+
+          <a href="pantry-co-pilot.html" class="group relative block w-full h-96 overflow-hidden rounded-lg shadow-lg">
+            <img src="project_images/pantrycopilot.png" alt="Pantry Co-Pilot project" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-black bg-opacity-5 flex items-end">
+              <h3 class="text-white text-2xl font-bold p-6">PANTRY CO-PILOT</h3>
+            </div>
+          </a>
+
+          <a href="spotify-replica.html" class="group relative block w-full h-96 overflow-hidden rounded-lg shadow-lg">
+            <img src="./project_images/spotify.png" alt="Spotify Replica project" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-black bg-opacity-5 flex items-end">
+              <h3 class="text-white text-2xl font-bold p-6">SPOTIFY REPLICA</h3>
+            </div>
+          </a>
+
+          <a href="educonnect.html" class="group relative block w-full h-96 overflow-hidden rounded-lg shadow-lg">
+            <img src="./project_images/edu.png" alt="EduConnect project" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-black bg-opacity-5 flex items-end">
+              <h3 class="text-white text-2xl font-bold p-6">EDUCONNECT</h3>
+            </div>
+          </a>
+
+          <a href="quilly.html" class="group relative block w-full h-96 overflow-hidden rounded-lg shadow-lg">
+            <img src="./project_images/quilly.png" alt="Quilly project" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-black bg-opacity-5 flex items-end">
+              <h3 class="text-white text-2xl font-bold p-6">QUILLY</h3>
+            </div>
+          </a>
+
+          <a href="booktessera.html" class="group relative block w-full h-96 overflow-hidden rounded-lg shadow-lg">
+            <img src="./project_images/Booktessera.png" alt="BookTessera project" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-black bg-opacity-5 flex items-end">
+              <h3 class="text-white text-2xl font-bold p-6">BOOKTESSERA</h3>
+            </div>
+          </a>
+
+          <a href="facetime-participation-removal.html" class="group relative block w-full h-96 overflow-hidden rounded-lg shadow-lg">
+            <img src="./project_images/ft.png" alt="Facetime Participation Removal project" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-black bg-opacity-5 flex items-end">
+              <h3 class="text-white text-2xl font-bold p-6">FACETIME PARTICIPATION REMOVAL</h3>
+            </div>
+          </a>
+          
+          <a href="route-case.html" class="group relative block w-full h-96 overflow-hidden rounded-lg shadow-lg">
+            <img src="./project_images/care.png" alt="Route Case project" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-black bg-opacity-5 flex items-end">
+              <h3 class="text-white text-2xl font-bold p-6">ROUTE CASE</h3>
+            </div>
+          </a>
+
+          <a href="additional-websites.html" class="group relative block w-full h-96 overflow-hidden rounded-lg shadow-lg">
+            <img src="img/image-13.png" alt="Additional Websites project" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end">
+              <h3 class="text-white text-2xl font-bold p-6">ADDITIONAL WEBSITES</h3>
+            </div>
+          </a>
+
+        </section>
+
+      </div>
+    </main>
+
+    <footer id="contact" class="footer bg-[#353535] text-white py-16 w-full relative">
+      <nav class="absolute top-0 right-0 p-5 z-20">
+        <a href="https://www.linkedin.com/in/sophie-anne-hernandez" target="_blank" rel="noopener noreferrer" class="text-white no-underline mx-2.5 hover:underline">Linkedin</a>
+        <a href="https://github.com/S0ph13Ann3" target="_blank" rel="noopener noreferrer" class="text-white no-underline mx-2.5 hover:underline">GitHub</a>
+      </nav>
+      <div class="max-w-[1200px] mx-auto px-5 sm:px-10 flex flex-col items-center">
+        <h2 class="font-semibold text-4xl mb-10 text-center">
+          Want to work together to bring your designs to life?<br />Let's bridge the gap!
+        </h2>
+        <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-8 mb-10 max-w-[400px]">
+          <a href="mailto:zednan863@gmail.com" class="cta-button inline-block w-fit px-6 py-3 bg-[#ededed] text-black font-medium text-xl no-underline rounded mb-4 sm:mb-0">
+            Get in Touch
+          </a>
+          <div class="availability flex items-center text-lg">
+            <span class="status-indicator w-3 h-3 bg-[#79c778] animate-pulse rounded-full mr-3 drop-shadow-green"></span>
+            Available for Work
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm opacity-80 px-5 max-w-[1200px] mx-auto mt-20 pt-4">
+        <div class="text-sm text-left justify-self-start sm:ml-8">
+          <p>(510) 439-7534</p>
+          <p>zednan863@gmail.com</p>
+        </div>
+        <p class="text-sm text-center justify-self-center">
+          Designed &amp; Developed<br />by Sophie Hernandez
+        </p>
+        <p class="text-sm text-right justify-self-end">
+          All rights reserved,<br />SOPHIE ANNE © 2025
+        </p>
+      </div>
+    </footer>
+
+    <script src="../Homepage/functionality.js"></script>
+  </body>
+</html>
