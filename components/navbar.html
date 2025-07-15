@@ -1,4 +1,3 @@
-<!-- components/navbar.html -->
 <nav class="bg-white/90 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
   <div class="w-full px-2 sm:px-6">
     <div class="relative flex items-center h-20">
@@ -6,24 +5,27 @@
       <div class="flex-grow"></div>
       <div class="relative flex items-center space-x-2 mr-2 sm:mr-6">
         
-        <!-- Main Horizontal Menu -->
+        <!-- This is the main menu container -->
         <div id="mobile-menu" class="transform translate-x-0 opacity-0 scale-95 transition-all duration-300 ease-in-out absolute top-full right-10 bg-white px-6 py-4 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 flex flex-row items-center space-x-6 pointer-events-none z-40">
           
-          <a href="../Homepage/homepage.html" class="text-lg font-bold text-gray-800 hover:text-black hover:underline">Home</a>
+          <a href="../Homepage/homepage.html" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline">Home</a>
           
-          <!-- Projects Dropdown Container -->
-          <div class="relative" id="projects-container">
-            <button id="projects-dropdown-button" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline focus:outline-none flex items-center">
-              <span>Projects</span>
-              <!-- The arrow for the dropdown -->
-              <svg class="w-4 h-4 ml-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          <!-- Projects link and dropdown container -->
+          <div class="relative flex items-center" id="projects-container">
+            <!-- This is now a direct link to a main projects page -->
+            <a href="../Projects/projects.html" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline">Projects</a>
+            
+            <!-- This button now only contains the arrow to toggle the dropdown -->
+            <button id="projects-dropdown-button" class="ml-1 p-1 focus:outline-none">
+              <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <!-- Projects Sub-Menu (hidden by default) -->
+
+            <!-- The dropdown menu itself remains the same -->
             <div id="projects-dropdown-menu" class="hidden absolute top-full left-1/2 -translate-x-1/2 mt-3 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 py-2 z-50">
               <a href="../Pantry Co Pilot/pantry_co_pilot.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">Pantry Co-Pilot</a>
               <a href="../SpotifyReplica/spotifyreplica.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">Spotify Replica</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">EduConnect</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">Quilly</a>
+              <a href="../WebApp/webapp.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">Additional Websites</a>
+              <!-- <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">Quilly</a> -->
             </div>
           </div>
           
@@ -31,7 +33,6 @@
           <a href="#contact" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline">Contact</a>
         </div>
         
-        <!-- Main Menu Button -->
         <button id="mobile-menu-button" class="focus:outline-none z-50">
           <img src="../images/square.png" alt="Menu" class="h-8 w-8" />
         </button>
