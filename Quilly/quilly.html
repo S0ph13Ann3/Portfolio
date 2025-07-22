@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Sophie Anne - Quilly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'instrument-sans': ['Instrument Sans', 'sans-serif'],
+            },
+            dropShadow: {
+              'green': '0 0 5px rgba(121, 199, 120, 0.7)',
+            },
+            colors: {
+              'quilly-bg': '#DBD8F0',
+              'quilly-accent': '#C9C4E8',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        /* Animation for the banner */
+        @keyframes scroll-up-continuous {
+            from { transform: translateY(0); }
+            to { transform: translateY(-50%); }
+        }
+
+        @keyframes scroll-down-continuous {
+            from { transform: translateY(-50%); }
+            to { transform: translateY(0); }
+        }
+
+        .scrolling-content-base {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .scrolling-content-up {
+            animation: scroll-up-continuous 40s linear infinite;
+        }
+
+        .scrolling-content-down {
+            animation: scroll-down-continuous 40s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-white flex flex-col items-center w-full font-instrument-sans text-black">
+
+    <div id="navbar-placeholder"></div>
+
+    <main class="w-full pt-20">
+        <header class="w-full p-4 flex items-center justify-center">
+            <div class="banner-container relative bg-quilly-bg rounded-2xl h-64 w-full max-w-6xl overflow-hidden shadow-xl">
+                <div class="absolute inset-0 flex items-center justify-center -rotate-12 scale-150 opacity-70">
+                    <div class="flex gap-4">
+                        <div class="h-96 w-40 overflow-hidden">
+                            <div class="scrolling-content-base scrolling-content-up">
+                                <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                                <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                        <div class="h-96 w-40 overflow-hidden">
+                            <div class="scrolling-content-base scrolling-content-down">
+                               <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                               <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                        <div class="h-96 w-40 overflow-hidden">
+                            <div class="scrolling-content-base scrolling-content-up">
+                                <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                                <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                        <div class="hidden sm:block h-96 w-40 overflow-hidden">
+                            <div class="scrolling-content-base scrolling-content-down">
+                               <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                               <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block h-96 w-40 overflow-hidden">
+                            <div class="scrolling-content-base scrolling-content-up">
+                                <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                                <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block h-96 w-40 overflow-hidden">
+                            <div class="scrolling-content-base scrolling-content-down">
+                               <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                               <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-overlay relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
+                    <div class="bg-black bg-opacity-25 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+                        <h1 class="text-5xl font-bold tracking-wide">PANTRY CO-PILOT</h1>
+                         <a href="https://www.myquilly.com/" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-6 py-2 bg-white bg-opacity-90 text-black font-semibold rounded-lg shadow-md transition-transform hover:scale-105">
+                            View Website
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+        </header>
+
+        <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 mt-4">
+            <div class="flex items-center justify-end flex-wrap gap-2 text-right">
+                <span class="text-xs font-medium text-gray-600 bg-green-100 px-3 py-1 rounded-full">
+                    Duration: Aug 2024 - Jan 2025
+                </span>
+                <span class="text-xs font-medium text-gray-600 bg-yellow-100 px-3 py-1 rounded-full">
+                    Tool: Figma
+                </span>
+            </div>
+        </div>
+
+        <hr class="border-neutral-200 w-full my-12 border-t">
+
+        <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 space-y-20 pb-20">
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <div class="text-content">
+                    <h2 class="text-4xl font-bold mb-4">project overview</h2>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        Quilly is a first-of-its-kind platform made for college women and anyone who vibes with a femme-centered space. It's all about building real community, finding your forever friends, and getting through college with a little more style (and a lot less stress).
+                        <br /><br />
+                        Think of Quilly as your go-to pocket guide for college life—whether you're looking for new connections, local events, or just a place where you feel seen. It's designed to help you show up, plug in, and never miss out on the moments that matter. With Quilly, FOMO doesn't stand a chance.
+                    </p>
+                </div>
+                <div class="image-content flex flex-col gap-6">
+                     <img src="./v1/web.jpeg" alt="Quilly app preview on a phone" class=" w-full h-auto object-cover">
+                </div>
+            </section>
+            
+            <hr class="border-neutral-200/80 w-full my-8 border-t">
+
+            <section>
+                <h3 class="text-2xl font-semibold mb-4">The challenge & the goal:</h3>
+                <p class="text-xl text-gray-700 leading-relaxed ">
+                    The rise of loneliness among college women has risen over the years and Quilly has made it our mission to create a real, supportive community — not just another social app or club. It offers a safe, authentic space where students can form meaningful connections and get the everyday support they need to feel less alone.
+                </p>
+            </section>
+            
+            <section>
+                <h3 class="text-2xl font-semibold mb-4">My role:</h3>
+                <p class="text-xl text-gray-700 leading-relaxed ">
+                    I joined Quilly as a <strong class="font-semibold">UX Designer</strong>, leading the design efforts for the beta version of the app. My work involved integrating user research conducted prior to my arrival and closely partnering with the CEO to bring their design vision to life in a way that aligned with user needs and product goals.
+                </p>
+            </section>
+            
+            <hr class="border-neutral-100 w-full my-12"/>
+
+            <section>
+                <h2 class="text-4xl font-bold mb-4 text-left">user flow</h2>
+                <img src="./v1/flow.png" alt="User flow diagram" class=" w-full max-w-4xl mx-auto h-auto">
+            </section>
+
+            <section>
+                <h2 class="text-4xl font-bold mb-6 text-left">design system</h2>
+                <div class="grid grid-cols-1 gap-6">
+                    <img src="./v1/type.png" alt="Color palette" class=" w-full max-w-4xl mx-auto h-auto object-contain">
+                </div>
+            </section>
+            
+            <hr class="border-neutral-100 w-full my-12"/>
+
+            <section>
+                <h2 class="text-4xl font-bold mb-10">prototype</h2>
+                <h3 class="text-2xl font-semibold mb-4">Initial screens:</h3>
+                <p class="text-xl text-gray-700 leading-relaxed mb-8 ">
+                    In our first design iteration, we used house colors as the primary theme throughout the app, based on each user's assigned house, with Quilly's brand colors serving as accents. While this added a fun, personalized touch, the house colors often felt overpowering and didn't align with the clean, minimal aesthetic we were aiming for. <br> <br>During this phase, we were also finalizing which features would be included in the beta launch. As a result, many of our early designs explored different navigation bar layouts, with icons varying depending on the feature set we were considering at the time.<br><br> Below are some of the initial designs from this iteration.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center justify-center">
+                    <img src="./v1/home1.png" alt="Initial screen design 1" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="./v1/discover.png" alt="Initial screen design 2" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="./v1/profile.png" alt="Initial screen design 3" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="./v1/onboard.png" alt="Initial screen design 4" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="./v1/message.png" alt="Initial screen design 5" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="./v1/board.png" alt="Initial screen design 6" class="rounded-lg  w-full max-w-xs mx-auto">
+                </div>
+            </section>
+            
+            <section>
+                <h3 class="text-2xl font-semibold mb-4">First re-design:</h3>
+                <p class="text-xl text-gray-700 leading-relaxed mb-8">
+                   After user feedback, we realized many comments were about the color scheme. We decided to tone down the house colors and go for a more minimal and clean look. Finalizing the main beta features also helped us create a more consistent and user-friendly nav bar. <br><br>We also discussed adding a feature similar to Instagram's "Close Friends," where users can see what their besties are up to.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center justify-center">
+                    <img src="./v2/home2.png" alt="First redesign screen 1" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="./v2/discover.png" alt="First redesign screen 2" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="./v2/menu.png" alt="First redesign screen 3" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="./v2/mates.png" alt="First redesign screen 4" class="rounded-lg w-full max-w-xs mx-auto">
+                    <img src="./v2/pin.png" alt="First redesign screen 5" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="./v2/profile.png" alt="First redesign screen 5" class="rounded-lg  w-full max-w-xs mx-auto">
+                </div>
+            </section>
+
+            <section>
+                <h3 class="text-2xl font-semibold mb-4">Second re-design:</h3>
+                 <p class="text-xl text-gray-700 leading-relaxed mb-8">
+                   When presenting our initial design to the CEO, she noted that while we had achieved a more subtle color scheme, it still lacked the clean, fresh aesthetic she envisioned. <br><br>This feedback sent us back to the drawing board, where our focus shifted to creating a truly simple, intuitive UI that prioritizes ample white space, clear information hierarchy, and an effortlessly user-friendly layout. <br><br>This became the official beta version we handed off to our software engineers.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start justify-center">
+                    <img src="./v3/home3.png" alt="Final homescreen design" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="./v3/discover.png" alt="Final discussion screen design" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="./v3/profile.png" alt="Final post interaction design" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="./v3/notify.png" alt="Final profile screen design" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="v3/post.png" alt="Final notifications screen design" class="rounded-lg  w-full max-w-xs mx-auto">
+                    <img src="v3/mates.png" alt="Final housemates screen design" class="rounded-lg  w-full max-w-xs mx-auto">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="footer-placeholder" class="w-full"></div>
+
+    <script src="../components/loader.js"></script>
+    <script src="../components/loader_footer.js"></script>
+    
+    <script>
+      (function() {
+        document.addEventListener('DOMContentLoaded', function () {
+          // Image sources for the animated banner
+          const imageSources = [
+              'v1/home1.png',
+              'v1/board.png',
+              'v1/profile.png',
+              'v2/home2.png',
+              'v2/discover.png',
+              'v2/pin.png',
+              'v3/home3.png',
+              'v3/post.png',
+              'v3/mates.png',
+          ];
+
+          function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+          }
+          
+          function createImageElement(src) {
+            return `<div class="relative w-40 h-72 rounded-lg shrink-0 overflow-hidden border-2 border-quilly-accent shadow-md">
+                        <img src="${src}" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-quilly-accent bg-opacity-30"></div>
+                    </div>`;
+          }
+
+          const columns = document.querySelectorAll('.scrolling-content-base');
+
+          columns.forEach(column => {
+            const contentBlocks = column.querySelectorAll('.flex.flex-col.shrink-0');
+            if (contentBlocks.length < 2) return;
+
+            const shuffledSources = shuffle([...imageSources]);
+            
+            // Populate both blocks with the same shuffled images for a seamless loop
+            const imagesHtml = shuffledSources.map(createImageElement).join('');
+            contentBlocks[0].innerHTML = imagesHtml;
+            contentBlocks[1].innerHTML = imagesHtml;
+            
+            // Add a random delay to stagger the animations
+            const animationDuration = 40; // Must match CSS
+            const randomDelay = -Math.random() * animationDuration;
+            column.style.animationDelay = `${randomDelay}s`;
+          });
+        });
+      })();
+    </script>
+    
+  </body>
+</html>
