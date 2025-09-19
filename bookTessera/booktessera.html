@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>BookTessera - Sophie Anne Portfolio</title>
+  <meta
+    name="description"
+    content="BookTessera ticketing platform project by Sophie Anne - CSE 115D Software Design Project"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'instrument-sans': ['Instrument Sans', 'sans-serif'],
+          },
+          colors: {
+            'quilly-bg': '#C1EBEB', 
+            'quilly-accent': '#E0F5F5',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @keyframes scroll-up-continuous {
+        from { transform: translateY(0); }
+        to { transform: translateY(-50%); }
+    }
+
+    @keyframes scroll-down-continuous {
+        from { transform: translateY(-50%); }
+        to { transform: translateY(0); }
+    }
+
+    .scrolling-content-base {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .scrolling-content-up {
+        animation: scroll-up-continuous 60s linear infinite;
+    }
+
+    .scrolling-content-down {
+        animation: scroll-down-continuous 60s linear infinite;
+    }
+  </style>
+
+</head>
+
+<body class="bg-white flex flex-col items-center w-full font-instrument-sans text-black">
+
+  <div id="navbar-placeholder"></div>
+
+  <main class="w-full pt-20 pb-20">
+    
+    <header class="w-full p-4 flex items-center justify-center">
+        <div class="banner-container relative bg-quilly-bg rounded-2xl h-64 w-full max-w-6xl overflow-hidden shadow-xl">
+            <div class="absolute inset-0 flex items-center justify-center -rotate-12 scale-150 opacity-70">
+                <div class="flex gap-4">
+                    <div class="h-96 w-40 overflow-hidden">
+                        <div class="scrolling-content-base scrolling-content-up">
+                            <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                            <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <div class="h-96 w-40 overflow-hidden">
+                        <div class="scrolling-content-base scrolling-content-down">
+                           <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                           <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <div class="h-96 w-40 overflow-hidden">
+                         <div class="scrolling-content-base scrolling-content-up">
+                            <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                            <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:block h-96 w-40 overflow-hidden">
+                         <div class="scrolling-content-base scrolling-content-down">
+                           <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                           <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <div class="hidden md:block h-96 w-40 overflow-hidden">
+                         <div class="scrolling-content-base scrolling-content-up">
+                            <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                            <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                     <div class="hidden lg:block h-96 w-40 overflow-hidden">
+                         <div class="scrolling-content-base scrolling-content-down">
+                           <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                           <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
+                <div class="bg-black bg-opacity-25 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+                    <h1 class="text-4xl font-bold tracking-wide">
+                        BOOKTESSERA
+                    </h1>
+                    <a href="https://github.com/BookTessera/BookTessera" class="inline-block mt-4 px-6 py-2 bg-white bg-opacity-90 text-black font-semibold rounded-lg shadow-md transition-transform hover:scale-105">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    </header>
+    
+    <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 mt-4">
+      <div class="flex items-center justify-end flex-wrap gap-2 text-right">
+        <span class="text-xs font-medium text-gray-600 bg-[#FFD6D6] px-3 py-1 rounded-full">
+          CSE 115D: Software Design Project - Accelerated
+        </span>
+        <span class="text-xs font-medium text-gray-600 bg-yellow-100 px-3 py-1 rounded-full">
+          Duration: April 2024 - June 2024
+        </span>
+        <span class="text-xs font-medium text-gray-600 bg-blue-100 px-3 py-1 rounded-full">
+          Tool: Figma
+        </span>
+      </div>
+      <p class="text-right text-sm text-gray-600 mt-2">
+        <span class="font-bold">Team:</span>
+        <span class="font-medium">
+          Alex Furlong, Shreya Sundar, Naimisha Daripineni, Pakhi Sinha, Sophie Hernandez
+        </span>
+      </p>
+    </div>
+    
+    <hr class="border-neutral-200 w-full my-12 md:my-20">
+
+    <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <h2 class="text-4xl font-bold">project overview</h2>
+            <img src="../images/Heart.png" alt="Decorative icon" class="w-9 h-9 -scale-x-100 -rotate-45">
+          </div>
+          <p class="text-xl text-gray-800 leading-relaxed">
+            BookTessera is a modern ticketing platform designed to combat the stress and unfairness of the typical online ticket purchasing experience. For years, fans and artists have been frustrated by scalpers, bots, and system crashes during high-demand sales. Our team set out to create a more equitable, transparent, and user-friendly solution that prioritizes real fans.
+          </p>
+        </div>
+
+        <div class="relative w-full max-w-xl mx-auto">
+          <img src="../bookTessera/images/laptop.png" alt="MacBook Air mockup frame" class="w-full h-auto">
+        </div>
+      </section>
+
+      <section class="mt-16">
+        <h3 class="text-3xl font-semibold mb-4">The challenge:</h3>
+        <p class="text-xl text-gray-800 leading-relaxed max-w-5xl">
+          Anyone who has tried to buy tickets for a popular concert knows the pain. The process is often a frantic race against bots and other buyers, plagued by crashing websites, confusing queues, and a lack of transparency. Artists also suffer from the fan backlash that results from these negative experiences.
+          <br><br>
+          Our primary challenges were:
+          <br>
+          - Technical Implementation
+          <br>
+          - Fairness
+          <br>
+          - User Experience
+        </p>
+
+        <h3 class="text-3xl font-semibold mt-12 mb-4">The goal:</h3>
+        <p class="text-xl text-gray-800 leading-relaxed max-w-5xl mb-10">
+          Our main goal was to design and develop a platform that offered an optimized general sales experience and an efficient purchase process.
+          <br><br>
+          To achieve this, we set the following objectives:
+        </p>
+        
+        <div role="list" aria-label="Project objectives" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div role="listitem" class="bg-gray-100 rounded-full w-48 h-48 flex items-center justify-center p-4 mx-auto">
+            <span class="text-xl font-bold">Enhanced User Management</span>
+          </div>
+          <div role="listitem" class="bg-gray-100 rounded-full w-48 h-48 flex items-center justify-center p-4 mx-auto">
+            <span class="text-xl font-bold">A Fair Queuing System</span>
+          </div>
+          <div role="listitem" class="bg-gray-100 rounded-full w-48 h-48 flex items-center justify-center p-4 mx-auto">
+            <span class="text-xl font-bold">Transparent Seat Allocation</span>
+          </div>
+          <div role="listitem" class="bg-gray-100 rounded-full w-48 h-48 flex items-center justify-center p-4 mx-auto">
+            <span class="text-xl font-bold">Secure &amp; Seamless Checkout</span>
+          </div>
+        </div>
+      </section>
+    </div> <hr class="border-neutral-200 w-full my-12 md:my-20">
+
+    <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+      <section>
+        <div class="flex items-center gap-3 mb-6">
+          <h2 class="text-4xl font-bold">design & user flow</h2>
+          <img src="../images/message_heart.png" alt="Decorative icon" class="w-9 h-9">
+        </div>
+        <p class="text-xl text-gray-800 leading-relaxed max-w-4xl mb-8">
+          Our design process began with mapping out the user journey and creating low-fidelity wireframes, which evolved into high-fidelity mockups in Figma.
+          <br><br>
+          In our user flow we included the technologies we will need to build that portion of the site.
+        </p>
+        
+        <img 
+          src="./images/user flow.png" 
+          alt="User flow diagram showing the complete user journey"
+          class="w-full h-auto rounded-lg shadow-md"
+        >
+        
+        <p class="text-xl text-gray-800 leading-relaxed max-w-5xl my-10">
+          The user flow helped guide us in designing our screens which we first made a high-fidelity prototype in Figma:
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-8">
+            <img src="../bookTessera/images/login.png" alt="User login page design" class="w-full h-auto object-cover aspect-[1.54] rounded-lg shadow-md">
+            <img src="images/main.png" alt="Alternative landing page design" class="w-full h-auto object-cover aspect-[1.54] rounded-lg shadow-md">
+            <img src="../bookTessera/images/tickets.png" alt="Purchase history page design" class="w-full h-auto object-cover aspect-[1.54] rounded-lg shadow-md">
+          </div>
+          <div class="space-y-8">
+            <img src="../bookTessera/images/event.png" alt="Event details page design" class="w-full max-w-md mx-auto h-auto object-cover aspect-[0.57] rounded-lg shadow-md">
+            <img src="../bookTessera/images/payment.png" alt="Payment checkout page design" class="w-full h-auto object-cover aspect-[1.54] rounded-lg shadow-md">
+          </div>
+        </div>
+      </section>
+    </div> <hr class="border-neutral-200 w-full my-12 md:my-20">
+
+    <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+      <section>
+        <div class="flex items-center gap-3 mb-6">
+          <h2 class="text-4xl font-bold">From design to code</h2>
+          <img src="../images/Heart.png" alt="Decorative icon" class="w-9 h-9 -scale-x-100 -rotate-45">
+        </div>
+        <p class="text-xl text-gray-800 leading-relaxed max-w-5xl mb-6">
+          Bringing the designs to life required a robust tech stack to handle the complex backend requirements while delivering a smooth frontend experience.
+        </p>
+        <div class="text-xl text-gray-800 leading-relaxed max-w-5xl">
+          The system was designed to be scalable and responsive.
+          <br><br>
+          <span class="font-semibold">Event &amp; User Data:</span>
+          We used Firestore, a NoSQL database, to store event information and user data. This allowed for real-time updates and flexible data structures.
+          <br><br>
+          <span class="font-semibold">Frontend Interface:</span>
+          The user interface was built with ReactJS and styled with Material-UI. This combination enabled us to create a dynamic, component-based, and visually consistent application.
+          <br><br>
+          <span class="font-semibold">Backend &amp; Queuing:</span>
+          A Node.js and Express.js server handled most of the API logic. For the critical queuing and seat assignment process during a sale, we used a Python backend, which processed users from the waiting room and randomly assigned them available seats. This separation of concerns en
+        </div>
+      </section>
+    </div> <hr class="border-neutral-200 w-full my-12 md:my-20">
+
+    <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+      <section>
+        <div class="flex items-center gap-3 mb-6">
+          <h2 class="text-4xl font-bold">Outcomes</h2>
+          <img src="../images/message_heart.png" alt="Decorative icon" class="w-9 h-9">
+        </div>
+        <p class="text-xl text-gray-800 leading-relaxed max-w-5xl mb-10">
+          The project successfully delivered on its core MVP goals. We created a functional platform where users could register, browse events, enter a queue, be assigned a seat, and purchase a ticket.
+        </p>
+
+        <div class="w-full max-w-4xl mx-auto">
+          <div class="relative w-full" style="padding-top: 56.25%;"> 
+            <iframe 
+              class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" 
+              src="https://drive.google.com/file/d/17Yqf7Ckgf1-TyvWyInkws758qB9xwey4/preview" 
+              allow="autoplay"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        
+      </section>
+    </div> 
+    </main> 
+  
+  <div id="footer-placeholder" class="w-full"></div>
+
+  <script src="../components/loader.js"></script>
+  <script src="../components/loader_footer.js"></script>
+    
+  <script>
+    (function() {
+      document.addEventListener('DOMContentLoaded', function () {
+        // Image sources for the animated banner
+        // These are still the FaceTime images, as requested to not change the banner
+        const imageSources = [
+            '../bookTessera/images/main.png',
+            '../bookTessera/images/login.png',
+            '../bookTessera/images/event.png',
+            '../bookTessera/images/payment.png',
+            '../bookTessera/images/tickets.png',
+            '../bookTessera/images/profile.png',
+            '../bookTessera/images/experience.png',
+        ];
+
+        function shuffle(array) {
+          for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+          }
+          return array;
+        }
+        
+        function createImageElement(src) {
+          // Changed border and background to use quilly-accent color
+          return `<div class="relative w-100 h-30 rounded-lg shrink-0 overflow-hidden border-2 border-quilly-accent shadow-md">
+                      <img src="${src}" class="w-full h-full object-contain">
+                      <div class="absolute inset-0 bg-quilly-accent bg-opacity-30"></div>
+                  </div>`;
+        }
+
+        const columns = document.querySelectorAll('.scrolling-content-base');
+
+        columns.forEach(column => {
+          const contentBlocks = column.querySelectorAll('.flex.flex-col.shrink-0');
+          if (contentBlocks.length < 2) return;
+
+          const shuffledSources = shuffle([...imageSources]);
+          
+          const imagesHtml = shuffledSources.map(createImageElement).join('');
+          contentBlocks[0].innerHTML = imagesHtml;
+          contentBlocks[1].innerHTML = imagesHtml;
+          
+          const animationDuration = 60; // Must match CSS
+          const randomDelay = -Math.random() * animationDuration;
+          column.style.animationDelay = `${randomDelay}s`;
+        });
+      });
+    })();
+  </script>
+  </body>
+</html>
