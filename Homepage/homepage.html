@@ -4,9 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>Sophie Anne Hernandez - UX Designer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="globals.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -14,133 +17,241 @@
         theme: {
           extend: {
             fontFamily: {
-              'instrument-sans': ['Instrument Sans', 'Helvetica'],
+              "instrument-sans": ["Instrument Sans", "Helvetica"],
             },
             dropShadow: {
-              'green': '0 0 5px rgba(121, 199, 120, 0.7)',
+              green: "0 0 5px rgba(121, 199, 120, 0.7)",
             },
-          }
-        }
-      }
+          },
+        },
+      };
     </script>
   </head>
   <body class="bg-white flex flex-col items-center w-full font-instrument-sans">
-
     <div id="navbar-placeholder"></div>
 
-    <main class="home bg-white flex flex-col items-center w-full relative pt-20">
+    <main
+      class="home bg-white flex flex-col items-center w-full relative pt-20"
+    >
       <div class="content bg-white w-full max-w-[1200px] px-5 sm:px-10">
-        <header class="header mt-16 mb-16">
-          <div class="name-and-pic grid grid-cols-12 items-center justify-between mb-10">
-            <h1 class="name font-bold text-black text-[7vw] leading-[8vw] col-start-1 md:col-span-8 self-center text-left -translate-x-1 flex flex-col items-start">
-              <img src="../images/Star.png" class="w-[4vw] shrink-0 relative left-[19vw] top-[1.5vw]" />
-              <span>SOPHIE ANNE<br/>HERNANDEZ&nbsp;&nbsp;</span>
-            </h1>
-            <img class="profile-pic w-[19vw] col-start-9 col-span-3 text-left ml-[3vw]" src="../images/chibi_me.png" alt="Sophie Anne Hernandez" />
+        <header class="header mt-8 mb-12">
+          <div class="flex justify-center items-center mb-2 w-full -mt-12">
+            <img
+              src="../images/logo.svg"
+              alt="Sophie Anne Hernandez Logo"
+              class="w-full max-w-[1100px] h-auto"
+            />
           </div>
 
-          <div class="contact flex items-center mb-10">
-            <a href="mailto:zednan863@gmail.com" id="emailAddress" class="email font-medium text-black text-[1.8vw] no-underline mr-2.5">zednan863@gmail.com</a>
+          <div class="contact flex items-center mb-4 -mt-4">
+            <a
+              href="mailto:zednan863@gmail.com"
+              id="emailAddress"
+              class="email font-medium text-black text-[1.8vw] no-underline mr-2.5"
+              >zednan863@gmail.com</a
+            >
             <div class="relative flex items-center">
-              <img class="email-icon w-5 h-5 cursor-pointer" src="../images/copy.png" alt="Email icon" onclick="copyEmailToClipboard()" />
-              <div id="copiedPopup" class="absolute hidden bg-stone-700 text-white text-xs px-2 py-1 rounded-full shadow-md left-full ml-1 top-1/2 -translate-y-1/2 whitespace-nowrap z-10 opacity-0 transition-opacity duration-300 pointer-events-none">
+              <img
+                class="email-icon w-5 h-5 cursor-pointer"
+                src="../images/copy.png"
+                alt="Email icon"
+                onclick="copyEmailToClipboard()"
+              />
+              <div
+                id="copiedPopup"
+                class="absolute hidden bg-stone-700 text-white text-xs px-2 py-1 rounded-full shadow-md left-full ml-1 top-1/2 -translate-y-1/2 whitespace-nowrap z-10 opacity-0 transition-opacity duration-300 pointer-events-none"
+              >
                 Copied!
               </div>
             </div>
           </div>
 
           <p class="tagline font-medium text-black text-[2.1vw] leading-[1.3]">
-            UX designer bridging the gap between design 
-            <img src="../images/design.png" alt="design" class="inline w-[3.5vw] h-[3.5vw] mx-1"> 
-            and code 
-            <img src="../images/Smiski laptop.png" alt="code" class="inline w-[3.5vw] h-[3.5vw] mx-1"> 
-            by day | Lost in books 
-            <img src="../images/book.png" alt="books" class="inline w-[3.5vw] h-[3.5vw] mx-1"> 
-            with matcha 
-            <img src="../images/matcha.png" alt="matcha" class="inline w-[3.5vw] h-[3.5vw] mx-1"> 
-            in hand by night 
+            UX designer bridging the gap between design
+            <img
+              src="../images/design.png"
+              alt="design"
+              class="inline w-[3.5vw] h-[3.5vw] mx-1"
+            />
+            and code
+            <img
+              src="../images/Smiski laptop.png"
+              alt="code"
+              class="inline w-[3.5vw] h-[3.5vw] mx-1"
+            />
+            by day | Lost in books
+            <img
+              src="../images/book.png"
+              alt="books"
+              class="inline w-[3.5vw] h-[3.5vw] mx-1"
+            />
+            with matcha
+            <img
+              src="../images/matcha.png"
+              alt="matcha"
+              class="inline w-[3.5vw] h-[3.5vw] mx-1"
+            />
+            in hand by night
           </p>
         </header>
       </div>
-      <hr class="border-neutral-100 w-full my-10 border-t"> 
-      
+      <hr class="border-neutral-100 w-full my-10 border-t" />
+
       <div class="content bg-white w-full max-w-[1200px] px-5 sm:px-10">
         <section class="projects mb-24" aria-labelledby="projects-heading">
           <div class="section-header flex items-center mb-10">
-            <h2 id="projects-heading" class="section-title font-bold text-black text-[2.5rem] mr-5">projects</h2>
-            <img class="section-icon w-[36px] h-[37px] mr-0.5" src="../images/message_heart.png" alt="Projects icon" />
-            <div class="flex-item ml-auto"><a href="../Projects/projects.html" class="learn-more inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded transition-colors duration-300 hover:bg-[#d0d0d0]">Show More</a></div>
+            <h2
+              id="projects-heading"
+              class="section-title font-bold text-black text-[2.5rem] mr-5"
+            >
+              projects
+            </h2>
+            <img
+              class="section-icon w-[36px] h-[37px] mr-0.5"
+              src="../images/message_heart.png"
+              alt="Projects icon"
+            />
+            <div class="flex-item ml-auto">
+              <a
+                href="../Projects/projects.html"
+                class="learn-more inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded transition-colors duration-300 hover:bg-[#d0d0d0]"
+                >Show More</a
+              >
+            </div>
           </div>
           <div class="project-grid grid grid-cols-1 gap-5 mb-10 md:grid-cols-2">
-            <a href="../Pantry Co Pilot/pantry_co_pilot.html" class="block project group relative h-[500px] overflow-hidden rounded-lg">
-                <img src="../images/pantry.png" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div class="text-center text-white p-4">
-                        <h3 class="text-2xl font-bold">Pantry Co-Pilot</h3>
-                        <p class="mt-2">View Project</p>
-                    </div>
+            <a
+              href="../Pantry Co Pilot/pantry_co_pilot.html"
+              class="block project group relative h-[500px] overflow-hidden rounded-lg"
+            >
+              <img
+                src="../images/pantry.png"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="text-center text-white p-4">
+                  <h3 class="text-2xl font-bold">Pantry Co-Pilot</h3>
+                  <p class="mt-2">View Project</p>
                 </div>
+              </div>
             </a>
-            <a href="../SpotifyReplica/spotifyreplica.html" class="block project group relative h-[500px] overflow-hidden rounded-lg">
-                <img src="../images/Spotify.png" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div class="text-center text-white p-4">
-                        <h3 class="text-2xl font-bold">Spotify Replica</h3>
-                        <p class="mt-2">View Project</p>
-                    </div>
+            <a
+              href="../SpotifyReplica/spotifyreplica.html"
+              class="block project group relative h-[500px] overflow-hidden rounded-lg"
+            >
+              <img
+                src="../images/Spotify.png"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="text-center text-white p-4">
+                  <h3 class="text-2xl font-bold">Spotify Replica</h3>
+                  <p class="mt-2">View Project</p>
                 </div>
+              </div>
             </a>
-            <a href="#" class="block project group relative h-[500px] overflow-hidden rounded-lg">
-                <img src="../images/educonnect.png" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div class="text-center text-white p-4">
-                        <h3 class="text-2xl font-bold">EduConnect</h3>
-                        <p class="mt-2">View Project</p>
-                    </div>
+            <a
+              href="#"
+              class="block project group relative h-[500px] overflow-hidden rounded-lg"
+            >
+              <img
+                src="../images/educonnect.png"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="text-center text-white p-4">
+                  <h3 class="text-2xl font-bold">EduConnect</h3>
+                  <p class="mt-2">View Project</p>
                 </div>
+              </div>
             </a>
-            <a href="../Quilly/quilly.html" class="block project group relative h-[500px] overflow-hidden rounded-lg">
-                <img src="../images/quillylogo.png" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div class="text-center text-white p-4">
-                        <h3 class="text-2xl font-bold">Quilly</h3>
-                        <p class="mt-2">View Project</p>
-                    </div>
+            <a
+              href="../Quilly/quilly.html"
+              class="block project group relative h-[500px] overflow-hidden rounded-lg"
+            >
+              <img
+                src="../images/quillylogo.png"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="text-center text-white p-4">
+                  <h3 class="text-2xl font-bold">Quilly</h3>
+                  <p class="mt-2">View Project</p>
                 </div>
+              </div>
             </a>
           </div>
         </section>
       </div>
-      <hr class="border-neutral-100 w-full my-10 border-t">
+      <hr class="border-neutral-100 w-full my-10 border-t" />
 
       <div class="content bg-white w-full max-w-[1200px] px-5 sm:px-10">
         <section class="about mb-24" aria-labelledby="about-heading">
           <div class="section-header flex items-center mb-10">
-            <h2 id="about-heading" class="section-title font-bold text-black text-[2.5rem] mr-5">about</h2>
-            <img class="section-icon w-[54px] h-[54px] mr-0.5" src="../images/Heart.png" alt="About icon" />
-            <div class="flex-item ml-auto"><a href="../About/about.html" class="learn-more inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded transition-colors duration-300 hover:bg-[#d0d0d0]">Learn More</a></div>
+            <h2
+              id="about-heading"
+              class="section-title font-bold text-black text-[2.5rem] mr-5"
+            >
+              about
+            </h2>
+            <img
+              class="section-icon w-[54px] h-[54px] mr-0.5"
+              src="../images/Heart.png"
+              alt="About icon"
+            />
+            <div class="flex-item ml-auto">
+              <a
+                href="../About/about.html"
+                class="learn-more inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded transition-colors duration-300 hover:bg-[#d0d0d0]"
+                >Learn More</a
+              >
+            </div>
           </div>
           <div class="bio grid grid-cols-12 gap-10 mb-10 md:flex-row">
-            <img class="photo-strip col-span-5 col-start-1 w-full max-w-[35vw] h-auto mx-auto md:mx-0" src="../images/Photo_Strp.png" alt="Photo strip of Sophie" />
-            <dl class="bio-details col-span-7 col-start-6 font-medium text-[1.375rem] leading-[1.5] flex flex-col">
+            <img
+              class="photo-strip col-span-5 col-start-1 w-full max-w-[35vw] h-auto mx-auto md:mx-0"
+              src="../images/Photo_Strp.png"
+              alt="Photo strip of Sophie"
+            />
+            <dl
+              class="bio-details col-span-7 col-start-6 font-medium text-[1.375rem] leading-[1.5] flex flex-col"
+            >
               <dt class="font-bold mt-5">💼 Current Job:</dt>
-              <dd class="ml-5"> Level 2 Data Center Technician at Google</dd>
+              <dd class="ml-5">Level 2 Data Center Technician at Google</dd>
               <dt class="font-bold mt-5">👩🏻‍🎓 College &amp; Major:</dt>
-              <dd class="ml-5">University of California - Santa Cruz, majored in Computer Science</dd>
+              <dd class="ml-5">
+                University of California - Santa Cruz, majored in Computer
+                Science
+              </dd>
               <dt class="font-bold mt-5">🧸 Hobbies:</dt>
               <dd class="ml-5">
-                Traveling, reading, video games, volleyball, baking, &amp; drawing
+                Traveling, reading, video games, volleyball, baking, &amp;
+                drawing
               </dd>
               <dt class="font-bold mt-5">🖍️ UX Specialization:</dt>
-              <dd class="ml-5">I blend UX designs with front-end code and personal, hand-drawn visuals.</dd>
+              <dd class="ml-5">
+                I blend UX designs with front-end code and personal, hand-drawn
+                visuals.
+              </dd>
               <dt class="font-bold mt-5">👩🏻‍💻 My Story:</dt>
               <dd class="ml-5">
-                In college, I gained a strong foundation in development and explored various programming languages.
-                While building web apps, I discovered my passion for front-end development—especially designing
-                intuitive, user-friendly interfaces.
+                In college, I gained a strong foundation in development and
+                explored various programming languages. While building web apps,
+                I discovered my passion for front-end development—especially
+                designing intuitive, user-friendly interfaces.
                 <br /><br />
-                That curiosity led me to UX design, where I found the perfect balance of creativity, problem-solving,
-                and empathy. Now, I'm focused on creating thoughtful digital experiences that put users first.
+                That curiosity led me to UX design, where I found the perfect
+                balance of creativity, problem-solving, and empathy. Now, I'm
+                focused on creating thoughtful digital experiences that put
+                users first.
               </dd>
             </dl>
           </div>
@@ -148,7 +259,6 @@
       </div>
     </main>
 
-    <!-- Footer Placeholder: Moved outside of <main> to allow it to be full-width -->
     <div id="footer-placeholder" class="w-full"></div>
 
     <script src="../components/loader.js"></script>
