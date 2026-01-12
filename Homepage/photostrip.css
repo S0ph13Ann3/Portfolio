@@ -1,0 +1,45 @@
+/* photostrip.css */
+.photo-strip-wrapper {
+    position: relative;
+    /* Height matches the approximate height of your drawing to keep things stable */
+    height: 650px;
+    width: 100%;
+    overflow: visible;
+}
+
+.photo-strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+}
+
+/* INITIAL PEAK: Subtle peek-out */
+.strip-bottom {
+    z-index: 10;
+    transform: rotate(-4deg) translateX(-15px);
+    /* Reduced from -50px */
+}
+
+.strip-top {
+    z-index: 30;
+    transform: rotate(0deg) translateX(0px);
+}
+
+/* SCROLL STATE: Slightly more fan-out when viewed */
+.photo-strip-wrapper.is-scrolled .strip-bottom {
+    transform: rotate(-8deg) translateX(-40px) translateY(10px);
+}
+
+/* HOVER STATE: Tighter fan-out to the left */
+.photo-strip-wrapper:hover .strip-bottom {
+    transform: rotate(-15deg) translateX(-80px) translateY(30px);
+    /* Reduced from -200px */
+}
+
+.photo-strip-wrapper:hover .strip-top {
+    transform: rotate(6deg) translateX(20px);
+}
