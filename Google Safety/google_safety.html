@@ -221,74 +221,520 @@
             />
           </div>
 
-          <h3 class="text-2xl font-semibold mb-4">A casual conversation:</h3>
+          <h3 class="text-2xl font-semibold mb-4">
+            The shortcut that felt like a wrong turn…
+          </h3>
           <p class="text-xl text-gray-800 leading-relaxed mb-6">
-            The initial idea for this project wasn't born in a design sprint,
-            but during a casual FaceTime call with friends. One friend jokingly
-            suggested they should be able to "kick out" another from the call.
-            This lighthearted comment sparked curiosity:
-            <strong>why isn't this a feature on FaceTime?</strong> This question
-            prompted an initial Google search to see if the feature was even
-            possible.
+            In 2025, my sister and I were navigating Tokyo at night. Google Maps
+            promised us a 4-minute shortcut back to the hotel. That 'shortcut'
+            led us away from the main road and into a series of pitch-black,
+            narrow alleys with no streetlights or open shops.
+            <br />
+            <br />
+            This experience made me stop and think: Why does the world's most
+            powerful navigation tool prioritize <strong>speed</strong> over
+            <strong>personal security</strong>?
+            <br />
+            <br />
+            I began searching through the settings for a 'Safety' toggle, only
+            to find it didn't exist for pedestrians.
+            <br />
+            <br />
+            That night in Tokyo led me to ask:
+            <strong
+              >What if we could toggle SAFETY like we toggle 'Avoid
+              Tolls'?</strong
+            >
           </p>
           <figure class="text-center">
             <div class="flex justify-center mb-4">
-              <img
+              <!-- <img
                 src="./images/inspo.png"
                 alt="Inspo"
                 class="rounded-xl shadow-lg max-w-sm w-full"
-              />
+              /> -->
             </div>
-            <figcaption class="text-lg italic text-gray-600">
-              The call that inspired this all
-            </figcaption>
+            <!-- <figcaption class="text-lg italic text-gray-600">
+              The Call that Inspired this All
+            </figcaption> -->
           </figure>
 
-          <h3 class="text-2xl font-semibold mt-12 mb-4">Problem validation:</h3>
+          <h3 class="text-2xl font-semibold mt-12 mb-4">Intial Research:</h3>
           <p class="text-xl text-gray-800 leading-relaxed mb-6">
-            The search quickly led to a thread on the official Apple Support
-            Communities forum titled "<a
-              href="https://discussions.apple.com/thread/253471197?sortBy=rank"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-[#4F6827] hover:underline"
-              >How to kick someone off a Group FaceTime call.</a
-            >" A user laid out the exact problem:
+            Google Maps is excellent for "point-to-point" navigation, however,
+            its algorithms often ignore environmental factors like lighting and
+            visibility, leading users into "sketchy" or uncomfortable areas.
+            <br />
+            Current navigation algorithms are built on a "Logic of Efficiency"
+            (Time + Distance). However, recent data shows that for many users,
+            efficiency is secondary to <strong>safety and visibility</strong> .
           </p>
-          <div class="space-y-4 my-6">
-            <img
-              src="./images/user.png"
-              alt="Apple Support Communities thread"
-              class="mx-auto"
-            />
-            <img
-              src="./images/question.png"
-              alt="Apple Support Communities thread continuation"
-              class="x-auto"
-            />
+
+          <div class="mt-12 space-y-12">
+            <!-- Walking Fear Data Section -->
+            <div class="bg-gray-50 rounded-2xl p-8 relative overflow-hidden">
+              <div class="absolute top-0 left-0 w-2 h-full bg-quilly-bg"></div>
+              <h4 class="text-2xl font-bold mb-4 text-gray-900">
+                The "Walking Fear" Data (2025)
+              </h4>
+              <p class="text-xl text-gray-800 leading-relaxed mb-6">
+                A national survey commissioned in August 2025 revealed a
+                staggering gap in how different demographics experience
+                navigation:
+              </p>
+              <div
+                class="bg-white p-6 rounded-xl shadow-sm border border-gray-100"
+              >
+                <p
+                  class="text-xl italic text-gray-700 font-medium leading-relaxed"
+                >
+                  "67% of women identified walking alone at night as their
+                  primary safety fear—significantly outpacing traveling in
+                  unfamiliar areas... 38% are forced to take precautionary
+                  measures every single day to feel secure."
+                </p>
+                <p class="text-sm text-gray-500 mt-4 font-semibold text-right">
+                  <a
+                    href="https://securitytoday.com/articles/2025/08/19/walking-alone-at-night-is-the-greatest-safety-fear-of-women-nationwide.aspx"
+                  >
+                    — Security Today, "Walking Alone at Night is the Greatest
+                    Safety Fear," Aug 2025</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <!-- Direct User Requests Section -->
+            <div>
+              <h4 class="text-2xl font-bold mb-6 text-gray-900">
+                Direct User Requests (2025–2026)
+              </h4>
+              <p class="text-xl text-gray-800 leading-relaxed mb-8">
+                On public forums and community boards, users have been vocal
+                about the lack of "Safe Routing" options:
+              </p>
+
+              <div class="grid grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div
+                  class="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:border-quilly-bg transition-colors duration-300 flex flex-col justify-between"
+                >
+                  <p class="text-lg text-gray-700 italic mb-6">
+                    "Imagine it is late in the night and you have to walk home
+                    alone in a city you don't know... there should be an option
+                    to avoid small streets and other places where you could get
+                    mugged or worse."
+                  </p>
+                  <div class="flex items-center gap-3 mt-auto">
+                    <div
+                      class="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-xs"
+                    >
+                      R
+                    </div>
+                    <p class="text-sm font-semibold text-gray-600">
+                      <a
+                        href="https://www.reddit.com/r/CrazyIdeas/comments/1fuiayb/google_maps_option_where_it_chooses_welllit/"
+                      >
+                        Reddit Discussion, "Google Maps option for well-lit
+                        streets," late 2025</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:border-quilly-bg transition-colors duration-300 flex flex-col justify-between"
+                >
+                  <p class="text-lg text-gray-700 italic mb-6">
+                    "Google Maps could display a notification... when a user is
+                    planning a route through an area known for crime or safety
+                    risks, especially at night. This notification would give
+                    users the option to choose an alternative route."
+                  </p>
+                  <div class="flex items-center gap-3 mt-auto">
+                    <div
+                      class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-xs"
+                    >
+                      G
+                    </div>
+                    <p class="text-sm font-semibold text-gray-600">
+                      <a
+                        href="https://support.google.com/maps/thread/368260853/proposal-for-safer-navigation-in-unsafe-neighborhoods?hl=en"
+                      >
+                        Google Maps Community Support Proposal, Oct 2025</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conducted User Research Section -->
+            <div>
+              <h4 class="text-2xl font-bold mb-8 text-gray-900">
+                Conducted User Research:
+              </h4>
+              <p class="text-xl text-gray-800 leading-relaxed mb-8">
+                After doing some initial online research, I conducted a small
+                survey with people who both use and don't use Google Maps to get
+                a general understanding of their opinion on the app.
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Chart 1 -->
+                <div
+                  class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center"
+                >
+                  <h5
+                    class="text-lg font-medium text-center mb-6 text-gray-800"
+                  >
+                    Have you ever felt unsafe on a Google Maps walking route due
+                    to poor lighting?
+                  </h5>
+                  <div
+                    class="relative w-48 h-48 rounded-full shrink-0"
+                    style="
+                      background: conic-gradient(
+                        #fca5a5 0% 45.5%,
+                        #86efac 45.5% 63.7%,
+                        #d1d5db 63.7% 100%
+                      );
+                    "
+                  ></div>
+                  <div class="mt-6 w-full space-y-3">
+                    <div
+                      class="flex items-center justify-between text-sm text-gray-700"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-red-300"></span>Yes
+                      </div>
+                      <span class="font-semibold">45.5%</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-sm text-gray-700"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-green-300"></span
+                        >No
+                      </div>
+                      <span class="font-semibold">18.2%</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-sm text-gray-700"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-gray-300"></span>I
+                        am not sure
+                      </div>
+                      <span class="font-semibold">36.4%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Chart 2 -->
+                <div
+                  class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center"
+                >
+                  <h5
+                    class="text-lg font-medium text-center mb-6 text-gray-800"
+                  >
+                    Would you be willing to take a route that is 5 minutes
+                    longer if it was guaranteed to be better lit?
+                  </h5>
+                  <div
+                    class="relative w-48 h-48 rounded-full shrink-0"
+                    style="
+                      background: conic-gradient(
+                        #86efac 0% 60%,
+                        #fde047 60% 90%,
+                        #fca5a5 90% 100%
+                      );
+                    "
+                  ></div>
+                  <div class="mt-6 w-full space-y-3">
+                    <div
+                      class="flex items-center justify-between text-sm text-gray-700"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-green-300"></span
+                        >Yes, I prioritize safety
+                      </div>
+                      <span class="font-semibold">60%</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-sm text-gray-700"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-yellow-300"></span
+                        >It depends on the neighborhood
+                      </div>
+                      <span class="font-semibold">30%</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-sm text-gray-700"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-red-300"></span>No,
+                        I prefer fastest route
+                      </div>
+                      <span class="font-semibold">10%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Chart 3 -->
+                <div
+                  class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center"
+                >
+                  <h5
+                    class="text-lg font-medium text-center mb-6 text-gray-800"
+                  >
+                    If Google Maps offered a 'prioritize well-lit paths' toggle,
+                    how likely would you be to use it?
+                  </h5>
+                  <div
+                    class="relative w-48 h-48 rounded-full shrink-0"
+                    style="
+                      background: conic-gradient(
+                        #4ade80 0% 45.5%,
+                        #86efac 45.5% 81.9%,
+                        #d1d5db 81.9% 91%,
+                        #fca5a5 91% 100%
+                      );
+                    "
+                  ></div>
+                  <div class="mt-6 w-full space-y-3">
+                    <div
+                      class="flex items-center justify-between text-sm text-gray-700"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-green-400"></span
+                        >Extremely likely
+                      </div>
+                      <span class="font-semibold">45.5%</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-sm text-gray-700"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-green-300"></span
+                        >Likely
+                      </div>
+                      <span class="font-semibold">36.4%</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-sm text-gray-700"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-gray-300"></span
+                        >Neutral
+                      </div>
+                      <span class="font-semibold">9.1%</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-sm text-gray-700"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-red-300"></span>Not
+                        at all likely
+                      </div>
+                      <span class="font-semibold">9.1%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Chart 4 (Bar) -->
+                <div
+                  class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-center"
+                >
+                  <h5
+                    class="text-lg font-medium text-center mb-8 text-gray-800"
+                  >
+                    What factors contribute to feeling unsafe?
+                  </h5>
+                  <div class="space-y-6 w-full">
+                    <div>
+                      <div
+                        class="flex justify-between text-sm mb-1 text-gray-700"
+                      >
+                        <span>Lack of other people around</span>
+                        <span class="font-bold">72.7%</span>
+                      </div>
+                      <div
+                        class="w-full bg-gray-100 rounded-full h-4 overflow-hidden"
+                      >
+                        <div
+                          class="bg-blue-300 h-4 rounded-full"
+                          style="width: 72.7%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="flex justify-between text-sm mb-1 text-gray-700"
+                      >
+                        <span>Passing through alleys or parks</span>
+                        <span class="font-bold">63.6%</span>
+                      </div>
+                      <div
+                        class="w-full bg-gray-100 rounded-full h-4 overflow-hidden"
+                      >
+                        <div
+                          class="bg-blue-300 h-4 rounded-full"
+                          style="width: 63.6%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="flex justify-between text-sm mb-1 text-gray-700"
+                      >
+                        <span>Poor street lighting</span>
+                        <span class="font-bold">54.5%</span>
+                      </div>
+                      <div
+                        class="w-full bg-gray-100 rounded-full h-4 overflow-hidden"
+                      >
+                        <div
+                          class="bg-blue-300 h-4 rounded-full"
+                          style="width: 54.5%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-xl text-gray-800 leading-relaxed mt-12">
+                My own research confirmed that my experience in the alleys of
+                Japan wasn't an isolated incident; it's a recurring pain point
+                for urban navigators using Google Maps.
+                <br /><br />
+                Users are explicitly asking for safety features, even if they
+                result in slightly longer travel times. There is a clear market
+                demand for a visibility-based layer in standard navigation apps.
+              </p>
+            </div>
           </div>
-          <p class="text-xl text-gray-800 leading-relaxed mb-6">
-            The response from a community specialist confirmed the limitation:
-          </p>
-          <img
-            src="./images/response.png"
-            alt="Apple Support specialist response"
-            class="mx-w-md my-6"
-          />
-          <p class="text-xl text-gray-800 leading-relaxed">
-            This confirmed the feature gap, but the most telling piece of
-            evidence was the community response:
-            <strong class="text-2xl">1,943</strong> users had clicked the "Me
-            Too" button. This provided quantitative data validating that the
-            initial, casual observation was a significant and widespread pain
-            point for thousands of users.
-          </p>
         </section>
       </div>
 
       <hr class="border-neutral-200 w-full my-12 md:my-16" />
 
       <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <section>
+          <div class="flex items-center gap-2 mb-8">
+            <h2 class="text-4xl font-bold">personas & user flow</h2>
+            <img
+              src="../images/Heart.png"
+              alt="Decorative icon"
+              class="w-9 h-9 -scale-x-100 -rotate-45"
+            />
+          </div>
+
+          <p class="text-xl text-gray-800 leading-relaxed mb-12">
+            After conducting my own research, I realized that my experience in
+            Japan was a widespread pain point, which allowed me to build
+            data-driven personas that reflect the real safety needs of everyday
+            users.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Elena -->
+            <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+              <div class="flex items-center gap-4 mb-6">
+                <img
+                  src="images/elena.png"
+                  alt="Elena"
+                  class="w-20 h-20 shrink-0 rounded-full object-cover border-2 border-white shadow-sm bg-purple-100"
+                />
+                <div>
+                  <h4 class="text-2xl font-bold text-gray-900">Elena</h4>
+                  <p class="text-gray-600 font-medium italic">
+                    "I value safety over speed in unfamiliar places."
+                  </p>
+                </div>
+              </div>
+              <div class="space-y-4 text-lg text-gray-700">
+                <p>
+                  <span class="font-bold text-gray-900">Context:</span> Tourist
+                  navigating cities like Tokyo after dark.
+                </p>
+                <p>
+                  <span class="font-bold text-gray-900">Goal:</span> Find
+                  well-lit, predictable routes to her hotel.
+                </p>
+                <p>
+                  <span class="font-bold text-gray-900">Frustration:</span>
+                  Google Maps suggests "shortcuts" through pitch-black alleys to
+                  save 3 minutes.
+                </p>
+                <p>
+                  <span class="font-bold text-gray-900">Motivation:</span>
+                  Predictability and visibility are more important than
+                  efficiency.
+                </p>
+              </div>
+            </div>
+
+            <!-- Marcus -->
+            <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+              <div class="flex items-center gap-4 mb-6">
+                <img
+                  src="images/marcus.png"
+                  alt="Marcus"
+                  class="w-20 h-20 shrink-0 rounded-full object-cover border-2 border-white shadow-sm bg-blue-100"
+                />
+                <div>
+                  <h4 class="text-2xl font-bold text-gray-900">Marcus</h4>
+                  <p class="text-gray-600 font-medium italic">
+                    "The map needs to know my city changes at night."
+                  </p>
+                </div>
+              </div>
+              <div class="space-y-4 text-lg text-gray-700">
+                <p>
+                  <span class="font-bold text-gray-900">Context:</span>
+                  Late-shift hospitality worker walking home at 11:00 PM.
+                </p>
+                <p>
+                  <span class="font-bold text-gray-900">Goal:</span> Stick to
+                  high-traffic main roads with verified lighting.
+                </p>
+                <p>
+                  <span class="font-bold text-gray-900">Frustration:</span> The
+                  app treats a 2:00 AM walk like a 2:00 PM walk, routing him
+                  through dark parks.
+                </p>
+                <p>
+                  <span class="font-bold text-gray-900">Motivation:</span> Wants
+                  a dynamic map and a way to report broken streetlights to help
+                  others.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="text-3xl font-semibold mt-12 mb-6">User Flow:</h3>
+          <p class="text-xl text-gray-800 leading-relaxed mb-8">
+            By mapping the specific frustrations of Elena and Marcus against the
+            existing Google Maps architecture, I developed a user flow that
+            integrates safety naturally into the current navigation and
+            contribution tabs.
+          </p>
+          <iframe
+            style="border: 1px solid rgba(0, 0, 0, 0.1)"
+            width="100%"
+            height="450"
+            src="https://embed.figma.com/board/g1F9hvWsX0rBOfKU66zi34/Google-maps-user-flow?node-id=0-1&embed-host=share"
+            allowfullscreen
+            class="w-full rounded-xl shadow-md"
+          ></iframe>
+        </section>
+      </div>
+
+      <hr class="border-neutral-200 w-full my-12 md:my-16" />
+
+      <!-- <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
         <section>
           <div class="flex items-center gap-2 mb-8">
             <h2 class="text-4xl font-bold">design & solution</h2>
@@ -383,11 +829,22 @@
             active call.
           </p>
         </section>
-      </div>
+      </div> -->
 
-      <hr class="border-neutral-200 w-full my-12 md:my-16" />
+      <!-- <hr class="border-neutral-200 w-full my-12 md:my-16" /> -->
 
       <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <section>
+          <div class="flex items-center gap-4 mb-8">
+            <h2 class="text-4xl font-bold">wireframes</h2>
+            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              Coming Soon
+            </span>
+          </div>
+        </section>
+      </div>
+
+      <!-- <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
         <section>
           <div class="flex items-center gap-2 mb-8">
             <h2 class="text-4xl font-bold">impact</h2>
@@ -428,7 +885,7 @@
             that feels native and intuitive. Ultimately, this empowers users,
             enhances safety, and expands FaceTime's reliability for a wider
             range of conversations.
-          </p>
+          </p> -->
         </section>
       </div>
     </main>

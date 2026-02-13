@@ -1,438 +1,1264 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="utf-8" />
-  <title>CareRoute - Sophie Anne Portfolio</title>
-  <meta
-    name="description"
-    content="CareRoute - A visual coordination system for rural health facilities in Rwanda to track medicine inventory and coordinate deliveries"
-  />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>CareRoute - Sophie Anne Portfolio</title>
+    <meta
+      name="description"
+      content="CareRoute - A visual coordination system for rural health facilities in Rwanda to track medicine inventory and coordinate deliveries"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            'instrument-sans': ['Instrument Sans', 'sans-serif'],
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              "instrument-sans": ["Instrument Sans", "sans-serif"],
+            },
+            colors: {
+              "quilly-bg": "#F9BD9F",
+              "quilly-accent": "#FBD7C5",
+            },
           },
-          colors: {
-            'quilly-bg': '#F9BD9F', 
-            'quilly-accent': '#FBD7C5',
-          }
+        },
+      };
+    </script>
+
+    <style>
+      @keyframes scroll-up-continuous {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-50%);
         }
       }
-    }
-  </script>
 
-  <style>
-    @keyframes scroll-up-continuous {
-        from { transform: translateY(0); }
-        to { transform: translateY(-50%); }
-    }
+      @keyframes scroll-down-continuous {
+        from {
+          transform: translateY(-50%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
 
-    @keyframes scroll-down-continuous {
-        from { transform: translateY(-50%); }
-        to { transform: translateY(0); }
-    }
-
-    .scrolling-content-base {
+      .scrolling-content-base {
         display: flex;
         flex-direction: column;
-    }
-    
-    .scrolling-content-up {
+      }
+
+      .scrolling-content-up {
         animation: scroll-up-continuous 60s linear infinite;
-    }
+      }
 
-    .scrolling-content-down {
+      .scrolling-content-down {
         animation: scroll-down-continuous 60s linear infinite;
-    }
-  </style>
+      }
+    </style>
+  </head>
 
-</head>
+  <body
+    class="bg-white flex flex-col items-center w-full font-instrument-sans text-black"
+  >
+    <div id="navbar-placeholder"></div>
 
-<body class="bg-white flex flex-col items-center w-full font-instrument-sans text-black">
-
-  <div id="navbar-placeholder"></div>
-
-  <main class="w-full pt-20 pb-20">
-    
-    <header class="w-full p-4 flex items-center justify-center">
-        <div class="banner-container relative bg-quilly-bg rounded-2xl h-64 w-full max-w-6xl overflow-hidden shadow-xl">
-            <div class="absolute inset-0 flex items-center justify-center -rotate-12 scale-150 opacity-70">
-                <div class="flex gap-4">
-                    <div class="h-96 w-40 overflow-hidden">
-                        <div class="scrolling-content-base scrolling-content-up">
-                            <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
-                            <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
-                        </div>
-                    </div>
-                    <div class="h-96 w-40 overflow-hidden">
-                        <div class="scrolling-content-base scrolling-content-down">
-                           <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
-                           <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
-                        </div>
-                    </div>
-                    <div class="h-96 w-40 overflow-hidden">
-                         <div class="scrolling-content-base scrolling-content-up">
-                            <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
-                            <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
-                        </div>
-                    </div>
-                    <div class="hidden sm:block h-96 w-40 overflow-hidden">
-                         <div class="scrolling-content-base scrolling-content-down">
-                           <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
-                           <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
-                        </div>
-                    </div>
-                    <div class="hidden md:block h-96 w-40 overflow-hidden">
-                         <div class="scrolling-content-base scrolling-content-up">
-                            <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
-                            <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
-                        </div>
-                    </div>
-                     <div class="hidden lg:block h-96 w-40 overflow-hidden">
-                         <div class="scrolling-content-base scrolling-content-down">
-                           <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
-                           <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
-                        </div>
-                    </div>
+    <main class="w-full pt-20 pb-20">
+      <header class="w-full p-4 flex items-center justify-center">
+        <div
+          class="banner-container relative bg-quilly-bg rounded-2xl h-64 w-full max-w-6xl overflow-hidden shadow-xl"
+        >
+          <div
+            class="absolute inset-0 flex items-center justify-center -rotate-12 scale-150 opacity-70"
+          >
+            <div class="flex gap-4">
+              <div class="h-96 w-40 overflow-hidden">
+                <div class="scrolling-content-base scrolling-content-up">
+                  <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                  <div
+                    class="flex flex-col shrink-0 gap-4"
+                    aria-hidden="true"
+                  ></div>
                 </div>
-            </div>
-            
-            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
-                <div class="bg-black bg-opacity-25 backdrop-blur-sm p-6 rounded-xl shadow-lg">
-                    <h1 class="text-4xl font-bold tracking-wide">
-                        CAREROUTE
-                    </h1>
-                    <a href="https://www.figma.com/design/5SbbVyN63X48gxq1blIV2e/CareRoute-Lo-Fi?node-id=151-2&t=BfVZAggRYW0gAudt-1" class="inline-block mt-4 px-6 py-2 bg-white bg-opacity-90 text-black font-semibold rounded-lg shadow-md transition-transform hover:scale-105">
-                        App Prototype
-                    </a>
+              </div>
+              <div class="h-96 w-40 overflow-hidden">
+                <div class="scrolling-content-base scrolling-content-down">
+                  <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                  <div
+                    class="flex flex-col shrink-0 gap-4"
+                    aria-hidden="true"
+                  ></div>
                 </div>
+              </div>
+              <div class="h-96 w-40 overflow-hidden">
+                <div class="scrolling-content-base scrolling-content-up">
+                  <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                  <div
+                    class="flex flex-col shrink-0 gap-4"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
+              <div class="hidden sm:block h-96 w-40 overflow-hidden">
+                <div class="scrolling-content-base scrolling-content-down">
+                  <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                  <div
+                    class="flex flex-col shrink-0 gap-4"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
+              <div class="hidden md:block h-96 w-40 overflow-hidden">
+                <div class="scrolling-content-base scrolling-content-up">
+                  <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                  <div
+                    class="flex flex-col shrink-0 gap-4"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
+              <div class="hidden lg:block h-96 w-40 overflow-hidden">
+                <div class="scrolling-content-base scrolling-content-down">
+                  <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                  <div
+                    class="flex flex-col shrink-0 gap-4"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
             </div>
-    
+          </div>
+
+          <div
+            class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4"
+          >
+            <div
+              class="bg-black bg-opacity-25 backdrop-blur-sm p-6 rounded-xl shadow-lg"
+            >
+              <h1 class="text-4xl font-bold tracking-wide">CAREROUTE</h1>
+              <a
+                href="https://www.figma.com/design/5SbbVyN63X48gxq1blIV2e/CareRoute-Lo-Fi?node-id=151-2&t=BfVZAggRYW0gAudt-1"
+                class="inline-block mt-4 px-6 py-2 bg-white bg-opacity-90 text-black font-semibold rounded-lg shadow-md transition-transform hover:scale-105"
+              >
+                App Prototype
+              </a>
+            </div>
+          </div>
         </div>
-    </header>
-    
-    <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 mt-4">
-      <div class="flex items-center justify-end flex-wrap gap-2 text-right">
-        <span class="text-xs font-medium text-gray-600 bg-[#FFD6D6] px-3 py-1 rounded-full">
-          Mentor Me Collective
-        </span>
-        <span class="text-xs font-medium text-gray-600 bg-yellow-100 px-3 py-1 rounded-full">
-          Duration: April 2025 - June 2025
-        </span>
-        <span class="text-xs font-medium text-gray-600 bg-blue-100 px-3 py-1 rounded-full">
-          Tool: Figma
-        </span>
+      </header>
+
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 mt-4">
+        <div class="flex items-center justify-end flex-wrap gap-2 text-right">
+          <span
+            class="text-xs font-medium text-gray-600 bg-[#FFD6D6] px-3 py-1 rounded-full"
+          >
+            Mentor Me Collective
+          </span>
+          <span
+            class="text-xs font-medium text-gray-600 bg-yellow-100 px-3 py-1 rounded-full"
+          >
+            Duration: April 2025 - June 2025
+          </span>
+          <span
+            class="text-xs font-medium text-gray-600 bg-blue-100 px-3 py-1 rounded-full"
+          >
+            Tool: Figma
+          </span>
+        </div>
+        <p class="text-right text-sm text-gray-600 mt-2">
+          <span class="font-bold">Team:</span>
+          <span class="font-medium">
+            Ibraheem Rawlinson, Sophie Hernandez, Denisse Dubon
+          </span>
+        </p>
       </div>
-      <p class="text-right text-sm text-gray-600 mt-2">
-        <span class="font-bold">Team:</span>
-        <span class="font-medium">
-          Ibraheem Rawlinson, Sophie Hernandez, Denisse Dubon
-        </span>
-      </p>
-    </div>
-    
-    <hr class="border-neutral-200 w-full my-12 md:my-20">
 
-    <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+      <hr class="border-neutral-200 w-full my-12 md:my-20" />
 
-      <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        <div>
-          <div class="flex items-center gap-3 mb-6">
-            <h2 class="text-4xl font-bold">project overview</h2>
-            <img src="../images/Heart.png" alt="Decorative icon" class="w-9 h-9 -scale-x-100 -rotate-45">
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <h2 class="text-4xl font-bold">project overview</h2>
+              <img
+                src="../images/Heart.png"
+                alt="Decorative icon"
+                class="w-9 h-9 -scale-x-100 -rotate-45"
+              />
+            </div>
+            <p class="text-xl text-gray-800 leading-relaxed">
+              In rural Rwanda, health facilities frequently run out of medicine
+              due to poor communication and slow delivery coordination.
+              <br /><br />Patients travel long distances only to find that their
+              required medication is unavailable. <br /><br />CareRoute is a
+              visual coordination system designed to address this. It enables
+              district health managers to track medicine inventory, receive
+              stock requests, and coordinate deliveries using existing
+              transportation networks.
+            </p>
+            <p class="text-lg italic text-gray-600 mt-6 max-w-4xl">
+              This project was designed to directly address key targets within
+              UN SDG Goal 3: Good Health & Well-being.
+            </p>
           </div>
-          <p class="text-xl text-gray-800 leading-relaxed">
-            In rural Rwanda, health facilities frequently run out of medicine due to poor communication and slow delivery coordination. <br /><br />Patients travel long distances only to find that their required medication is unavailable. <br /><br />CareRoute is a visual coordination system designed to address this. It enables district health managers to track medicine inventory, receive stock requests, and coordinate deliveries using existing transportation networks.
-          </p>
-          <p class="text-lg italic text-gray-600 mt-6 max-w-4xl">
-          This project was designed to directly address key targets within UN SDG Goal 3: Good Health & Well-being.
-        </p>
-        </div>
-        <div class="flex justify-center items-center mt-8 md:mt-0">
-          <img src="images/phone.png" alt="Natural titanium scene" class="max-h-[700px] w-auto">
-        </div>
-      </section>
+          <div class="flex justify-center items-center mt-8 md:mt-0">
+            <img
+              src="images/phone.png"
+              alt="Natural titanium scene"
+              class="max-h-[700px] w-auto"
+            />
+          </div>
+        </section>
 
-      <section class="mt-16">
-        <h3 class="text-3xl font-semibold mb-4">The problem:</h3>
-        <p class="text-xl text-gray-800 leading-relaxed max-w-4xl">
-          The core issue is not that the country lacks medicine, but that the people responsible for managing it don't have the right tools to communicate, track, or share real-time inventory data. <br /><br />The system relies on handwritten notes, calls, and memory. <br /><br />The <span class="font-medium">results</span> are:
-        </p>
-        <ul class="list-disc list-inside text-xl text-gray-800 leading-relaxed max-w-4xl mt-2 space-y-1">
-          <li>Missed treatments and miscommunication.</li>
-          <li>Overloaded workers with no visibility into stock levels.</li>
-          <li>Medicines lost, delayed, or wasted.</li>
-        </ul>
-        
-      </section>
-    </div>
-    
-    <hr class="border-neutral-200 w-full my-12 md:my-20">
-
-    <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
-      <section>
-        <div class="flex items-center gap-3 mb-6">
-          <h2 class="text-4xl font-bold">user research</h2>
-          <img src="../images/message_heart.png" alt="Decorative icon" class="w-9 h-9">
-        </div>
-        <p class="text-xl text-gray-800 leading-relaxed max-w-5xl">
-          Our process was guided by the principle: <span class="font-medium">we are not the user</span>. We developed two primary personas based on insights from sources like <span class="font-medium">VillageReach</span> and the <span class="font-medium">Global Health Supply Chain Summit</span>.
-        </p>
-      
-        <h3 class="text-3xl font-semibold mt-12 mb-4">User context matters:</h3>
-        <div class="text-xl text-gray-800 leading-relaxed max-w-5xl space-y-4">
-          <p>
-            Unlike digital-first users, our stakeholders operate in low-bandwidth, high-pressure, and often low-literacy environments.
+        <section class="mt-16">
+          <h3 class="text-3xl font-semibold mb-4">The problem:</h3>
+          <p class="text-xl text-gray-800 leading-relaxed max-w-4xl">
+            The core issue is not that the country lacks medicine, but that the
+            people responsible for managing it don't have the right tools to
+            communicate, track, or share real-time inventory data.
+            <br /><br />The system relies on handwritten notes, calls, and
+            memory. <br /><br />The
+            <span class="font-medium">results</span> are:
           </p>
-          <ul class="list-disc list-inside space-y-1">
-            <li>They rely heavily on analog tools like notebooks and SMS.</li>
-            <li>Many use basic phones or budget Android devices.</li>
-            <li>They juggle high responsibility with minimal support.</li>
+          <ul
+            class="list-disc list-inside text-xl text-gray-800 leading-relaxed max-w-4xl mt-2 space-y-1"
+          >
+            <li>Missed treatments and miscommunication.</li>
+            <li>Overloaded workers with no visibility into stock levels.</li>
+            <li>Medicines lost, delayed, or wasted.</li>
           </ul>
-          <blockquote class="border-l-4 border-gray-300 pl-4 italic text-gray-600 text-lg">
-            "If the stock is low, I have to call someone — but I don't know if they'll pick up or if they have what we need."<br />
-            <span class="text-base not-italic">— Adapted from CHW interviews in VillageReach reports</span>
-          </blockquote>
-        </div>
+        </section>
+      </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mt-12">
-          <article class="flex items-start gap-4">
-            <img src="images/user1.png" alt="Portrait of Patrice Uwimana" class="w-20 h-20 rounded-full object-cover border-2 border-gray-200 shrink-0" />
-            <div class="flex-1">
-              <div class="bg-gray-100 rounded-xl p-4">
-                <h4 class="text-2xl font-semibold">Patrice Uwimana</h4>
-                <p class="text-base text-gray-700 mt-1">
-                  <span class="italic">Age:</span> <span class="font-medium italic">28</span><br />
-                  <span class="italic">Role & Location:</span> <span class="font-medium italic">A Community Health Worker (CHW) in the rural Nyamagabe District.</span>
-                </p>
-                <div class="bg-white rounded-lg p-3 mt-3 space-y-2 text-lg">
-                  <p><span class="font-semibold">Frustrations</span>: Long travel, paper logs, and missed deliveries.</p>
-                  <p><span class="font-semibold">Goals</span>: Log and report inventory quickly, reduce walking, and spend more time with patients.</p>
+      <hr class="border-neutral-200 w-full my-12 md:my-20" />
+
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <section>
+          <div class="flex items-center gap-3 mb-6">
+            <h2 class="text-4xl font-bold">user research</h2>
+            <img
+              src="../images/message_heart.png"
+              alt="Decorative icon"
+              class="w-9 h-9"
+            />
+          </div>
+          <p class="text-xl text-gray-800 leading-relaxed max-w-5xl">
+            Our process was guided by the principle:
+            <span class="font-medium">we are not the user</span>. We developed
+            two primary personas based on insights from sources like
+            <span class="font-medium">VillageReach</span> and the
+            <span class="font-medium">Global Health Supply Chain Summit</span>.
+          </p>
+
+          <h3 class="text-3xl font-semibold mt-12 mb-4">
+            User context matters:
+          </h3>
+          <div
+            class="text-xl text-gray-800 leading-relaxed max-w-5xl space-y-4"
+          >
+            <p>
+              Unlike digital-first users, our stakeholders operate in
+              low-bandwidth, high-pressure, and often low-literacy environments.
+            </p>
+            <ul class="list-disc list-inside space-y-1">
+              <li>They rely heavily on analog tools like notebooks and SMS.</li>
+              <li>Many use basic phones or budget Android devices.</li>
+              <li>They juggle high responsibility with minimal support.</li>
+            </ul>
+            <blockquote
+              class="border-l-4 border-gray-300 pl-4 italic text-gray-600 text-lg"
+            >
+              "If the stock is low, I have to call someone — but I don't know if
+              they'll pick up or if they have what we need."<br />
+              <span class="text-base not-italic"
+                >— Adapted from CHW interviews in VillageReach reports</span
+              >
+            </blockquote>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mt-12">
+            <article class="flex items-start gap-4">
+              <img
+                src="images/user1.png"
+                alt="Portrait of Patrice Uwimana"
+                class="w-20 h-20 rounded-full object-cover border-2 border-gray-200 shrink-0"
+              />
+              <div class="flex-1">
+                <div class="bg-gray-100 rounded-xl p-4">
+                  <h4 class="text-2xl font-semibold">Patrice Uwimana</h4>
+                  <p class="text-base text-gray-700 mt-1">
+                    <span class="italic">Age:</span>
+                    <span class="font-medium italic">28</span><br />
+                    <span class="italic">Role & Location:</span>
+                    <span class="font-medium italic"
+                      >A Community Health Worker (CHW) in the rural Nyamagabe
+                      District.</span
+                    >
+                  </p>
+                  <div class="bg-white rounded-lg p-3 mt-3 space-y-2 text-lg">
+                    <p>
+                      <span class="font-semibold">Frustrations</span>: Long
+                      travel, paper logs, and missed deliveries.
+                    </p>
+                    <p>
+                      <span class="font-semibold">Goals</span>: Log and report
+                      inventory quickly, reduce walking, and spend more time
+                      with patients.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="flex items-start gap-4">
+              <img
+                src="images/user2.png"
+                alt="Portrait of Jean Bosco Nshimiyimana"
+                class="w-20 h-20 rounded-full object-cover border-2 border-gray-200 shrink-0"
+              />
+              <div class="flex-1">
+                <div class="bg-gray-100 rounded-xl p-4">
+                  <h4 class="text-2xl font-semibold">
+                    Jean Bosco Nshimiyimana
+                  </h4>
+                  <p class="text-base text-gray-700 mt-1">
+                    <span class="italic">Age:</span>
+                    <span class="font-medium italic">41</span><br />
+                    <span class="italic">Role & Location:</span>
+                    <span class="font-medium italic"
+                      >A District Supply Coordinator in Butare Town, managing
+                      20+ rural clinics.</span
+                    >
+                  </p>
+                  <div class="bg-white rounded-lg p-3 mt-3 space-y-2 text-lg">
+                    <p>
+                      <span class="font-semibold">Frustrations</span>: Poor
+                      visibility into clinic stock, an over-reliance on calls
+                      and paper, and information overload.
+                    </p>
+                    <p>
+                      <span class="font-semibold">Goals</span>: Prioritize
+                      routes, prevent stockouts, and generate clean reports.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <h4 class="text-3xl font-semibold mt-12 mb-4">
+            Why this matters for design:
+          </h4>
+          <p class="text-xl text-gray-800 leading-relaxed max-w-5xl">
+            Understanding these personas guided every part of our product
+            design:
+          </p>
+          <ul
+            class="list-disc list-inside text-xl text-gray-800 leading-relaxed max-w-5xl mt-4 space-y-1"
+          >
+            <li>
+              Jean's dashboard is fast, lightweight, and shows urgent issues
+              first.
+            </li>
+            <li>
+              Patrice's mobile app works offline and caches data to reduce
+              stress.
+            </li>
+          </ul>
+          <p class="text-xl text-gray-800 leading-relaxed max-w-5xl mt-4">
+            By designing for real constraints, not ideal ones, we ensure
+            CareRoute meets users where they are — not where we wish they were.
+          </p>
+        </section>
+      </div>
+
+      <hr class="border-neutral-200 w-full my-12 md:my-20" />
+
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <section>
+          <div class="flex items-center gap-3 mb-6">
+            <h2 class="text-4xl font-bold">the solution</h2>
+            <img
+              src="../images/Heart.png"
+              alt="Decorative icon"
+              class="w-9 h-9 -scale-x-100 -rotate-45"
+            />
+          </div>
+          <p class="text-xl text-gray-800 leading-relaxed max-w-5xl mb-6">
+            CareRoute is a lightweight, dual-platform (mobile + web)
+            coordination tool designed for rural health workers managing
+            medicine delivery under pressure. <br /><br />It is not a high-tech
+            overhaul. Instead, it embraces the hybrid reality of rural health
+            workers, bridging the gap between paper-based operations and digital
+            coordination.
+          </p>
+          <div
+            class="text-xl text-gray-800 leading-relaxed max-w-5xl space-y-4"
+          >
+            <p>
+              <span class="font-semibold">For Beatrice (Mobile):</span>
+              <span class="font-regular">
+                A simple interface to request, confirm, and track medicine
+                deliveries with offline-first functionality.
+              </span>
+            </p>
+            <p>
+              <span class="font-semibold">For Jean Bosco (Web): </span>
+              <span class="font-regular">
+                A dashboard view of urgent stockouts and delivery assignments to
+                support faster decisions with fewer errors.
+              </span>
+            </p>
+          </div>
+
+          <h3 class="text-3xl font-semibold mt-12 mb-6">Mobile flow:</h3>
+          <div class="grid grid-cols-1 md:grid-cols-1 gap-8 items-start">
+            <img
+              src="../CareRoute/images/mobileflow.jpg"
+              alt="Mobile flow wireframe"
+              class="w-full h-auto rounded-lg shadow-md max-w-3xl mx-auto"
+            />
+            <div class="text-xl text-gray-800 leading-relaxed space-y-3">
+              <p>
+                <span class="font-semibold"
+                  >App Launches → Offline Sync Alert:</span
+                >
+                The app prompts: "Weak signal detected. Load latest saved data?"
+                This gives her a sense of control.
+              </p>
+              <p>
+                <span class="font-semibold">Land on Stock Tab:</span> The
+                default view shows inventory cards with a clear status: ✅ Full
+                / 🟡 Low / 🔴 Empty.
+              </p>
+              <p>
+                <span class="font-semibold">Tap on a Low Stock Item:</span> This
+                opens a detail screen with a CTA at the bottom: [Request
+                Delivery].
+              </p>
+              <p>
+                <span class="font-semibold">Request Delivery Screen:</span> A
+                simple form auto-fills the medicine name. She only needs to
+                input the quantity and an optional note. The app auto-queues the
+                request to sync if offline.
+              </p>
+              <p>
+                <span class="font-semibold">Confirmation:</span> She receives a
+                success message: "Delivery request sent." or, if offline,
+                "Saved. Will send when connection is restored".
+              </p>
+              <p>
+                <span class="font-semibold">Track Delivery Status:</span> She
+                can track the request as its status updates from ⏳ "Awaiting
+                assignment" to 🚗 "Out for delivery".
+              </p>
+              <p>
+                <span class="font-semibold">Confirm Delivery:</span> Upon
+                arrival, she inputs a 4-digit code from the driver and taps
+                [Confirm Receipt] to close the loop.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="text-3xl font-semibold mt-12 mb-6">Web flow:</h3>
+          <div class="grid grid-cols-1 md:grid-cols-1 gap-8 items-start">
+            <img
+              src="../CareRoute/images/webflow.jpg"
+              alt="Web flow wireframe"
+              class="w-full h-auto rounded-lg shadow-md max-w-3xl mx-auto"
+            />
+            <div class="text-xl text-gray-800 leading-relaxed space-y-3">
+              <p>
+                <span class="font-semibold">Urgent Requests (Top):</span> The
+                top panel is a triage area, displaying the most urgent stock
+                requests as actionable cards so critical needs are addressed
+                first.
+              </p>
+              <p>
+                <span class="font-semibold">Insights & Tasks (Middle):</span>
+                The middle panel provides actionable insights, pairing data
+                visualizations (like request frequency) with a clear task list
+                of pending approvals and unconfirmed deliveries.
+              </p>
+              <p>
+                <span class="font-semibold">System Logs (Bottom):</span> The
+                bottom panel features a system log of all recent activity,
+                offering a transparent and documented record to build user
+                confidence.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <hr class="border-neutral-200 w-full my-12 md:my-20" />
+
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <section>
+          <div class="flex items-center gap-3 mb-6">
+            <h2 class="text-4xl font-bold">from wireframes to visual design</h2>
+            <img
+              src="../images/message_heart.png"
+              alt="Decorative icon"
+              class="w-9 h-9"
+            />
+          </div>
+          <p class="text-xl text-gray-800 leading-relaxed max-w-5xl mb-10">
+            The design process moved from low-fidelity sketches to a defined
+            visual system built on clarity and trust. My role was mainly
+            focusing on creating our low-fidelity mockups, and another one of my
+            team members worked on the hi-fidelity portion.
+          </p>
+
+          <h3 class="text-3xl font-semibold mt-12 mb-6">Lo-Fi wireframes:</h3>
+          <h4 class="text-2xl font-semibold mb-4">Mobile</h4>
+          <div class="relative w-full max-w-6xl mx-auto mb-12 group">
+            <!-- Slides Container -->
+            <div class="overflow-hidden py-8">
+              <div
+                id="lofi-carousel"
+                class="flex transition-transform duration-500 ease-in-out items-center"
+                style="transform: translateX(0%)"
+              >
+                <!-- Slide 1 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/error1.png"
+                    alt="Mobile app alert screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Offline Sync Alert: Prompts user to load saved data when
+                    signal is weak.
+                  </p>
+                </div>
+                <!-- Slide 2 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/home1.png"
+                    alt="Mobile app home screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Home Screen: Overview of inventory status with clear
+                    indicators.
+                  </p>
+                </div>
+                <!-- Slide 3 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/med1.png"
+                    alt="Mobile app medicine detail screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Medicine Detail: View stock levels and request delivery.
+                  </p>
+                </div>
+                <!-- Slide 4 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/deliver1.png"
+                    alt="Mobile app request delivery screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Request Delivery: Simple form to request stock
+                    replenishment.
+                  </p>
+                </div>
+                <!-- Slide 5 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/message1.png"
+                    alt="Mobile app confirmation screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Confirmation: Success message for delivery request.
+                  </p>
+                </div>
+                <!-- Slide 6 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/track1.png"
+                    alt="Mobile app tracking delivery screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Tracking: Monitor delivery status in real-time.
+                  </p>
+                </div>
+                <!-- Slide 7 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/arrive1.png"
+                    alt="Mobile app delivery arrived screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Arrival: Confirm receipt of delivery with a code.
+                  </p>
+                </div>
+                <!-- Slide 8 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/plus1.png"
+                    alt="Mobile app home screen part 2"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Expanded View: Additional options and status details.
+                  </p>
+                </div>
+                <!-- Slide 9 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/update1.png"
+                    alt="Mobile app update stock screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Update Stock: Interface for manually updating inventory
+                    counts.
+                  </p>
                 </div>
               </div>
             </div>
-          </article>
-          
-          <article class="flex items-start gap-4">
-            <img src="images/user2.png" alt="Portrait of Jean Bosco Nshimiyimana" class="w-20 h-20 rounded-full object-cover border-2 border-gray-200 shrink-0" />
-            <div class="flex-1">
-              <div class="bg-gray-100 rounded-xl p-4">
-                <h4 class="text-2xl font-semibold">Jean Bosco Nshimiyimana</h4>
-                <p class="text-base text-gray-700 mt-1">
-                  <span class="italic">Age:</span> <span class="font-medium italic">41</span><br />
-                  <span class="italic">Role & Location:</span> <span class="font-medium italic">A District Supply Coordinator in Butare Town, managing 20+ rural clinics.</span>
-                </p>
-                <div class="bg-white rounded-lg p-3 mt-3 space-y-2 text-lg">
-                  <p><span class="font-semibold">Frustrations</span>: Poor visibility into clinic stock, an over-reliance on calls and paper, and information overload.</p>
-                  <p><span class="font-semibold">Goals</span>: Prioritize routes, prevent stockouts, and generate clean reports.</p>
+
+            <!-- Navigation Buttons -->
+            <button
+              id="prev-btn"
+              class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md focus:outline-none transition-colors z-10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <button
+              id="next-btn"
+              class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md focus:outline-none transition-colors z-10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+
+            <!-- Indicators -->
+            <div class="flex justify-center mt-4 gap-2">
+              <button
+                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="0"
+              ></button>
+              <button
+                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="1"
+              ></button>
+              <button
+                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="2"
+              ></button>
+              <button
+                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="3"
+              ></button>
+              <button
+                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="4"
+              ></button>
+              <button
+                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="5"
+              ></button>
+              <button
+                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="6"
+              ></button>
+              <button
+                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="7"
+              ></button>
+              <button
+                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="8"
+              ></button>
+            </div>
+          </div>
+          <h4 class="text-2xl font-semibold mb-4">Web</h4>
+          <img
+            src="images/webhome.png"
+            alt="Web dashboard homescreen"
+            class="w-full h-auto rounded-lg"
+          />
+
+          <h3 class="text-3xl font-semibold mt-12 mb-6">
+            Hi-fidelity Prototype:
+          </h3>
+          <div
+            class="bg-orange-50 border-l-4 border-quilly-bg rounded-r-xl p-6 mb-12 shadow-sm flex items-start gap-4"
+          >
+            <div
+              class="bg-white p-2 rounded-full shrink-0 text-quilly-bg shadow-sm"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                />
+              </svg>
+            </div>
+            <p class="text-lg text-gray-800 leading-relaxed">
+              <span class="font-bold">Note:</span> Due to the project objectives
+              and the amount of time my team and I were given, we were only
+              asked to create the high-fidelity prototype for the mobile screen.
+            </p>
+          </div>
+          <div class="relative w-full max-w-6xl mx-auto mb-12 group">
+            <!-- Slides Container -->
+            <div class="overflow-hidden py-8">
+              <div
+                id="hifi-carousel"
+                class="flex transition-transform duration-500 ease-in-out items-center"
+                style="transform: translateX(0%)"
+              >
+                <!-- Slide 1 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/error2.png"
+                    alt="High-fidelity mobile app alert screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Offline Sync Alert: Prompts user to load saved data when
+                    signal is weak.
+                  </p>
+                </div>
+                <!-- Slide 2 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/home2.png"
+                    alt="High-fidelity mobile app home screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Home Screen: Overview of inventory status with clear
+                    indicators.
+                  </p>
+                </div>
+                <!-- Slide 3 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/med2.png"
+                    alt="High-fidelity mobile app medicine detail screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Medicine Detail: View stock levels and request delivery.
+                  </p>
+                </div>
+                <!-- Slide 4 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/deliver2.png"
+                    alt="High-fidelity mobile app request delivery screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Request Delivery: Simple form to request stock
+                    replenishment.
+                  </p>
+                </div>
+                <!-- Slide 5 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/message2.png"
+                    alt="High-fidelity mobile app confirm screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Confirmation: Success message for delivery request.
+                  </p>
+                </div>
+                <!-- Slide 6 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/track2.png"
+                    alt="High-fidelity mobile app tracking delivery screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Tracking: Monitor delivery status in real-time.
+                  </p>
+                </div>
+                <!-- Slide 7 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/arrive2.png"
+                    alt="High-fidelity mobile app delivery screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Arrival: Confirm receipt of delivery with a code.
+                  </p>
+                </div>
+                <!-- Slide 8 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/plus2.png"
+                    alt="High-fidelity mobile app home screen part 2"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Expanded View: Additional options and status details.
+                  </p>
+                </div>
+                <!-- Slide 9 -->
+                <div
+                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
+                >
+                  <img
+                    src="images/update2.png"
+                    alt="High-fidelity mobile app update stock screen"
+                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
+                  />
+                  <p class="text-lg text-gray-700 text-center font-medium">
+                    Update Stock: Interface for manually updating inventory
+                    counts.
+                  </p>
                 </div>
               </div>
             </div>
-          </article>
-        </div>
 
-        <h4 class="text-3xl font-semibold mt-12 mb-4">Why this matters for design:</h4>
-        <p class="text-xl text-gray-800 leading-relaxed max-w-5xl">
-          Understanding these personas guided every part of our product design:
-        </p>
-        <ul class="list-disc list-inside text-xl text-gray-800 leading-relaxed max-w-5xl mt-4 space-y-1">
-          <li>Jean's dashboard is fast, lightweight, and shows urgent issues first.</li>
-          <li>Patrice's mobile app works offline and caches data to reduce stress.</li>
-        </ul>
-        <p class="text-xl text-gray-800 leading-relaxed max-w-5xl mt-4">
-          By designing for real constraints, not ideal ones, we ensure CareRoute meets users where they are — not where we wish they were.
-        </p>
-      </section>
-    </div>
-    
-    <hr class="border-neutral-200 w-full my-12 md:my-20">
+            <!-- Navigation Buttons -->
+            <button
+              id="hifi-prev-btn"
+              class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md focus:outline-none transition-colors z-10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <button
+              id="hifi-next-btn"
+              class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md focus:outline-none transition-colors z-10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
 
-    <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
-      <section>
-        <div class="flex items-center gap-3 mb-6">
-          <h2 class="text-4xl font-bold">the solution</h2>
-          <img src="../images/Heart.png" alt="Decorative icon" class="w-9 h-9 -scale-x-100 -rotate-45">
-        </div>
-        <p class="text-xl text-gray-800 leading-relaxed max-w-5xl mb-6">
-          CareRoute is a lightweight, dual-platform (mobile + web) coordination tool designed for rural health workers managing medicine delivery under pressure. <br /><br />It is not a high-tech overhaul. Instead, it embraces the hybrid reality of rural health workers, bridging the gap between paper-based operations and digital coordination.
-        </p>
-        <div class="text-xl text-gray-800 leading-relaxed max-w-5xl space-y-4">
-          <p>
-            <span class="font-semibold">For Beatrice (Mobile):</span>
-            <span class="font-regular">
-              A simple interface to request, confirm, and track medicine deliveries with offline-first functionality.
-            </span>
-          </p>
-          <p>
-            <span class="font-semibold">For Jean Bosco (Web): </span>
-            <span class="font-regular">
-              A dashboard view of urgent stockouts and delivery assignments to support faster decisions with fewer errors.
-            </span>
-          </p>
-        </div>
-
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Mobile flow:</h3>
-        <div class="grid grid-cols-1 md:grid-cols-1 gap-8 items-start">
-          <img src="../CareRoute/images/mobileflow.jpg" alt="Mobile flow wireframe" class="w-full h-auto rounded-lg shadow-md max-w-3xl mx-auto" />
-          <div class="text-xl text-gray-800 leading-relaxed space-y-3">
-            <p><span class="font-semibold">App Launches → Offline Sync Alert:</span> The app prompts: "Weak signal detected. Load latest saved data?" This gives her a sense of control.</p>
-            <p><span class="font-semibold">Land on Stock Tab:</span> The default view shows inventory cards with a clear status: ✅ Full / 🟡 Low / 🔴 Empty.</p>
-            <p><span class="font-semibold">Tap on a Low Stock Item:</span> This opens a detail screen with a CTA at the bottom: [Request Delivery].</p>
-            <p><span class="font-semibold">Request Delivery Screen:</span> A simple form auto-fills the medicine name. She only needs to input the quantity and an optional note. The app auto-queues the request to sync if offline.</p>
-            <p><span class="font-semibold">Confirmation:</span> She receives a success message: "Delivery request sent." or, if offline, "Saved. Will send when connection is restored".</p>
-            <p><span class="font-semibold">Track Delivery Status:</span> She can track the request as its status updates from ⏳ "Awaiting assignment" to 🚗 "Out for delivery".</p>
-            <p><span class="font-semibold">Confirm Delivery:</span> Upon arrival, she inputs a 4-digit code from the driver and taps [Confirm Receipt] to close the loop.</p>
+            <!-- Indicators -->
+            <div class="flex justify-center mt-4 gap-2">
+              <button
+                class="hifi-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="0"
+              ></button>
+              <button
+                class="hifi-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="1"
+              ></button>
+              <button
+                class="hifi-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="2"
+              ></button>
+              <button
+                class="hifi-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="3"
+              ></button>
+              <button
+                class="hifi-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="4"
+              ></button>
+              <button
+                class="hifi-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="5"
+              ></button>
+              <button
+                class="hifi-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="6"
+              ></button>
+              <button
+                class="hifi-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="7"
+              ></button>
+              <button
+                class="hifi-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                data-index="8"
+              ></button>
+            </div>
           </div>
-        </div>
+        </section>
+      </div>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Web flow:</h3>
-        <div class="grid grid-cols-1 md:grid-cols-1 gap-8 items-start">
-           <img src="../CareRoute/images/webflow.jpg" alt="Web flow wireframe" class="w-full h-auto rounded-lg shadow-md max-w-3xl mx-auto" />
-           <div class="text-xl text-gray-800 leading-relaxed space-y-3">
-            <p><span class="font-semibold">Urgent Requests (Top):</span> The top panel is a triage area, displaying the most urgent stock requests as actionable cards so critical needs are addressed first.</p>
-            <p><span class="font-semibold">Insights & Tasks (Middle):</span> The middle panel provides actionable insights, pairing data visualizations (like request frequency) with a clear task list of pending approvals and unconfirmed deliveries.</p>
-            <p><span class="font-semibold">System Logs (Bottom):</span> The bottom panel features a system log of all recent activity, offering a transparent and documented record to build user confidence.</p>
+      <hr class="border-neutral-200 w-full my-12 md:my-20" />
+
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <section>
+          <div class="flex items-center gap-3 mb-6">
+            <h2 class="text-4xl font-bold">future vision & learnings</h2>
+            <img
+              src="../images/Heart.png"
+              alt="Decorative icon"
+              class="w-9 h-9 -scale-x-100 -rotate-45"
+            />
           </div>
-        </div>
-      </section>
-    </div>
-    
-    <hr class="border-neutral-200 w-full my-12 md:my-20">
+          <p class="text-xl text-gray-800 leading-relaxed max-w-5xl">
+            Our strategy is to start with a controlled pilot in 1-2 rural
+            clinics, then validate features under real-world conditions before
+            scaling regionally.
+          </p>
 
-    <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
-      <section>
-        <div class="flex items-center gap-3 mb-6">
-          <h2 class="text-4xl font-bold">from wireframes to visual design</h2>
-          <img src="../images/message_heart.png" alt="Decorative icon" class="w-9 h-9">
-        </div>
-        <p class="text-xl text-gray-800 leading-relaxed max-w-5xl mb-10">
-          The design process moved from low-fidelity sketches to a defined visual system built on clarity and trust. My role was mainly focusing on creating our low-fidelity mockups, and another one of my team members worked on the hi-fidelity portion.
-        </p>
+          <h3 class="text-3xl font-semibold mt-12 mb-4">Future vision:</h3>
+          <ul
+            class="list-disc list-inside text-xl text-gray-800 leading-relaxed max-w-5xl space-y-3"
+          >
+            <li>
+              <span class="font-semibold">Emotional Wellness Layer:</span> Add a
+              "mood check" emoji system to help supervisors track burnout.
+            </li>
+            <li>
+              <span class="font-semibold">Analytics Dashboard:</span> Enable
+              data exports to funders and reveal trends in medicine waste and
+              delivery delays.
+            </li>
+            <li>
+              <span class="font-semibold">Expansion Playbook:</span> Create a
+              "plug-and-play" model to localize for similar contexts in Malawi,
+              Tanzania, or Uganda.
+            </li>
+          </ul>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Lo-Fi wireframes:</h3>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
-          <img src="images/error1.png" alt="Mobile app alert screen" class="w-full h-auto rounded-lg object-contain">
-          <img src="images/home1.png" alt="Mobile app home screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/med1.png" alt="Mobile app medicine detail screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/deliver1.png" alt="Mobile app request delivery screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/message1.png" alt="Mobile app confirmation screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/track1.png" alt="Mobile app tracking delivery screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/arrive1.png" alt="Mobile app delivery arrived screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/plus1.png" alt="Mobile app home screen part 2" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/update1.png" alt="Mobile app update stock screen" class="w-full h-auto rounded-lg  object-contain">
-        </div>
-        <img src="images/webhome.png" alt="Web dashboard homescreen" class="w-full h-auto rounded-lg  mt-8">
+          <h3 class="text-3xl font-semibold mt-12 mb-4">Learnings:</h3>
+          <ul
+            class="list-disc list-inside text-xl text-gray-800 leading-relaxed max-w-5xl space-y-3"
+          >
+            <li>
+              <span class="font-semibold">Tech ≠ Transformation:</span> Tools
+              only work if they're designed with empathy for real-world users.
+            </li>
+            <li>
+              <span class="font-semibold"
+                >Designing for constraint is power:</span
+              >
+              Limited signal and time aren't barriers—they're design signals
+              that lead to focused solutions.
+            </li>
+            <li>
+              <span class="font-semibold">User research is our compass:</span>
+              Insights from field reports and user interviews kept us grounded
+              in reality, not theory.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Hi-fidelity Prototype:</h3>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
-          <img src="images/error2.png" alt="High-fidelity mobile app alert screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/home2.png" alt="High-fidelity mobile app home screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/med2.png" alt="High-fidelity mobile app medicine detail screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/deliver2.png" alt="High-fidelity mobile app request delivery screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/message2.png" alt="High-fidelity mobile app confirm screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/track2.png" alt="High-fidelity mobile app tracking delivery screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/arrive2.png" alt="High-fidelity mobile app delivery screen" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/plus2.png" alt="High-fidelity mobile app home screen part 2" class="w-full h-auto rounded-lg  object-contain">
-          <img src="images/update2.png" alt="High-fidelity mobile app update stock screen" class="w-full h-auto rounded-lg  object-contain">
-        </div>
-      </section>
-    </div>
-    
-    <hr class="border-neutral-200 w-full my-12 md:my-20">
+    <div id="footer-placeholder" class="w-full"></div>
 
-    <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
-      <section>
-        <div class="flex items-center gap-3 mb-6">
-          <h2 class="text-4xl font-bold">future vision & learnings</h2>
-          <img src="../images/Heart.png" alt="Decorative icon" class="w-9 h-9 -scale-x-100 -rotate-45">
-        </div>
-        <p class="text-xl text-gray-800 leading-relaxed max-w-5xl">
-          Our strategy is to start with a controlled pilot in 1-2 rural clinics, then validate features under real-world conditions before scaling regionally.
-        </p>
+    <script src="../components/loader.js"></script>
+    <script src="../components/loader_footer.js"></script>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-4">Future vision:</h3>
-        <ul class="list-disc list-inside text-xl text-gray-800 leading-relaxed max-w-5xl space-y-3">
-          <li><span class="font-semibold">Emotional Wellness Layer:</span> Add a "mood check" emoji system to help supervisors track burnout.</li>
-          <li><span class="font-semibold">Analytics Dashboard:</span> Enable data exports to funders and reveal trends in medicine waste and delivery delays.</li>
-          <li><span class="font-semibold">Expansion Playbook:</span> Create a "plug-and-play" model to localize for similar contexts in Malawi, Tanzania, or Uganda.</li>
-        </ul>
-        
-        <h3 class="text-3xl font-semibold mt-12 mb-4">Learnings:</h3>
-        <ul class="list-disc list-inside text-xl text-gray-800 leading-relaxed max-w-5xl space-y-3">
-          <li><span class="font-semibold">Tech ≠ Transformation:</span> Tools only work if they're designed with empathy for real-world users.</li>
-          <li><span class="font-semibold">Designing for constraint is power:</span> Limited signal and time aren't barriers—they're design signals that lead to focused solutions.</li>
-          <li><span class="font-semibold">User research is our compass:</span> Insights from field reports and user interviews kept us grounded in reality, not theory.</li>
-        </ul>
-      </section>
-    </div> 
-  </main> 
-  
-  <div id="footer-placeholder" class="w-full"></div>
+    <script>
+      (function () {
+        document.addEventListener("DOMContentLoaded", function () {
+          // Image sources for the animated banner
+          // These are still the FaceTime images, as requested to not change the banner
+          const imageSources = [
+            "../CareRoute/images/error2.png",
+            "../CareRoute/images/home2.png",
+            "../CareRoute/images/med2.png",
+            "../CareRoute/images/deliver2.png",
+            "../CareRoute/images/message2.png",
+            "../CareRoute/images/track2.png",
+            "../CareRoute/images/arrive2.png",
+            "../CareRoute/images/plus2.png",
+            "../CareRoute/images/update2.png",
+          ];
 
-  <script src="../components/loader.js"></script>
-  <script src="../components/loader_footer.js"></script>
-    
-  <script>
-    (function() {
-      document.addEventListener('DOMContentLoaded', function () {
-        // Image sources for the animated banner
-        // These are still the FaceTime images, as requested to not change the banner
-        const imageSources = [
-            '../CareRoute/images/error2.png',
-            '../CareRoute/images/home2.png',
-            '../CareRoute/images/med2.png',
-            '../CareRoute/images/deliver2.png',
-            '../CareRoute/images/message2.png',
-            '../CareRoute/images/track2.png',
-            '../CareRoute/images/arrive2.png',
-            '../CareRoute/images/plus2.png',
-            '../CareRoute/images/update2.png',
-        ];
-
-        function shuffle(array) {
-          for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
+          function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
           }
-          return array;
-        }
-        
-        function createImageElement(src) {
-          // Changed border and background to use quilly-accent color
-          return `<div class="relative w-100 h-30 rounded-lg shrink-0 overflow-hidden border-2 border-quilly-accent shadow-md">
+
+          function createImageElement(src) {
+            // Changed border and background to use quilly-accent color
+            return `<div class="relative w-100 h-30 rounded-lg shrink-0 overflow-hidden border-2 border-quilly-accent shadow-md">
                       <img src="${src}" class="w-full h-full object-contain">
                       <div class="absolute inset-0 bg-quilly-accent bg-opacity-30"></div>
                   </div>`;
-        }
+          }
 
-        const columns = document.querySelectorAll('.scrolling-content-base');
+          const columns = document.querySelectorAll(".scrolling-content-base");
 
-        columns.forEach(column => {
-          const contentBlocks = column.querySelectorAll('.flex.flex-col.shrink-0');
-          if (contentBlocks.length < 2) return;
+          columns.forEach((column) => {
+            const contentBlocks = column.querySelectorAll(
+              ".flex.flex-col.shrink-0",
+            );
+            if (contentBlocks.length < 2) return;
 
-          const shuffledSources = shuffle([...imageSources]);
-          
-          const imagesHtml = shuffledSources.map(createImageElement).join('');
-          contentBlocks[0].innerHTML = imagesHtml;
-          contentBlocks[1].innerHTML = imagesHtml;
-          
-          const animationDuration = 60; // Must match CSS
-          const randomDelay = -Math.random() * animationDuration;
-          column.style.animationDelay = `${randomDelay}s`;
+            const shuffledSources = shuffle([...imageSources]);
+
+            const imagesHtml = shuffledSources.map(createImageElement).join("");
+            contentBlocks[0].innerHTML = imagesHtml;
+            contentBlocks[1].innerHTML = imagesHtml;
+
+            const animationDuration = 60; // Must match CSS
+            const randomDelay = -Math.random() * animationDuration;
+            column.style.animationDelay = `${randomDelay}s`;
+          });
         });
-      });
-    })();
-  </script>
+
+        // Carousel Logic for Lo-Fi Wireframes
+        document.addEventListener("DOMContentLoaded", function () {
+          const carousel = document.getElementById("lofi-carousel");
+          const prevBtn = document.getElementById("prev-btn");
+          const nextBtn = document.getElementById("next-btn");
+          const indicators = document.querySelectorAll(".indicator");
+          let currentIndex = 0;
+          const totalSlides = 9; // Number of slides
+
+          function updateCarousel() {
+            const isMobile = window.innerWidth < 768;
+            let translateX;
+
+            if (isMobile) {
+              translateX = -(currentIndex * 100);
+            } else {
+              // Center the current index in a 3-item view
+              translateX = (1 - currentIndex) * (100 / 3);
+            }
+
+            if (carousel) {
+              carousel.style.transform = `translateX(${translateX}%)`;
+            }
+
+            // Update Slide Styles (Opacity/Scale)
+            Array.from(carousel.children).forEach((slide, index) => {
+              if (index === currentIndex) {
+                slide.classList.remove("opacity-40", "scale-90");
+                slide.classList.add("opacity-100", "scale-100", "z-10");
+              } else {
+                slide.classList.add("opacity-40", "scale-90");
+                slide.classList.remove("opacity-100", "scale-100", "z-10");
+              }
+            });
+
+            // Update indicators
+            indicators.forEach((ind, index) => {
+              if (index === currentIndex) {
+                ind.classList.remove("bg-gray-300");
+                ind.classList.add("bg-gray-800");
+              } else {
+                ind.classList.add("bg-gray-300");
+                ind.classList.remove("bg-gray-800");
+              }
+            });
+          }
+
+          if (prevBtn && nextBtn && carousel) {
+            prevBtn.addEventListener("click", () => {
+              currentIndex =
+                currentIndex === 0 ? totalSlides - 1 : currentIndex - 1;
+              updateCarousel();
+            });
+
+            nextBtn.addEventListener("click", () => {
+              currentIndex =
+                currentIndex === totalSlides - 1 ? 0 : currentIndex + 1;
+              updateCarousel();
+            });
+
+            indicators.forEach((ind) => {
+              ind.addEventListener("click", (e) => {
+                currentIndex = parseInt(e.target.getAttribute("data-index"));
+                updateCarousel();
+              });
+            });
+
+            // Initialize
+            updateCarousel();
+          }
+
+          // Carousel Logic for Hi-Fi Wireframes
+          const hifiCarousel = document.getElementById("hifi-carousel");
+          const hifiPrevBtn = document.getElementById("hifi-prev-btn");
+          const hifiNextBtn = document.getElementById("hifi-next-btn");
+          const hifiIndicators = document.querySelectorAll(".hifi-indicator");
+          let hifiCurrentIndex = 0;
+          const hifiTotalSlides = 9;
+
+          function updateHifiCarousel() {
+            const isMobile = window.innerWidth < 768;
+            let translateX;
+
+            if (isMobile) {
+              translateX = -(hifiCurrentIndex * 100);
+            } else {
+              translateX = (1 - hifiCurrentIndex) * (100 / 3);
+            }
+
+            if (hifiCarousel) {
+              hifiCarousel.style.transform = `translateX(${translateX}%)`;
+            }
+
+            // Update Slide Styles
+            Array.from(hifiCarousel.children).forEach((slide, index) => {
+              if (index === hifiCurrentIndex) {
+                slide.classList.remove("opacity-40", "scale-90");
+                slide.classList.add("opacity-100", "scale-100", "z-10");
+              } else {
+                slide.classList.add("opacity-40", "scale-90");
+                slide.classList.remove("opacity-100", "scale-100", "z-10");
+              }
+            });
+
+            // Update indicators
+            hifiIndicators.forEach((ind, index) => {
+              if (index === hifiCurrentIndex) {
+                ind.classList.remove("bg-gray-300");
+                ind.classList.add("bg-gray-800");
+              } else {
+                ind.classList.add("bg-gray-300");
+                ind.classList.remove("bg-gray-800");
+              }
+            });
+          }
+
+          if (hifiPrevBtn && hifiNextBtn && hifiCarousel) {
+            hifiPrevBtn.addEventListener("click", () => {
+              hifiCurrentIndex =
+                hifiCurrentIndex === 0
+                  ? hifiTotalSlides - 1
+                  : hifiCurrentIndex - 1;
+              updateHifiCarousel();
+            });
+
+            hifiNextBtn.addEventListener("click", () => {
+              hifiCurrentIndex =
+                hifiCurrentIndex === hifiTotalSlides - 1
+                  ? 0
+                  : hifiCurrentIndex + 1;
+              updateHifiCarousel();
+            });
+
+            hifiIndicators.forEach((ind) => {
+              ind.addEventListener("click", (e) => {
+                hifiCurrentIndex = parseInt(
+                  e.target.getAttribute("data-index"),
+                );
+                updateHifiCarousel();
+              });
+            });
+
+            // Initialize
+            updateHifiCarousel();
+          }
+
+          window.addEventListener("resize", () => {
+            updateCarousel();
+            updateHifiCarousel();
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
