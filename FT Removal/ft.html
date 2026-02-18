@@ -1,284 +1,613 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>Sophie Anne - FaceTime Participation Removal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              'instrument-sans': ['Instrument Sans', 'sans-serif'],
+              "instrument-sans": ["Instrument Sans", "sans-serif"],
             },
             colors: {
-              'quilly-bg': '#C9DEA6',
-              'quilly-accent': '#DBE9C3',
-            }
-          }
-        }
-      }
+              "quilly-bg": "#C9DEA6",
+              "quilly-accent": "#DBE9C3",
+            },
+          },
+        },
+      };
     </script>
     <style>
-        /* Animation for the banner */
-        @keyframes scroll-up-continuous {
-            from { transform: translateY(0); }
-            to { transform: translateY(-50%); }
+      /* Animation for the banner */
+      @keyframes scroll-up-continuous {
+        from {
+          transform: translateY(0);
         }
+        to {
+          transform: translateY(-50%);
+        }
+      }
 
-        @keyframes scroll-down-continuous {
-            from { transform: translateY(-50%); }
-            to { transform: translateY(0); }
+      @keyframes scroll-down-continuous {
+        from {
+          transform: translateY(-50%);
         }
+        to {
+          transform: translateY(0);
+        }
+      }
 
-        .scrolling-content-base {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .scrolling-content-up {
-            animation: scroll-up-continuous 60s linear infinite;
-        }
+      .scrolling-content-base {
+        display: flex;
+        flex-direction: column;
+      }
 
-        .scrolling-content-down {
-            animation: scroll-down-continuous 60s linear infinite;
-        }
+      .scrolling-content-up {
+        animation: scroll-up-continuous 60s linear infinite;
+      }
+
+      .scrolling-content-down {
+        animation: scroll-down-continuous 60s linear infinite;
+      }
     </style>
-</head>
-<body class="bg-white flex flex-col items-center w-full font-instrument-sans text-black">
-
+  </head>
+  <body
+    class="bg-white flex flex-col items-center w-full font-instrument-sans text-black"
+  >
     <div id="navbar-placeholder"></div>
 
     <main class="w-full pt-20">
-        <header class="w-full p-4 flex items-center justify-center">
-            <div class="banner-container relative bg-quilly-bg rounded-2xl h-64 w-full max-w-6xl overflow-hidden shadow-xl">
-                <div class="absolute inset-0 flex items-center justify-center -rotate-12 scale-150 opacity-70">
-                    <div class="flex gap-4">
-                        <div class="h-96 w-40 overflow-hidden">
-                            <div class="scrolling-content-base scrolling-content-up">
-                                <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
-                                <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
-                            </div>
-                        </div>
-                        <div class="h-96 w-40 overflow-hidden">
-                            <div class="scrolling-content-base scrolling-content-down">
-                               <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
-                               <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
-                            </div>
-                        </div>
-                        <div class="h-96 w-40 overflow-hidden">
-                             <div class="scrolling-content-base scrolling-content-up">
-                                <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
-                                <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
-                            </div>
-                        </div>
-                        <div class="hidden sm:block h-96 w-40 overflow-hidden">
-                             <div class="scrolling-content-base scrolling-content-down">
-                               <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
-                               <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
-                            </div>
-                        </div>
-                        <div class="hidden md:block h-96 w-40 overflow-hidden">
-                             <div class="scrolling-content-base scrolling-content-up">
-                                <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
-                                <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
-                            </div>
-                        </div>
-                         <div class="hidden lg:block h-96 w-40 overflow-hidden">
-                             <div class="scrolling-content-base scrolling-content-down">
-                               <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
-                               <div class="flex flex-col shrink-0 gap-4" aria-hidden="true"></div>
-                            </div>
-                        </div>
-                    </div>
+      <header class="w-full p-4 flex items-center justify-center">
+        <div
+          class="banner-container relative bg-quilly-bg rounded-2xl h-64 w-full max-w-6xl overflow-hidden shadow-xl"
+        >
+          <div
+            class="absolute inset-0 flex items-center justify-center -rotate-12 scale-150 opacity-70"
+          >
+            <div class="flex gap-4">
+              <div class="h-96 w-40 overflow-hidden">
+                <div class="scrolling-content-base scrolling-content-up">
+                  <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                  <div
+                    class="flex flex-col shrink-0 gap-4"
+                    aria-hidden="true"
+                  ></div>
                 </div>
-                
-                <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
-                    <div class="bg-black bg-opacity-25 backdrop-blur-sm p-6 rounded-xl shadow-lg">
-                        <h1 class="text-4xl font-bold tracking-wide">
-                            FACETIME PARTICIPATION REMOVAL
-                        </h1>
-                        <a href="https://www.figma.com/proto/K2jIBX2MQ4TdTKhCWmYSs9/Kicking-Out-FT-Feature?node-id=1-72&p=f&t=Clj2yjWTuwNEwQp9-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A72&show-proto-sidebar=1" class="inline-block mt-4 px-6 py-2 bg-white bg-opacity-90 text-black font-semibold rounded-lg shadow-md transition-transform hover:scale-105">
-                            App Prototype
-                        </a>
-                    </div>
+              </div>
+              <div class="h-96 w-40 overflow-hidden">
+                <div class="scrolling-content-base scrolling-content-down">
+                  <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                  <div
+                    class="flex flex-col shrink-0 gap-4"
+                    aria-hidden="true"
+                  ></div>
                 </div>
-        
+              </div>
+              <div class="h-96 w-40 overflow-hidden">
+                <div class="scrolling-content-base scrolling-content-up">
+                  <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                  <div
+                    class="flex flex-col shrink-0 gap-4"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
+              <div class="hidden sm:block h-96 w-40 overflow-hidden">
+                <div class="scrolling-content-base scrolling-content-down">
+                  <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                  <div
+                    class="flex flex-col shrink-0 gap-4"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
+              <div class="hidden md:block h-96 w-40 overflow-hidden">
+                <div class="scrolling-content-base scrolling-content-up">
+                  <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                  <div
+                    class="flex flex-col shrink-0 gap-4"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
+              <div class="hidden lg:block h-96 w-40 overflow-hidden">
+                <div class="scrolling-content-base scrolling-content-down">
+                  <div class="flex flex-col shrink-0 gap-4 mb-4"></div>
+                  <div
+                    class="flex flex-col shrink-0 gap-4"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
             </div>
-        </header>
+          </div>
 
-        <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 mt-4">
-            <div class="flex items-center justify-end flex-wrap gap-2 text-right">
-                <span class="text-xs font-medium text-gray-600 bg-green-100 px-3 py-1 rounded-full">
-                    Duration: June 2025
-                </span>
-                <span class="text-xs font-medium text-gray-600 bg-yellow-100 px-3 py-1 rounded-full">
-                    Tool: Figma
-                </span>
+          <div
+            class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4"
+          >
+            <div
+              class="bg-black bg-opacity-25 backdrop-blur-sm p-6 rounded-xl shadow-lg"
+            >
+              <h1 class="text-4xl font-bold tracking-wide">
+                FACETIME PARTICIPATION REMOVAL
+              </h1>
+              <a
+                href="https://www.figma.com/proto/K2jIBX2MQ4TdTKhCWmYSs9/Kicking-Out-FT-Feature?node-id=1-72&p=f&t=Clj2yjWTuwNEwQp9-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A72&show-proto-sidebar=1"
+                class="inline-block mt-4 px-6 py-2 bg-white bg-opacity-90 text-black font-semibold rounded-lg shadow-md transition-transform hover:scale-105"
+              >
+                App Prototype
+              </a>
             </div>
+          </div>
         </div>
+      </header>
 
-        <hr class="border-neutral-200 w-full my-12 md:my-16">
-
-        <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
-            <section>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-                    <div>
-                        <div class="flex items-center gap-2 mb-4">
-                            <h2 class="text-4xl font-bold text-left">project overview</h2>
-                            <img src="../images/Heart.png" alt="Decorative icon" class="w-9 h-9 -scale-x-100 -rotate-45">
-                        </div>
-                        <p class="text-xl text-gray-800 leading-relaxed">
-                            FaceTime is Apple's seamlessly integrated video calling application, celebrated for its simplicity. However, as group calls have become more prevalent, a critical moderation feature is noticeably absent: the ability to remove a participant from an ongoing call. This limitation can lead to disruptive experiences, security concerns, and a lack of control for users.
-                            <br/><br/>
-                            This case study explores designing a participant removal feature that could finally give FaceTime users the control they've been asking for.
-                        </p>
-                    </div>
-                    <div class="flex justify-end">
-                         <img src="./images/phone2.png" alt="FaceTime interface on iPhone" class="max-h-[900px] w-auto">
-                    </div>
-                </div>
-            </section>
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 mt-4">
+        <div class="flex items-center justify-end flex-wrap gap-2 text-right">
+          <span
+            class="text-xs font-medium text-gray-600 bg-green-100 px-3 py-1 rounded-full"
+          >
+            Duration: June 2025
+          </span>
+          <span
+            class="text-xs font-medium text-gray-600 bg-yellow-100 px-3 py-1 rounded-full"
+          >
+            Tool: Figma
+          </span>
         </div>
-            
-        <hr class="border-neutral-200 w-full my-12 md:my-16">
+      </div>
 
-        <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
-            <section>
-                <div class="flex items-center gap-2 mb-8">
-                    <h2 class="text-4xl font-bold">discovery & research</h2>
-                    <img src="../images/message_heart.png" alt="Decorative icon" class="w-9 h-9">
+      <hr class="border-neutral-200 w-full my-12 md:my-16" />
+
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <section>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <div>
+              <div class="flex items-center gap-2 mb-4">
+                <h2 class="text-4xl font-bold text-left">project overview</h2>
+                <img
+                  src="../images/Heart.png"
+                  alt="Decorative icon"
+                  class="w-9 h-9 -scale-x-100 -rotate-45"
+                />
+              </div>
+              <p class="text-xl text-gray-800 leading-relaxed">
+                FaceTime is Apple's seamlessly integrated video calling
+                application, celebrated for its simplicity. However, as group
+                calls have become more prevalent, a critical moderation feature
+                is noticeably absent: the ability to remove a participant from
+                an ongoing call. This limitation can lead to disruptive
+                experiences, security concerns, and a lack of control for users.
+                <br /><br />
+                This case study explores designing a participant removal feature
+                that could finally give FaceTime users the control they've been
+                asking for.
+              </p>
+            </div>
+            <div class="flex justify-end">
+              <img
+                src="./images/phone2.png"
+                alt="FaceTime interface on iPhone"
+                class="max-h-[900px] w-auto"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <hr class="border-neutral-200 w-full my-12 md:my-16" />
+
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <section>
+          <div class="flex items-center gap-2 mb-8">
+            <h2 class="text-4xl font-bold">discovery & research</h2>
+            <img
+              src="../images/message_heart.png"
+              alt="Decorative icon"
+              class="w-9 h-9"
+            />
+          </div>
+
+          <h3 class="text-2xl font-semibold mb-4">A casual conversation:</h3>
+          <p class="text-xl text-gray-800 leading-relaxed mb-6">
+            The initial idea for this project wasn't born in a design sprint,
+            but during a casual FaceTime call with friends. One friend jokingly
+            suggested they should be able to "kick out" another from the call.
+            This lighthearted comment sparked curiosity:
+            <strong>why isn't this a feature on FaceTime?</strong> This question
+            prompted an initial Google search to see if the feature was even
+            possible.
+          </p>
+          <figure class="text-center">
+            <div class="flex justify-center mb-4">
+              <img
+                src="./images/inspo.png"
+                alt="Inspo"
+                class="rounded-xl shadow-lg max-w-sm w-full"
+              />
+            </div>
+            <figcaption class="text-lg italic text-gray-600">
+              The call that inspired this all
+            </figcaption>
+          </figure>
+
+          <h3 class="text-2xl font-semibold mt-12 mb-4">Problem validation:</h3>
+          <p class="text-xl text-gray-800 leading-relaxed mb-6">
+            The search quickly led to a thread on the official Apple Support
+            Communities forum titled "<a
+              href="https://discussions.apple.com/thread/253471197?sortBy=rank"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-[#4F6827] hover:underline"
+              >How to kick someone off a Group FaceTime call.</a
+            >" A user laid out the exact problem:
+          </p>
+          <div class="space-y-4 my-6">
+            <img
+              src="./images/user.png"
+              alt="Apple Support Communities thread"
+              class="mx-auto"
+            />
+            <img
+              src="./images/question.png"
+              alt="Apple Support Communities thread continuation"
+              class="x-auto"
+            />
+          </div>
+          <p class="text-xl text-gray-800 leading-relaxed mb-6">
+            The response from a community specialist confirmed the limitation:
+          </p>
+          <img
+            src="./images/response.png"
+            alt="Apple Support specialist response"
+            class="mx-w-md my-6"
+          />
+          <p class="text-xl text-gray-800 leading-relaxed">
+            This confirmed the feature gap, but the most telling piece of
+            evidence was the community response:
+            <strong class="text-2xl">1,943</strong> users had clicked the "Me
+            Too" button. This provided quantitative data validating that the
+            initial, casual observation was a significant and widespread pain
+            point for thousands of users.
+          </p>
+
+          <h4 class="text-2xl font-bold mb-8 mt-12 text-gray-900">
+            Conducted User Research:
+          </h4>
+          <p class="text-xl text-gray-800 leading-relaxed mb-8">
+            I wanted to conduct my own quick survey to see if this is true, so I
+            sent out a google survey to see what the general public thinks as
+            well.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Chart 1 -->
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center"
+            >
+              <h5 class="text-lg font-medium text-center mb-6 text-gray-800">
+                Have you ever wanted to remove a participant from a Group
+                FaceTime call?
+              </h5>
+              <div
+                class="relative w-48 h-48 rounded-full shrink-0"
+                style="
+                  background: conic-gradient(
+                    #fca5a5 0% 72.7%,
+                    #86efac 72.7% 90.9%,
+                    #d1d5db 90.9% 100%
+                  );
+                "
+              ></div>
+              <div class="mt-6 w-full space-y-3">
+                <div
+                  class="flex items-center justify-between text-sm text-gray-700"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-red-300"></span>Yes
+                  </div>
+                  <span class="font-semibold">72.7%</span>
                 </div>
-                
-                <h3 class="text-2xl font-semibold mb-4">A casual conversation:</h3>
-                <p class="text-xl text-gray-800 leading-relaxed mb-6">
-                    The initial idea for this project wasn't born in a design sprint, but during a casual FaceTime call with friends. One friend jokingly suggested they should be able to "kick out" another from the call. This lighthearted comment sparked curiosity: <strong>why isn't this a feature on FaceTime?</strong> This question prompted an initial Google search to see if the feature was even possible.
-                </p>
-                <figure class="text-center">
-                    <div class="flex justify-center mb-4">
-                        <img src="./images/inspo.png" alt="Inspo" class="rounded-xl shadow-lg max-w-sm w-full">
-                        
-                    </div>
-                    <figcaption class="text-lg italic text-gray-600">The call that inspired this all</figcaption>
-                </figure>
-
-                <h3 class="text-2xl font-semibold mt-12 mb-4">Problem validation:</h3>
-                <p class="text-xl text-gray-800 leading-relaxed mb-6">
-                    The search quickly led to a thread on the official Apple Support Communities forum titled "<a href="https://discussions.apple.com/thread/253471197?sortBy=rank" target="_blank" rel="noopener noreferrer" class="text-[#4F6827] hover:underline">How to kick someone off a Group FaceTime call.</a>" A user laid out the exact problem:
-                </p>
-                <div class="space-y-4 my-6">
-                    <img src="./images/user.png" alt="Apple Support Communities thread" class=" mx-auto">
-                    <img src="./images/question.png" alt="Apple Support Communities thread continuation" class=" x-auto">
+                <div
+                  class="flex items-center justify-between text-sm text-gray-700"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-green-300"></span>No
+                  </div>
+                  <span class="font-semibold">18.2%</span>
                 </div>
-                <p class="text-xl text-gray-800 leading-relaxed mb-6">The response from a community specialist confirmed the limitation:</p>
-                <img src="./images/response.png" alt="Apple Support specialist response" class="mx-w-md my-6">
-                <p class="text-xl text-gray-800 leading-relaxed">
-                    This confirmed the feature gap, but the most telling piece of evidence was the community response: <strong class="text-2xl">1,943</strong> users had clicked the "Me Too" button. This provided quantitative data validating that the initial, casual observation was a significant and widespread pain point for thousands of users.
-                </p>
-            </section>
-        </div>
-            
-        <hr class="border-neutral-200 w-full my-12 md:my-16">
-
-        <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
-            <section>
-                <div class="flex items-center gap-2 mb-8">
-                    <h2 class="text-4xl font-bold">design & solution</h2>
-                    <img src="../images/Heart.png" alt="Decorative icon" class="w-9 h-9 -scale-x-100 -rotate-45">
+                <div
+                  class="flex items-center justify-between text-sm text-gray-700"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-gray-300"></span>I
+                    don't recall
+                  </div>
+                  <span class="font-semibold">9.1%</span>
                 </div>
-                <p class="text-xl text-gray-800 leading-relaxed mb-10">
-                    I explored both the "vote-to-kick" or "any-participant-removes" concept similar to ones in video games and WhatsApp was considered, however, with discussing with my friends they all agreed a host-led removal model is the best solution.
-                    <br/><br/>
-                    It aligns best with Apple's design philosophy by creating a clear, simple line of responsibility and preventing the potential chaos. The "host" is the user who initiated the Group FaceTime call.
-                </p>
+              </div>
+            </div>
 
-                <h3 class="text-2xl font-semibold mb-4">User flow & UI design:</h3>
-                <p class="text-xl text-gray-800 leading-relaxed mb-8">
-                    The experience is broken into two distinct flows: one for the user performing the removal, and one for the participant who is removed.
-                </p>
-                
-                <h4 class="text-xl font-semibold mt-8 mb-4">Flow for the User (Removing a Participant):</h4>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-6">
-                    <img src="./images/button.png" alt="FaceTime interface with remove button" class="rounded-xl shadow-lg mx-auto">
-                    <img src="./images/remove.png" alt="User clicking remove button" class="rounded-xl shadow-lg mx-auto">
-                    <img src="./images/two.png" alt="FaceTime interface after removal" class="rounded-xl shadow-lg mx-auto">
+            <!-- Chart 2 -->
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center"
+            >
+              <h5 class="text-lg font-medium text-center mb-6 text-gray-800">
+                How do you currently handle removing someone from a call?
+              </h5>
+              <div
+                class="relative w-48 h-48 rounded-full shrink-0"
+                style="
+                  background: conic-gradient(
+                    #86efac 0% 63.6%,
+                    #fde047 63.6% 90.9%,
+                    #fca5a5 90.9% 100%
+                  );
+                "
+              ></div>
+              <div class="mt-6 w-full space-y-3">
+                <div
+                  class="flex items-center justify-between text-sm text-gray-700"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-green-300"></span>Hang
+                    up and restart the call
+                  </div>
+                  <span class="font-semibold">63.6%</span>
                 </div>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    1. The host taps the screen to show all participant tiles. <br>
-                    2. A small 'x' button is visible in the corner of each participant's tile. <br>
-                    3. The host clicks the 'x' button on the tile of the participant they wish to remove. <br>
-                    4. A system prompt appears, asking: "Remove [Contact Name] from FaceTime?" <br>
-                    5. The host confirms the action by tapping "OK" or "Cancel". The removed participant's tile disappears, and the FaceTime screen grid adjusts seamlessly to show only the remaining users. <br>
-                    6. The call continues without interruption.
-                </p>
-
-                <h4 class="text-xl font-semibold mt-12 mb-4">Flow for the Removed Participant:</h4>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-6">
-                     <img src="./images/button.png" alt="FaceTime interface for removed participant" class="rounded-xl shadow-lg mx-auto">
-                     <img src="./images/popup.png" alt="Removed participant's view" class="rounded-xl shadow-lg mx-auto">
-                     <img src="images/noinvite.png" alt="Group chat after removal" class="rounded-xl shadow-lg mx-auto">
+                <div
+                  class="flex items-center justify-between text-sm text-gray-700"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-yellow-300"></span>Ask
+                    them to leave
+                  </div>
+                  <span class="font-semibold">27.3%</span>
                 </div>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    1. The participant is immediately and smoothly removed from the FaceTime call. <br>
-                    2. They are automatically taken to the Messages group chat where the FaceTime call was initiated. This provides immediate context for what happened.<br>
-                    3. A pop-up message appears over the chat, stating: "You've been removed from the call." <br>
-                    4. The language is direct but neutral. Within the chat, the FaceTime call banner at the top now appears inactive or the "Join" button is disabled for them, visually confirming they can no longer rejoin the active call.
-                </p>
-            </section>
-        </div>
-
-        <hr class="border-neutral-200 w-full my-12 md:my-16">
-            
-        <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
-            <section>
-                <div class="flex items-center gap-2 mb-8">
-                    <h2 class="text-4xl font-bold">impact</h2>
-                    <img src="../images/message_heart.png" alt="Decorative icon" class="w-9 h-9">
+                <div
+                  class="flex items-center justify-between text-sm text-gray-700"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-red-300"></span>Ignore
+                    it
+                  </div>
+                  <span class="font-semibold">9.1%</span>
                 </div>
-                 <p class="text-xl text-gray-800 leading-relaxed">
-                    The introduction of a removal feature would have a positive impact by:
-                    <br/><br/>
-                    Giving users direct control to manage disruptions.
-                    <br/>
-                    Eliminating the awkward and time-consuming workaround of ending and restarting calls to manage participants.
-                 </p>
-            </section>
-        </div>
+              </div>
+            </div>
 
-        <hr class="border-neutral-200 w-full my-12 md:my-16">
-
-        <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 pb-20">
-            <section>
-                 <div class="flex items-center gap-2 mb-8">
-                    <h2 class="text-4xl font-bold">conclusion</h2>
-                     <img src="../images/Heart.png" alt="Decorative icon" class="w-9 h-9 -scale-x-100 -rotate-45">
+            <!-- Chart 3 -->
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center"
+            >
+              <h5 class="text-lg font-medium text-center mb-6 text-gray-800">
+                If FaceTime added a 'Remove Participant' feature, how likely
+                would you be to use it?
+              </h5>
+              <div
+                class="relative w-48 h-48 rounded-full shrink-0"
+                style="
+                  background: conic-gradient(
+                    #4ade80 0% 60%,
+                    #86efac 60% 90%,
+                    #d1d5db 90% 95%,
+                    #fca5a5 95% 100%
+                  );
+                "
+              ></div>
+              <div class="mt-6 w-full space-y-3">
+                <div
+                  class="flex items-center justify-between text-sm text-gray-700"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-green-400"></span
+                    >Extremely likely
+                  </div>
+                  <span class="font-semibold">60%</span>
                 </div>
-                <p class="text-xl text-gray-800 leading-relaxed">
-                    This user removal feature solves a key user pain point by providing essential moderation tools within FaceTime. The design aligns with Apple's ethos of simplicity and user respect, delivering a solution that feels native and intuitive. Ultimately, this empowers users, enhances safety, and expands FaceTime's reliability for a wider range of conversations.
-                </p>
-            </section>
-        </div>
+                <div
+                  class="flex items-center justify-between text-sm text-gray-700"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-green-300"></span
+                    >Likely
+                  </div>
+                  <span class="font-semibold">30%</span>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm text-gray-700"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-gray-300"></span
+                    >Neutral
+                  </div>
+                  <span class="font-semibold">5%</span>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm text-gray-700"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-red-300"></span>Not at
+                    all likely
+                  </div>
+                  <span class="font-semibold">5%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <hr class="border-neutral-200 w-full my-12 md:my-16" />
+
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <section>
+          <div class="flex items-center gap-2 mb-8">
+            <h2 class="text-4xl font-bold">design & solution</h2>
+            <img
+              src="../images/Heart.png"
+              alt="Decorative icon"
+              class="w-9 h-9 -scale-x-100 -rotate-45"
+            />
+          </div>
+          <p class="text-xl text-gray-800 leading-relaxed mb-10">
+            I explored both the "vote-to-kick" or "any-participant-removes"
+            concept similar to ones in video games and WhatsApp was considered,
+            however, with discussing with my friends they all agreed a host-led
+            removal model is the best solution.
+            <br /><br />
+            It aligns best with Apple's design philosophy by creating a clear,
+            simple line of responsibility and preventing the potential chaos.
+            The "host" is the user who initiated the Group FaceTime call.
+          </p>
+
+          <h3 class="text-2xl font-semibold mb-4">User flow & UI design:</h3>
+          <p class="text-xl text-gray-800 leading-relaxed mb-8">
+            The experience is broken into two distinct flows: one for the user
+            performing the removal, and one for the participant who is removed.
+          </p>
+
+          <h4 class="text-xl font-semibold mt-8 mb-4">
+            Flow for the User (Removing a Participant):
+          </h4>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-6">
+            <img
+              src="./images/button.png"
+              alt="FaceTime interface with remove button"
+              class="rounded-xl shadow-lg mx-auto"
+            />
+            <img
+              src="./images/remove.png"
+              alt="User clicking remove button"
+              class="rounded-xl shadow-lg mx-auto"
+            />
+            <img
+              src="./images/two.png"
+              alt="FaceTime interface after removal"
+              class="rounded-xl shadow-lg mx-auto"
+            />
+          </div>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            1. The host taps the screen to show all participant tiles. <br />
+            2. A small 'x' button is visible in the corner of each participant's
+            tile. <br />
+            3. The host clicks the 'x' button on the tile of the participant
+            they wish to remove. <br />
+            4. A system prompt appears, asking: "Remove [Contact Name] from
+            FaceTime?" <br />
+            5. The host confirms the action by tapping "OK" or "Cancel". The
+            removed participant's tile disappears, and the FaceTime screen grid
+            adjusts seamlessly to show only the remaining users. <br />
+            6. The call continues without interruption.
+          </p>
+
+          <h4 class="text-xl font-semibold mt-12 mb-4">
+            Flow for the Removed Participant:
+          </h4>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-6">
+            <img
+              src="./images/button.png"
+              alt="FaceTime interface for removed participant"
+              class="rounded-xl shadow-lg mx-auto"
+            />
+            <img
+              src="./images/popup.png"
+              alt="Removed participant's view"
+              class="rounded-xl shadow-lg mx-auto"
+            />
+            <img
+              src="images/noinvite.png"
+              alt="Group chat after removal"
+              class="rounded-xl shadow-lg mx-auto"
+            />
+          </div>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            1. The participant is immediately and smoothly removed from the
+            FaceTime call. <br />
+            2. They are automatically taken to the Messages group chat where the
+            FaceTime call was initiated. This provides immediate context for
+            what happened.<br />
+            3. A pop-up message appears over the chat, stating: "You've been
+            removed from the call." <br />
+            4. The language is direct but neutral. Within the chat, the FaceTime
+            call banner at the top now appears inactive or the "Join" button is
+            disabled for them, visually confirming they can no longer rejoin the
+            active call.
+          </p>
+        </section>
+      </div>
+
+      <hr class="border-neutral-200 w-full my-12 md:my-16" />
+
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <section>
+          <div class="flex items-center gap-2 mb-8">
+            <h2 class="text-4xl font-bold">impact</h2>
+            <img
+              src="../images/message_heart.png"
+              alt="Decorative icon"
+              class="w-9 h-9"
+            />
+          </div>
+          <p class="text-xl text-gray-800 leading-relaxed">
+            The introduction of a removal feature would have a positive impact
+            by:
+            <br /><br />
+            Giving users direct control to manage disruptions.
+            <br />
+            Eliminating the awkward and time-consuming workaround of ending and
+            restarting calls to manage participants.
+          </p>
+        </section>
+      </div>
+
+      <hr class="border-neutral-200 w-full my-12 md:my-16" />
+
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 pb-20">
+        <section>
+          <div class="flex items-center gap-2 mb-8">
+            <h2 class="text-4xl font-bold">conclusion</h2>
+            <img
+              src="../images/Heart.png"
+              alt="Decorative icon"
+              class="w-9 h-9 -scale-x-100 -rotate-45"
+            />
+          </div>
+          <p class="text-xl text-gray-800 leading-relaxed">
+            This user removal feature solves a key user pain point by providing
+            essential moderation tools within FaceTime. The design aligns with
+            Apple's ethos of simplicity and user respect, delivering a solution
+            that feels native and intuitive. Ultimately, this empowers users,
+            enhances safety, and expands FaceTime's reliability for a wider
+            range of conversations.
+          </p>
+        </section>
+      </div>
     </main>
 
     <div id="footer-placeholder" class="w-full"></div>
 
     <script src="../components/loader.js"></script>
     <script src="../components/loader_footer.js"></script>
-    
+
     <script>
-      (function() {
-        document.addEventListener('DOMContentLoaded', function () {
+      (function () {
+        document.addEventListener("DOMContentLoaded", function () {
           // Image sources for the animated banner
           const imageSources = [
-              'images/button.png',
-              'images/noinvite.png',
-              'images/remove.png',
-              'images/two.png',
-              'images/popup.png'
+            "images/button.png",
+            "images/noinvite.png",
+            "images/remove.png",
+            "images/two.png",
+            "images/popup.png",
           ];
 
           function shuffle(array) {
@@ -288,7 +617,7 @@
             }
             return array;
           }
-          
+
           function createImageElement(src) {
             // Changed border and background to use quilly-accent color
             return `<div class="relative w-40 h-72 rounded-lg shrink-0 overflow-hidden border-2 border-quilly-accent shadow-md">
@@ -297,18 +626,20 @@
                     </div>`;
           }
 
-          const columns = document.querySelectorAll('.scrolling-content-base');
+          const columns = document.querySelectorAll(".scrolling-content-base");
 
-          columns.forEach(column => {
-            const contentBlocks = column.querySelectorAll('.flex.flex-col.shrink-0');
+          columns.forEach((column) => {
+            const contentBlocks = column.querySelectorAll(
+              ".flex.flex-col.shrink-0",
+            );
             if (contentBlocks.length < 2) return;
 
             const shuffledSources = shuffle([...imageSources]);
-            
-            const imagesHtml = shuffledSources.map(createImageElement).join('');
+
+            const imagesHtml = shuffledSources.map(createImageElement).join("");
             contentBlocks[0].innerHTML = imagesHtml;
             contentBlocks[1].innerHTML = imagesHtml;
-            
+
             const animationDuration = 60; // Must match CSS
             const randomDelay = -Math.random() * animationDuration;
             column.style.animationDelay = `${randomDelay}s`;
@@ -316,6 +647,5 @@
         });
       })();
     </script>
-    
-</body>
+  </body>
 </html>
