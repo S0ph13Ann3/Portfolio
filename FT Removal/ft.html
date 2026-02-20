@@ -152,17 +152,95 @@
       </header>
 
       <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 mt-4">
-        <div class="flex items-center justify-end flex-wrap gap-2 text-right">
-          <span
-            class="text-xs font-medium text-gray-600 bg-green-100 px-3 py-1 rounded-full"
+        <div class="flex flex-wrap items-center justify-end gap-4">
+          <!-- Duration Widget -->
+          <div
+            class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
           >
-            Duration: June 2025
-          </span>
-          <span
-            class="text-xs font-medium text-gray-600 bg-yellow-100 px-3 py-1 rounded-full"
+            <div class="p-2 bg-green-50 rounded-full text-green-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0h18M5 21h14a2 2 0 0 0 2-2V7.5a2.25 2.25 0 0 0-2.25-2.25H5A2.25 2.25 0 0 0 2.75 7.5v11.25c0 1.105.895 2 2 2Z"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col text-left">
+              <span
+                class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                >Duration</span
+              >
+              <span class="text-sm font-medium text-gray-800">June 2025</span>
+            </div>
+          </div>
+
+          <!-- Role Widget -->
+          <div
+            class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
           >
-            Tool: Figma
-          </span>
+            <div class="p-2 bg-blue-50 rounded-full text-blue-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col text-left">
+              <span
+                class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                >Role</span
+              >
+              <span class="text-sm font-medium text-gray-800"
+                >Product Designer</span
+              >
+            </div>
+          </div>
+
+          <!-- Team Size Widget -->
+          <div
+            class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
+          >
+            <div class="p-2 bg-purple-50 rounded-full text-purple-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col text-left">
+              <span
+                class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                >Team</span
+              >
+              <span class="text-sm font-medium text-gray-800">Solo</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -182,23 +260,45 @@
               </div>
               <p class="text-xl text-gray-800 leading-relaxed">
                 FaceTime is Apple's seamlessly integrated video calling
-                application, celebrated for its simplicity. However, as group
-                calls have become more prevalent, a critical moderation feature
-                is noticeably absent: the ability to remove a participant from
-                an ongoing call. This limitation can lead to disruptive
-                experiences, security concerns, and a lack of control for users.
-                <br /><br />
-                This case study explores designing a participant removal feature
-                that could finally give FaceTime users the control they've been
-                asking for.
+                application, celebrated for its simplicity.
+                <span class="font-bold text-2xl block my-4"
+                  >But when a call goes south, who controls the room?</span
+                >
+                Currently, if a participant becomes disruptive, the host is
+                powerless. The only solution is to hang up on everyone.
+                <br />
+                <br />
+                <strong>The Problem:</strong> Users lack basic moderation tools,
+                leaving them vulnerable to disruptions.
+                <br />
+                <br />
+                <strong>The Goal:</strong> Design a native 'Remove Participant'
+                feature that restores control without compromising the app's
+                intuitive design.
+                <br />
+                <br />
+                <strong>The Impact:</strong> A safer, more manageable group
+                calling experience that maintains Apple's simplicity while
+                prioritizing user peace of mind.
               </p>
             </div>
             <div class="flex justify-end">
-              <img
-                src="./images/phone4.png"
-                alt="FaceTime interface on iPhone"
-                class="max-h-[900px] w-auto translate-x-16 -mt-19"
-              />
+              <div
+                class="relative border-[12px] border-black bg-black rounded-[3rem] w-[280px] h-[580px] shadow-2xl overflow-hidden translate-x-8"
+              >
+                <div
+                  class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[80px] h-6 bg-black rounded-b-xl z-20"
+                ></div>
+                <video
+                  id="overview-video"
+                  class="w-full h-full object-cover"
+                  autoplay
+                  muted
+                  playsinline
+                >
+                  <source src="./images/kick_out.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
           </div>
         </section>
@@ -604,6 +704,19 @@
 
     <script>
       (function () {
+        // Video loop logic for Project Overview
+        const overviewVideo = document.getElementById("overview-video");
+        if (overviewVideo) {
+          const videos = ["./images/kick_out.mp4", "./images/kicked_user.mp4"];
+          let currentVideoIndex = 0;
+
+          overviewVideo.addEventListener("ended", () => {
+            currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+            overviewVideo.src = videos[currentVideoIndex];
+            overviewVideo.play();
+          });
+        }
+
         document.addEventListener("DOMContentLoaded", function () {
           // Image sources for the animated banner
           const imageSources = [
