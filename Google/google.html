@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Sophie Anne - Google ART Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              "instrument-sans": ["Instrument Sans", "sans-serif"],
+            },
+            colors: {
+              "google-blue-bg": "#D2E3FC",
+              "google-blue-accent": "#4285F4",
+            },
+            animation: {
+              blob: "blob 7s infinite",
+            },
+            keyframes: {
+              blob: {
+                "0%": { transform: "translate(0px, 0px) scale(1)" },
+                "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+                "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
+                "100%": { transform: "translate(0px, 0px) scale(1)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-white flex flex-col items-center w-full font-instrument-sans text-black"
+  >
+    <div id="navbar-placeholder"></div>
+
+    <main class="w-full pt-20 pb-20">
+      <!-- Header / Banner -->
+      <header class="w-full p-4 flex items-center justify-center">
+        <div
+          class="relative bg-google-blue-bg rounded-2xl h-64 w-full max-w-6xl overflow-hidden shadow-xl flex items-center justify-center"
+        >
+          <!-- Decorative Background Elements -->
+          <div class="absolute inset-0 opacity-30">
+            <div
+              class="absolute top-[-50%] left-[-10%] w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"
+            ></div>
+            <div
+              class="absolute top-[-50%] right-[-10%] w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"
+            ></div>
+            <div
+              class="absolute bottom-[-50%] left-[20%] w-96 h-96 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"
+            ></div>
+          </div>
+
+          <div class="relative z-10 text-center p-6">
+            <div
+              class="bg-white/40 backdrop-blur-md p-8 rounded-2xl shadow-lg border border-white/50"
+            >
+              <h1
+                class="text-3xl md:text-5xl font-bold tracking-wide text-gray-900"
+              >
+                GOOGLE
+              </h1>
+              <p class="mt-3 text-lg font-medium text-gray-800">20% Project</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Project Details -->
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 mt-12">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <!-- Left Column: Project Info -->
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <h2 class="text-4xl font-bold">Art of Reliability Pilot</h2>
+              <img
+                src="../images/Heart.png"
+                alt="Decorative icon"
+                class="w-9 h-9 -rotate-12 opacity-80"
+              />
+            </div>
+
+            <div class="flex flex-wrap items-center justify-start gap-4 mb-8">
+              <!-- Role Widget -->
+              <div
+                class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
+              >
+                <div class="p-2 bg-blue-50 rounded-full text-blue-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col text-left">
+                  <span
+                    class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                    >Role</span
+                  >
+                  <span class="text-sm font-medium text-gray-800"
+                    >UX Designer</span
+                  >
+                </div>
+              </div>
+
+              <!-- Team Widget -->
+              <div
+                class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
+              >
+                <div class="p-2 bg-purple-50 rounded-full text-purple-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col text-left">
+                  <span
+                    class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                    >Team</span
+                  >
+                  <span class="text-sm font-medium text-gray-800"
+                    >GCP/TI Education</span
+                  >
+                </div>
+              </div>
+
+              <!-- Status Widget -->
+              <div
+                class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
+              >
+                <div class="p-2 bg-green-50 rounded-full text-green-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col text-left">
+                  <span
+                    class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                    >Status</span
+                  >
+                  <span class="text-sm font-medium text-gray-800">Ongoing</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-xl text-gray-800 leading-relaxed mb-6">
+              I am currently working on a <strong>20% project</strong> with the
+              <span class="font-semibold text-google-blue-accent"
+                >GCP/TI Education Team (GET)</span
+              >
+              on their pilot training module called
+              <span class="font-semibold">Art of Reliability (ART)</span>.
+            </p>
+            <p class="text-xl text-gray-800 leading-relaxed mb-6">
+              The <strong>ART program</strong> is a new initiative focused on
+              increasing the adoption of AI tools among Site Reliability
+              Engineers (SREs) to enhance reliability practices.
+            </p>
+            <p class="text-xl text-gray-800 leading-relaxed">
+              This is a strategic <strong>multi-year project</strong> with an
+              initial focus on <span class="italic">AI-Driven Operations</span>,
+              aiming to transform how reliability is maintained at scale.
+            </p>
+          </div>
+
+          <!-- Right Column: Contact -->
+          <div class="flex flex-col justify-center h-full">
+            <div class="bg-google-blue-bg/20 rounded-3xl p-10 text-center">
+              <h2 class="text-3xl font-bold mb-4">
+                Interested in learning more?
+              </h2>
+              <p
+                class="text-xl text-gray-700 leading-relaxed mb-8 max-w-2xl mx-auto"
+              >
+                If you are interested in seeing my internal portfolio, please
+                feel free to reach out.
+              </p>
+
+              <a
+                href="mailto:sophie.anne.hernandez@google.com"
+                class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-black text-white text-base font-semibold rounded-full hover:bg-gray-800 transition-transform hover:scale-105 shadow-lg w-full md:w-auto"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 flex-shrink-0"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+                <span class="break-all md:break-normal"
+                  >sophie.anne.hernandez@google.com</span
+                >
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="footer-placeholder" class="w-full"></div>
+
+    <script src="../components/loader.js"></script>
+    <script src="../components/loader_footer.js"></script>
+  </body>
+</html>
