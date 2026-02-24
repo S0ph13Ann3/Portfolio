@@ -65,6 +65,16 @@
       .scrolling-content-down {
         animation: scroll-down-continuous 60s linear infinite;
       }
+
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .hide-scroll::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .hide-scroll {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
     </style>
   </head>
 
@@ -255,34 +265,128 @@
       <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
         <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <div class="flex items-center gap-3 mb-6">
-              <h2 class="text-4xl font-bold">project overview</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+              ensuring medicine reaches the last mile
               <img
                 src="../images/Heart.png"
                 alt="Decorative icon"
-                class="w-9 h-9 -scale-x-100 -rotate-45"
+                class="w-9 h-9 -scale-x-100 -rotate-45 inline-block ml-1 align-bottom"
               />
-            </div>
-            <p class="text-xl text-gray-800 leading-relaxed">
-              In rural healthcare, a missing supply truck isn't just an
-              inconvenience—it's a life-or-death gap in care.
-              <span class="font-bold text-2xl block my-4"
-                >CareRoute ensures medicine reaches the patients who need it
-                most.</span
-              >
-              <br />
-              <strong>The Problem:</strong> Rural clinics in Rwanda face
-              frequent stockouts due to reliance on slow, manual communication
-              methods. <br /><br />
-              <strong>The Goal:</strong> Design a low-bandwidth visual
-              coordination system that empowers health managers to track
-              inventory and coordinate deliveries in real-time. We prioritized a
-              simple UI relying on color and icons to guide non-tech-savvy
-              users.<br /><br />
-              <strong>The Impact:</strong> A scalable solution targeting UN SDG
-              Goal 3, designed to prevent missed treatments and reduce medical
-              waste.
+            </h2>
+            <p class="text-xl text-gray-800 leading-relaxed mb-8">
+              Delayed data in rural clinics leads to medicine stockouts and
+              missed treatments. CareRoute bridges this gap by replacing manual
+              logs with a real-time visual system that ensures life-saving
+              medicine reaches Rwanda’s remote clinics. My team and I
+              spearheaded the design of a low-bandwidth UI strategy that
+              prioritizes accessibility for non-tech-savvy users in
+              low-connectivity environments.
             </p>
+
+            <div class="bg-red-50 rounded-xl p-6 border border-red-100 mb-10">
+              <h3
+                class="text-sm font-bold text-red-800 uppercase tracking-wide mb-2"
+              >
+                The Challenge
+              </h3>
+              <p class="text-lg font-medium text-gray-900 leading-relaxed">
+                "How might we design a low-bandwidth coordination system that
+                empowers health managers to track inventory and deliveries in
+                real-time?"
+              </p>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-6">Design Goals</h3>
+            <ul class="space-y-6">
+              <li class="flex items-start gap-4">
+                <div class="p-3 bg-blue-50 rounded-xl text-blue-600 shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-gray-900">
+                    At-a-Glance Tracking
+                  </h4>
+                  <p class="text-gray-700 leading-relaxed">
+                    Replace manual reporting with a high-visibility status
+                    system.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="p-3 bg-green-50 rounded-xl text-green-600 shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-gray-900">
+                    Technical Resilience
+                  </h4>
+                  <p class="text-gray-700 leading-relaxed">
+                    Optimize for full functionality in areas with limited
+                    connectivity.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <div
+                  class="p-3 bg-purple-50 rounded-xl text-purple-600 shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-gray-900">
+                    Inclusive Design
+                  </h4>
+                  <p class="text-gray-700 leading-relaxed">
+                    Use a color-coded visual language to bridge digital literacy
+                    gaps.
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
           <div class="flex justify-center items-center mt-8 md:mt-0">
             <div
@@ -308,7 +412,7 @@
       <hr class="border-neutral-200 w-full my-12 md:my-20" />
 
       <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
-        <div class="flex items-center gap-3 mb-6">
+        <div class="flex items-center gap-3 mb-12">
           <h2 class="text-4xl font-bold">context</h2>
           <img
             src="../images/message_heart.png"
@@ -317,22 +421,47 @@
           />
         </div>
         <section>
-          <h3 class="text-3xl font-semibold mb-4">The problem:</h3>
-          <p class="text-xl text-gray-800 leading-relaxed max-w-4xl">
-            The core issue is not that the country lacks medicine, but that the
-            people responsible for managing it don't have the right tools to
-            communicate, track, or share real-time inventory data.
-            <br /><br />The system relies on handwritten notes, calls, and
-            memory. <br /><br />The
-            <span class="font-medium">results</span> are:
-          </p>
-          <ul
-            class="list-disc list-inside text-xl text-gray-800 leading-relaxed max-w-4xl mt-2 space-y-1"
+          <div
+            class="bg-gray-50 rounded-3xl p-8 md:p-10 mb-12 border border-gray-100"
           >
-            <li>Missed treatments and miscommunication.</li>
-            <li>Overloaded workers with no visibility into stock levels.</li>
-            <li>Medicines lost, delayed, or wasted.</li>
-          </ul>
+            <h3 class="text-3xl font-semibold mb-4">The problem:</h3>
+            <p class="text-xl text-gray-800 leading-relaxed">
+              The core issue is not that the country lacks medicine, but that
+              the people responsible for managing it don't have the right tools
+              to communicate, track, or share real-time inventory data.
+              <br /><br />The system relies on handwritten notes, calls, and
+              memory.
+            </p>
+          </div>
+
+          <h3 class="text-2xl font-semibold mb-6 px-2">The results:</h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="bg-red-50 rounded-2xl p-8 border border-red-100 hover:shadow-md transition-all"
+            >
+              <div class="text-4xl mb-4">❌</div>
+              <p class="text-lg text-gray-800 font-medium leading-relaxed">
+                Missed treatments and miscommunication.
+              </p>
+            </div>
+            <div
+              class="bg-orange-50 rounded-2xl p-8 border border-orange-100 hover:shadow-md transition-all"
+            >
+              <div class="text-4xl mb-4">📉</div>
+              <p class="text-lg text-gray-800 font-medium leading-relaxed">
+                Overloaded workers with no visibility into stock levels.
+              </p>
+            </div>
+            <div
+              class="bg-gray-50 rounded-2xl p-8 border border-gray-200 hover:shadow-md transition-all"
+            >
+              <div class="text-4xl mb-4">🗑️</div>
+              <p class="text-lg text-gray-800 font-medium leading-relaxed">
+                Medicines lost, delayed, or wasted.
+              </p>
+            </div>
+          </div>
         </section>
       </div>
 
@@ -600,575 +729,490 @@
       <hr class="border-neutral-200 w-full my-12 md:my-20" />
 
       <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
-        <section>
-          <div class="flex items-center gap-3 mb-6">
-            <h2 class="text-4xl font-bold">from wireframes to visual design</h2>
+        <section class="mb-12">
+          <div class="flex items-center gap-3 mb-12">
+            <h2 class="text-4xl font-bold">ideation</h2>
             <img
               src="../images/message_heart.png"
               alt="Decorative icon"
               class="w-9 h-9"
             />
           </div>
-          <p class="text-xl text-gray-800 leading-relaxed max-w-5xl mb-10">
-            The design process moved from low-fidelity sketches to a defined
-            visual system built on clarity and trust. My role was mainly
-            focusing on creating our low-fidelity mockups, and another one of my
-            team members worked on the hi-fidelity portion.
+          <p class="text-xl text-gray-800 leading-relaxed max-w-5xl mb-16">
+            To meet tight deadlines, we prioritized the mobile flow, aligning
+            with our target users' preference for the accessibility and
+            convenience of mobile devices. While future iterations will include
+            a fully realized web experience, we have already developed a
+            low-fidelity version of the web flow to map out the core concept.
+          </p>
+        </section>
+      </div>
+
+      <div class="w-full max-w-[1400px] mx-auto px-5 sm:px-10">
+        <section class="mb-24">
+          <!-- Ideation Grid Container -->
+          <div
+            class="bg-gray-50 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100"
+          >
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-16">
+              <!-- Column 1: Lo-Fi Wireframes -->
+              <div class="flex flex-col">
+                <div class="flex items-center gap-4 mb-8">
+                  <span class="text-5xl font-bold text-quilly-accent/60"
+                    >01</span
+                  >
+                  <h3 class="text-3xl font-semibold">Lo-Fi Wireframes</h3>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4">
+                  <!-- Grid Items 1-9 -->
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/error1.png')"
+                  >
+                    <img
+                      src="images/error1.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Lo-Fi Screen 1"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/home1.png')"
+                  >
+                    <img
+                      src="images/home1.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Lo-Fi Screen 2"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/med1.png')"
+                  >
+                    <img
+                      src="images/med1.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Lo-Fi Screen 3"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/deliver1.png')"
+                  >
+                    <img
+                      src="images/deliver1.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Lo-Fi Screen 4"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/message1.png')"
+                  >
+                    <img
+                      src="images/message1.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Lo-Fi Screen 5"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/track1.png')"
+                  >
+                    <img
+                      src="images/track1.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Lo-Fi Screen 6"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/arrive1.png')"
+                  >
+                    <img
+                      src="images/arrive1.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Lo-Fi Screen 7"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/plus1.png')"
+                  >
+                    <img
+                      src="images/plus1.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Lo-Fi Screen 8"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/update1.png')"
+                  >
+                    <img
+                      src="images/update1.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Lo-Fi Screen 9"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 2: 1st Iteration -->
+              <div class="flex flex-col">
+                <div class="flex items-center gap-4 mb-8">
+                  <span class="text-5xl font-bold text-quilly-accent/60"
+                    >02</span
+                  >
+                  <h3 class="text-3xl font-semibold">1st Iteration</h3>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4">
+                  <!-- Grid Items 1-9 (Placeholders) -->
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/error2.png')"
+                  >
+                    <img
+                      src="images/error2.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Iteration Screen 1"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/home2.png')"
+                  >
+                    <img
+                      src="images/home2.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Iteration Screen 2"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/med2.png')"
+                  >
+                    <img
+                      src="images/med2.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Iteration Screen 3"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/deliver2.png')"
+                  >
+                    <img
+                      src="images/deliver2.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Iteration Screen 4"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/message2.png')"
+                  >
+                    <img
+                      src="images/message2.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Iteration Screen 5"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/track2.png')"
+                  >
+                    <img
+                      src="images/track2.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Iteration Screen 6"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/arrive2.png')"
+                  >
+                    <img
+                      src="images/arrive2.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Iteration Screen 7"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/plus2.png')"
+                  >
+                    <img
+                      src="images/plus2.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Iteration Screen 8"
+                    />
+                  </div>
+                  <div
+                    class="group cursor-pointer aspect-[9/16] transition-all hover:scale-[1.02]"
+                    onclick="openModal('images/update2.png')"
+                  >
+                    <img
+                      src="images/update2.png"
+                      class="w-full h-full object-contain rounded-lg"
+                      alt="Iteration Screen 9"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <hr class="border-neutral-200 w-full my-12 md:my-20" />
+
+      <div class="w-full max-w-[1400px] mx-auto px-5 sm:px-10">
+        <section class="mb-24">
+          <h3 class="text-3xl font-semibold mb-6">Hi-fidelity Prototype:</h3>
+
+          <!-- Flow 1: Request Delivery -->
+          <div
+            class="flex flex-col lg:flex-row gap-24 items-start justify-center mb-24"
+          >
+            <!-- Left: Video -->
+            <div class="flex flex-col items-center shrink-0 mx-auto lg:mx-0">
+              <div
+                class="relative border-[12px] border-black bg-black rounded-[3rem] w-[300px] h-[650px] shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[80px] h-6 bg-black rounded-b-xl z-20"
+                ></div>
+                <video
+                  class="w-full h-full object-cover"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source src="images/flow 1.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <p
+                class="text-center text-sm text-gray-500 mt-4 font-medium uppercase tracking-wide"
+              >
+                Video Walkthrough
+              </p>
+            </div>
+
+            <!-- Right: Screens Box -->
+            <div class="w-full lg:max-w-2xl">
+              <h4 class="text-2xl font-semibold mb-4">Request Delivery Flow</h4>
+              <p class="text-lg text-gray-700 mb-8">
+                This user flow demonstrates the process of identifying low
+                stock, requesting a delivery, and tracking it to arrival.
+              </p>
+
+              <div
+                class="bg-gray-50 rounded-3xl p-6 border border-gray-100 shadow-sm"
+              >
+                <div class="grid grid-cols-3 sm:grid-cols-4 gap-4">
+                  <!-- Images -->
+                  <div
+                    class="cursor-pointer hover:scale-105 transition-transform duration-300"
+                    onclick="openModal('images/newhome.png')"
+                  >
+                    <img
+                      src="images/newhome.png"
+                      class="w-full h-auto rounded-lg border border-gray-200 shadow-sm"
+                      alt="Home Screen"
+                    />
+                  </div>
+                  <div
+                    class="cursor-pointer hover:scale-105 transition-transform duration-300"
+                    onclick="openModal('images/newmed.png')"
+                  >
+                    <img
+                      src="images/newmed.png"
+                      class="w-full h-auto rounded-lg border border-gray-200 shadow-sm"
+                      alt="Medicine Detail"
+                    />
+                  </div>
+                  <div
+                    class="cursor-pointer hover:scale-105 transition-transform duration-300"
+                    onclick="openModal('images/schedule.png')"
+                  >
+                    <img
+                      src="images/schedule.png"
+                      class="w-full h-auto rounded-lg border border-gray-200 shadow-sm"
+                      alt="Request Delivery"
+                    />
+                  </div>
+                  <div
+                    class="cursor-pointer hover:scale-105 transition-transform duration-300"
+                    onclick="openModal('images/track.png')"
+                  >
+                    <img
+                      src="images/track.png"
+                      class="w-full h-auto rounded-lg border border-gray-200 shadow-sm"
+                      alt="Confirmation"
+                    />
+                  </div>
+                  <div
+                    class="cursor-pointer hover:scale-105 transition-transform duration-300"
+                    onclick="openModal('images/car.png')"
+                  >
+                    <img
+                      src="images/car.png"
+                      class="w-full h-auto rounded-lg border border-gray-200 shadow-sm"
+                      alt="Tracking"
+                    />
+                  </div>
+                  <div
+                    class="cursor-pointer hover:scale-105 transition-transform duration-300"
+                    onclick="openModal('images/code.png')"
+                  >
+                    <img
+                      src="images/code.png"
+                      class="w-full h-auto rounded-lg border border-gray-200 shadow-sm"
+                      alt="Arrival"
+                    />
+                  </div>
+                  <div
+                    class="cursor-pointer hover:scale-105 transition-transform duration-300"
+                    onclick="openModal('images/stock.png')"
+                  >
+                    <img
+                      src="images/stock.png"
+                      class="w-full h-auto rounded-lg border border-gray-200 shadow-sm"
+                      alt="Review"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flow 2: Update Stock -->
+          <div
+            class="flex flex-col lg:flex-row gap-24 items-start justify-center mb-24"
+          >
+            <!-- Left: Video -->
+            <div class="flex flex-col items-center shrink-0 mx-auto lg:mx-0">
+              <div
+                class="relative border-[12px] border-black bg-black rounded-[3rem] w-[300px] h-[650px] shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[80px] h-6 bg-black rounded-b-xl z-20"
+                ></div>
+                <video
+                  class="w-full h-full object-cover"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source src="images/flow 2.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <p
+                class="text-center text-sm text-gray-500 mt-4 font-medium uppercase tracking-wide"
+              >
+                Video Walkthrough
+              </p>
+            </div>
+
+            <!-- Right: Screens Box -->
+            <div class="w-full lg:max-w-lg">
+              <h4 class="text-2xl font-semibold mb-4">Update Stock Flow</h4>
+              <p class="text-lg text-gray-700 mb-8">
+                This user flow shows how a worker manually updates inventory
+                counts when new stock arrives or is dispensed.
+              </p>
+
+              <div
+                class="bg-gray-50 rounded-3xl p-6 border border-gray-100 shadow-sm"
+              >
+                <div class="grid grid-cols-3 gap-4">
+                  <!-- Images -->
+                  <div
+                    class="cursor-pointer hover:scale-105 transition-transform duration-300"
+                    onclick="openModal('images/options2.png')"
+                  >
+                    <img
+                      src="images/options2.png"
+                      class="w-full h-auto rounded-lg border border-gray-200 shadow-sm"
+                      alt="Home Screen"
+                    />
+                  </div>
+                  <div
+                    class="cursor-pointer hover:scale-105 transition-transform duration-300"
+                    onclick="openModal('images/update3.png')"
+                  >
+                    <img
+                      src="images/update3.png"
+                      class="w-full h-auto rounded-lg border border-gray-200 shadow-sm"
+                      alt="Expanded View"
+                    />
+                  </div>
+                  <div
+                    class="cursor-pointer hover:scale-105 transition-transform duration-300"
+                    onclick="openModal('images/finished.png')"
+                  >
+                    <img
+                      src="images/finished.png"
+                      class="w-full h-auto rounded-lg border border-gray-200 shadow-sm"
+                      alt="Update Stock"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <hr class="border-neutral-200 w-full my-12 md:my-20" />
+
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <section>
+          <div class="flex items-center gap-3 mb-8">
+            <h2 class="text-4xl font-bold">usability testing</h2>
+            <img
+              src="../images/message_heart.png"
+              alt="Decorative icon"
+              class="w-9 h-9"
+            />
+          </div>
+          <p class="text-xl text-gray-800 leading-relaxed max-w-5xl mb-12">
+            We engaged our program cohort to test the core features and user
+            flows. The goal was to ensure the system remained accessible to
+            users with varying levels of technical literacy.
           </p>
 
-          <h3 class="text-3xl font-semibold mt-12 mb-6">Lo-Fi wireframes:</h3>
-          <h4 class="text-2xl font-semibold mb-4">Mobile</h4>
-          <div class="relative w-full max-w-6xl mx-auto mb-12 group">
-            <!-- Slides Container -->
-            <div class="overflow-hidden py-8">
-              <div
-                id="lofi-carousel"
-                class="flex transition-transform duration-500 ease-in-out items-center"
-                style="transform: translateX(0%)"
-              >
-                <!-- Slide 1 -->
-                <div
-                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
-                >
-                  <img
-                    src="images/error1.png"
-                    alt="Mobile app alert screen"
-                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
-                  />
-                  <p class="text-lg text-gray-700 text-center font-medium">
-                    Offline Sync Alert: Prompts user to load saved data when
-                    signal is weak.
-                  </p>
-                </div>
-                <!-- Slide 2 -->
-                <div
-                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
-                >
-                  <img
-                    src="images/home1.png"
-                    alt="Mobile app home screen"
-                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
-                  />
-                  <p class="text-lg text-gray-700 text-center font-medium">
-                    Home Screen: Overview of inventory status with clear
-                    indicators.
-                  </p>
-                </div>
-                <!-- Slide 3 -->
-                <div
-                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
-                >
-                  <img
-                    src="images/med1.png"
-                    alt="Mobile app medicine detail screen"
-                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
-                  />
-                  <p class="text-lg text-gray-700 text-center font-medium">
-                    Medicine Detail: View stock levels and request delivery.
-                  </p>
-                </div>
-                <!-- Slide 4 -->
-                <div
-                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
-                >
-                  <img
-                    src="images/deliver1.png"
-                    alt="Mobile app request delivery screen"
-                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
-                  />
-                  <p class="text-lg text-gray-700 text-center font-medium">
-                    Request Delivery: Simple form to request stock
-                    replenishment.
-                  </p>
-                </div>
-                <!-- Slide 5 -->
-                <div
-                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
-                >
-                  <img
-                    src="images/message1.png"
-                    alt="Mobile app confirmation screen"
-                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
-                  />
-                  <p class="text-lg text-gray-700 text-center font-medium">
-                    Confirmation: Success message for delivery request.
-                  </p>
-                </div>
-                <!-- Slide 6 -->
-                <div
-                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
-                >
-                  <img
-                    src="images/track1.png"
-                    alt="Mobile app tracking delivery screen"
-                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
-                  />
-                  <p class="text-lg text-gray-700 text-center font-medium">
-                    Tracking: Monitor delivery status in real-time.
-                  </p>
-                </div>
-                <!-- Slide 7 -->
-                <div
-                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
-                >
-                  <img
-                    src="images/arrive1.png"
-                    alt="Mobile app delivery arrived screen"
-                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
-                  />
-                  <p class="text-lg text-gray-700 text-center font-medium">
-                    Arrival: Confirm receipt of delivery with a code.
-                  </p>
-                </div>
-                <!-- Slide 8 -->
-                <div
-                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
-                >
-                  <img
-                    src="images/plus1.png"
-                    alt="Mobile app home screen part 2"
-                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
-                  />
-                  <p class="text-lg text-gray-700 text-center font-medium">
-                    Expanded View: Additional options and status details.
-                  </p>
-                </div>
-                <!-- Slide 9 -->
-                <div
-                  class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-4 transition-all duration-500 ease-in-out transform opacity-40 scale-90"
-                >
-                  <img
-                    src="images/update1.png"
-                    alt="Mobile app update stock screen"
-                    class="max-h-[500px] w-auto object-contain mb-4 shadow-sm rounded-lg"
-                  />
-                  <p class="text-lg text-gray-700 text-center font-medium">
-                    Update Stock: Interface for manually updating inventory
-                    counts.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Navigation Buttons -->
-            <button
-              id="prev-btn"
-              class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md focus:outline-none transition-colors z-10"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.75 19.5L8.25 12l7.5-7.5"
-                />
-              </svg>
-            </button>
-            <button
-              id="next-btn"
-              class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md focus:outline-none transition-colors z-10"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </button>
-
-            <!-- Indicators -->
-            <div class="flex justify-center mt-4 gap-2">
-              <button
-                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
-                data-index="0"
-              ></button>
-              <button
-                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
-                data-index="1"
-              ></button>
-              <button
-                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
-                data-index="2"
-              ></button>
-              <button
-                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
-                data-index="3"
-              ></button>
-              <button
-                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
-                data-index="4"
-              ></button>
-              <button
-                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
-                data-index="5"
-              ></button>
-              <button
-                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
-                data-index="6"
-              ></button>
-              <button
-                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
-                data-index="7"
-              ></button>
-              <button
-                class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
-                data-index="8"
-              ></button>
-            </div>
-          </div>
-          <h4 class="text-2xl font-semibold mb-4">Web</h4>
-          <div
-            class="flex flex-col items-center justify-center w-full max-w-5xl mx-auto mt-4 mb-12"
-          >
-            <!-- Laptop Screen -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div
-              class="relative w-[90%] md:w-[85%] rounded-t-2xl border-[12px] border-gray-800 bg-gray-800 shadow-2xl"
+              class="bg-white rounded-2xl p-8 border border-gray-200 flex flex-col items-center text-center shadow-sm"
             >
-              <div
-                class="w-full aspect-[16/10] bg-white rounded overflow-hidden relative"
-              >
-                <div class="absolute inset-0 overflow-y-auto">
-                  <img
-                    src="images/webhome.png"
-                    class="w-full h-auto"
-                    alt="Web dashboard homescreen"
-                  />
-                </div>
-              </div>
-            </div>
-            <!-- Laptop Base -->
-            <div
-              class="w-full h-4 md:h-6 bg-gray-700 rounded-b-xl shadow-xl relative"
-            >
-              <div
-                class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1.5 bg-gray-600 rounded-b-lg"
-              ></div>
-            </div>
-          </div>
-
-          <h3 class="text-3xl font-semibold mt-12 mb-6">
-            Hi-fidelity Prototype:
-          </h3>
-          <div
-            class="bg-orange-50 border-l-4 border-quilly-bg rounded-r-xl p-6 mb-12 shadow-sm flex items-start gap-4"
-          >
-            <div
-              class="bg-white p-2 rounded-full shrink-0 text-quilly-bg shadow-sm"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2.5"
-                stroke="currentColor"
-                class="w-5 h-5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
-                />
-              </svg>
-            </div>
-            <!-- <p class="text-lg text-gray-800 leading-relaxed">
-              <span class="font-bold">Note:</span> Due to the project objectives
-              and the amount of time my team and I were given, we were only
-              asked to create the high-fidelity prototype for the mobile screen.
-            </p> -->
-          </div>
-          <div class="flex flex-col gap-24 items-center w-full">
-            <div class="flex flex-col items-center w-full">
-              <p class="text-xl text-gray-800 leading-relaxed mb-8 text-center">
-                This user flow is for requesting delivery.
+              <span class="text-4xl font-bold text-gray-900 mb-4">95%</span>
+              <p class="text-lg text-gray-600">
+                of users found the UI simple and easy to navigate.
               </p>
-
-              <!-- Collapsible Screens Section Flow 1 -->
-              <div class="w-full">
-                <div class="relative group">
-                  <div class="overflow-hidden py-8">
-                    <div
-                      id="carousel-flow1"
-                      class="flex transition-transform duration-300 ease-in-out"
-                    >
-                      <div
-                        class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-2 transition-all duration-300 ease-in-out transform opacity-40 scale-90"
-                      >
-                        <div
-                          class="relative border-[12px] border-black bg-black rounded-[3rem] w-[320px] h-[690px] shadow-2xl overflow-hidden"
-                        >
-                          <div
-                            class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[80px] h-6 bg-black rounded-b-xl z-20"
-                          ></div>
-                          <video
-                            class="w-full h-full object-cover"
-                            autoplay
-                            loop
-                            muted
-                            playsinline
-                          >
-                            <source src="images/flow 1.mp4" type="video/mp4" />
-                          </video>
-                        </div>
-                        <p class="text-center text-sm text-gray-600 mt-2">
-                          Video Walkthrough
-                        </p>
-                      </div>
-                      <div
-                        class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-2 transition-all duration-300 ease-in-out transform opacity-40 scale-90"
-                      >
-                        <img
-                          src="images/newhome.png"
-                          class="w-full h-auto rounded-lg"
-                          alt="Home Screen"
-                        />
-                        <p class="text-center text-sm text-gray-600 mt-2">
-                          Home Screen
-                        </p>
-                      </div>
-                      <div
-                        class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-2 transition-all duration-300 ease-in-out transform opacity-40 scale-90"
-                      >
-                        <img
-                          src="images/newmed.png"
-                          class="w-full h-auto rounded-lg"
-                          alt="Medicine Detail"
-                        />
-                        <p class="text-center text-sm text-gray-600 mt-2">
-                          Medicine Detail
-                        </p>
-                      </div>
-                      <div
-                        class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-2 transition-all duration-300 ease-in-out transform opacity-40 scale-90"
-                      >
-                        <img
-                          src="images/schedule.png"
-                          class="w-full h-auto rounded-lg"
-                          alt="Request Delivery"
-                        />
-                        <p class="text-center text-sm text-gray-600 mt-2">
-                          Request Delivery
-                        </p>
-                      </div>
-                      <div
-                        class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-2 transition-all duration-300 ease-in-out transform opacity-40 scale-90"
-                      >
-                        <img
-                          src="images/track.png"
-                          class="w-full h-auto rounded-lg"
-                          alt="Confirmation"
-                        />
-                        <p class="text-center text-sm text-gray-600 mt-2">
-                          Confirmation
-                        </p>
-                      </div>
-                      <div
-                        class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-2 transition-all duration-300 ease-in-out transform opacity-40 scale-90"
-                      >
-                        <img
-                          src="images/car.png"
-                          class="w-full h-auto rounded-lg"
-                          alt="Tracking"
-                        />
-                        <p class="text-center text-sm text-gray-600 mt-2">
-                          Tracking
-                        </p>
-                      </div>
-                      <div
-                        class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-2 transition-all duration-300 ease-in-out transform opacity-40 scale-90"
-                      >
-                        <img
-                          src="images/code.png"
-                          class="w-full h-auto rounded-lg"
-                          alt="Arrival"
-                        />
-                        <p class="text-center text-sm text-gray-600 mt-2">
-                          Arrival
-                        </p>
-                      </div>
-                      <div
-                        class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-2 transition-all duration-300 ease-in-out transform opacity-40 scale-90"
-                      >
-                        <img
-                          src="images/stock.png"
-                          class="w-full h-auto rounded-lg"
-                          alt="Review"
-                        />
-                        <p class="text-center text-sm text-gray-600 mt-2">
-                          Review
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    id="prev-flow1-btn"
-                    class="absolute top-1/2 left-2 -translate-y-1/2 bg-white/80 hover:bg-white p-1.5 rounded-full shadow-sm text-gray-700"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      class="w-4 h-4"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.75 19.5 8.25 12l7.5-7.5"
-                      />
-                    </svg>
-                  </button>
-                  <button
-                    id="next-flow1-btn"
-                    class="absolute top-1/2 right-2 -translate-y-1/2 bg-white/80 hover:bg-white p-1.5 rounded-full shadow-sm text-gray-700"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      class="w-4 h-4"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
             </div>
 
-            <div class="flex flex-col items-center w-full">
-              <p class="text-xl text-gray-800 leading-relaxed mb-8 text-center">
-                This user flow is for updating stock.
+            <div
+              class="bg-white rounded-2xl p-8 border border-gray-200 flex flex-col items-center text-center shadow-sm"
+            >
+              <span class="text-4xl mb-4">📱</span>
+              <p class="text-lg text-gray-600">
+                Validated as "perfect" for users with limited tech literacy.
               </p>
+            </div>
 
-              <!-- Collapsible Screens Section Flow 2 -->
-              <div class="w-full">
-                <div class="relative group">
-                  <div class="overflow-hidden py-8">
-                    <div
-                      id="carousel-flow2"
-                      class="flex transition-transform duration-300 ease-in-out"
-                    >
-                      <div
-                        class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-2 transition-all duration-300 ease-in-out transform opacity-40 scale-90"
-                      >
-                        <div
-                          class="relative border-[12px] border-black bg-black rounded-[3rem] w-[320px] h-[690px] shadow-2xl overflow-hidden"
-                        >
-                          <div
-                            class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[80px] h-6 bg-black rounded-b-xl z-20"
-                          ></div>
-                          <video
-                            class="w-full h-full object-cover"
-                            autoplay
-                            loop
-                            muted
-                            playsinline
-                          >
-                            <source src="images/flow 2.mp4" type="video/mp4" />
-                          </video>
-                        </div>
-                        <p class="text-center text-sm text-gray-600 mt-2">
-                          Video Walkthrough
-                        </p>
-                      </div>
-                      <div
-                        class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-2 transition-all duration-300 ease-in-out transform opacity-40 scale-90"
-                      >
-                        <img
-                          src="images/options2.png"
-                          class="w-full h-auto rounded-lg"
-                          alt="Home Screen"
-                        />
-                        <p class="text-center text-sm text-gray-600 mt-2">
-                          Home Screen
-                        </p>
-                      </div>
-                      <div
-                        class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-2 transition-all duration-300 ease-in-out transform opacity-40 scale-90"
-                      >
-                        <img
-                          src="images/update3.png"
-                          class="w-full h-auto rounded-lg"
-                          alt="Expanded View"
-                        />
-                        <p class="text-center text-sm text-gray-600 mt-2">
-                          Expanded View
-                        </p>
-                      </div>
-                      <div
-                        class="w-full md:w-1/3 flex-shrink-0 flex flex-col items-center p-2 transition-all duration-300 ease-in-out transform opacity-40 scale-90"
-                      >
-                        <img
-                          src="images/finished.png"
-                          class="w-full h-auto rounded-lg"
-                          alt="Update Stock"
-                        />
-                        <p class="text-center text-sm text-gray-600 mt-2">
-                          Update Stock
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    id="prev-flow2-btn"
-                    class="absolute top-1/2 left-2 -translate-y-1/2 bg-white/80 hover:bg-white p-1.5 rounded-full shadow-sm text-gray-700"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      class="w-4 h-4"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.75 19.5 8.25 12l7.5-7.5"
-                      />
-                    </svg>
-                  </button>
-                  <button
-                    id="next-flow2-btn"
-                    class="absolute top-1/2 right-2 -translate-y-1/2 bg-white/80 hover:bg-white p-1.5 rounded-full shadow-sm text-gray-700"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      class="w-4 h-4"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
+            <div
+              class="bg-white rounded-2xl p-8 border border-gray-200 flex flex-col items-center text-center shadow-sm"
+            >
+              <span class="text-4xl font-bold text-gray-900 mb-4">100%</span>
+              <p class="text-lg text-gray-600">
+                Completion rate for critical tasks like requesting stock.
+              </p>
             </div>
           </div>
         </section>
@@ -1193,52 +1237,145 @@
             webflow.
           </p>
 
-          <h3 class="text-3xl font-semibold mt-12 mb-4">Future vision:</h3>
-          <ul
-            class="list-disc list-inside text-xl text-gray-800 leading-relaxed max-w-5xl space-y-3"
-          >
-            <li>
-              <span class="font-semibold">Emotional Wellness Layer:</span> Add a
-              "mood check" emoji system to help supervisors track burnout.
-            </li>
-            <li>
-              <span class="font-semibold">Analytics Dashboard:</span> Enable
-              data exports to funders and reveal trends in medicine waste and
-              delivery delays.
-            </li>
-            <li>
-              <span class="font-semibold">Expansion Playbook:</span> Create a
-              "plug-and-play" model to localize for similar contexts in Malawi,
-              Tanzania, or Uganda.
-            </li>
-          </ul>
+          <h3 class="text-3xl font-semibold mt-12 mb-8">Future vision:</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div
+              class="bg-orange-50 rounded-2xl p-8 border border-orange-100 hover:shadow-md transition-all"
+            >
+              <div class="text-4xl mb-4">🧘‍♀️</div>
+              <h4 class="text-xl font-bold text-gray-900 mb-3">
+                Emotional Wellness Layer
+              </h4>
+              <p class="text-gray-700 leading-relaxed">
+                Add a "mood check" emoji system to help supervisors track
+                burnout.
+              </p>
+            </div>
+            <div
+              class="bg-blue-50 rounded-2xl p-8 border border-blue-100 hover:shadow-md transition-all"
+            >
+              <div class="text-4xl mb-4">📊</div>
+              <h4 class="text-xl font-bold text-gray-900 mb-3">
+                Analytics Dashboard
+              </h4>
+              <p class="text-gray-700 leading-relaxed">
+                Enable data exports to funders and reveal trends in medicine
+                waste and delivery delays.
+              </p>
+            </div>
+            <div
+              class="bg-green-50 rounded-2xl p-8 border border-green-100 hover:shadow-md transition-all"
+            >
+              <div class="text-4xl mb-4">🌍</div>
+              <h4 class="text-xl font-bold text-gray-900 mb-3">
+                Expansion Playbook
+              </h4>
+              <p class="text-gray-700 leading-relaxed">
+                Create a "plug-and-play" model to localize for similar contexts
+                in Malawi, Tanzania, or Uganda.
+              </p>
+            </div>
+          </div>
 
-          <h3 class="text-3xl font-semibold mt-12 mb-4">Learnings:</h3>
-          <ul
-            class="list-disc list-inside text-xl text-gray-800 leading-relaxed max-w-5xl space-y-3"
-          >
-            <li>
-              <span class="font-semibold">Tech ≠ Transformation:</span> Tools
-              only work if they're designed with empathy for real-world users.
-            </li>
-            <li>
-              <span class="font-semibold"
-                >Designing for constraint is power:</span
+          <h3 class="text-3xl font-semibold mb-8">Learnings:</h3>
+          <div class="space-y-4">
+            <div
+              class="flex gap-6 items-start bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:border-quilly-accent transition-colors"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center font-bold text-gray-600 text-lg"
               >
-              Limited signal and time aren't barriers—they're design signals
-              that lead to focused solutions.
-            </li>
-            <li>
-              <span class="font-semibold">User research is our compass:</span>
-              Insights from field reports and user interviews kept us grounded
-              in reality, not theory.
-            </li>
-          </ul>
+                1
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  Tech ≠ Transformation
+                </h4>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                  Tools only work if they're designed with empathy for
+                  real-world users.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-6 items-start bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:border-quilly-accent transition-colors"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center font-bold text-gray-600 text-lg"
+              >
+                2
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  Designing for constraint is power
+                </h4>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                  Limited signal and time aren't barriers—they're design signals
+                  that lead to focused solutions.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-6 items-start bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:border-quilly-accent transition-colors"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center font-bold text-gray-600 text-lg"
+              >
+                3
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  User research is our compass
+                </h4>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                  Insights from field reports and user interviews kept us
+                  grounded in reality, not theory.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
 
     <div id="footer-placeholder" class="w-full"></div>
+
+    <!-- Image Modal -->
+    <div
+      id="image-modal"
+      class="fixed inset-0 z-[100] hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 md:p-10 cursor-zoom-out transition-opacity duration-300 opacity-0"
+      onclick="closeModal()"
+    >
+      <div
+        class="relative max-w-full max-h-full flex items-center justify-center"
+      >
+        <img
+          id="modal-image"
+          src=""
+          alt="Full screen view"
+          class="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl transform scale-95 transition-transform duration-300"
+        />
+        <button
+          class="absolute -top-12 right-0 text-white/70 hover:text-white transition-colors p-2"
+          onclick="closeModal()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <script src="../components/loader.js"></script>
     <script src="../components/loader_footer.js"></script>
@@ -1310,139 +1447,40 @@
           });
         });
 
-        // Carousel Logic for Lo-Fi Wireframes
-        document.addEventListener("DOMContentLoaded", function () {
-          const carousel = document.getElementById("lofi-carousel");
-          const prevBtn = document.getElementById("prev-btn");
-          const nextBtn = document.getElementById("next-btn");
-          const indicators = document.querySelectorAll(".indicator");
-          let currentIndex = 0;
-          const totalSlides = 9; // Number of slides
+        // Modal Logic
+        window.openModal = function (src) {
+          const modal = document.getElementById("image-modal");
+          const modalImg = document.getElementById("modal-image");
 
-          function updateCarousel() {
-            const isMobile = window.innerWidth < 768;
-            let translateX;
-
-            if (isMobile) {
-              translateX = -(currentIndex * 100);
-            } else {
-              // Center the current index in a 3-item view
-              translateX = (1 - currentIndex) * (100 / 3);
-            }
-
-            if (carousel) {
-              carousel.style.transform = `translateX(${translateX}%)`;
-            }
-
-            // Update Slide Styles (Opacity/Scale)
-            Array.from(carousel.children).forEach((slide, index) => {
-              if (index === currentIndex) {
-                slide.classList.remove("opacity-40", "scale-90");
-                slide.classList.add("opacity-100", "scale-100", "z-10");
-              } else {
-                slide.classList.add("opacity-40", "scale-90");
-                slide.classList.remove("opacity-100", "scale-100", "z-10");
-              }
-            });
-
-            // Update indicators
-            indicators.forEach((ind, index) => {
-              if (index === currentIndex) {
-                ind.classList.remove("bg-gray-300");
-                ind.classList.add("bg-gray-800");
-              } else {
-                ind.classList.add("bg-gray-300");
-                ind.classList.remove("bg-gray-800");
-              }
-            });
+          if (modal && modalImg) {
+            modalImg.src = src;
+            modal.classList.remove("hidden");
+            // Small delay to allow display:block to apply before opacity transition
+            setTimeout(() => {
+              modal.classList.remove("opacity-0");
+              modalImg.classList.remove("scale-95");
+              modalImg.classList.add("scale-100");
+            }, 10);
+            document.body.style.overflow = "hidden"; // Prevent background scrolling
           }
+        };
 
-          if (prevBtn && nextBtn && carousel) {
-            prevBtn.addEventListener("click", () => {
-              currentIndex =
-                currentIndex === 0 ? totalSlides - 1 : currentIndex - 1;
-              updateCarousel();
-            });
+        window.closeModal = function () {
+          const modal = document.getElementById("image-modal");
+          const modalImg = document.getElementById("modal-image");
 
-            nextBtn.addEventListener("click", () => {
-              currentIndex =
-                currentIndex === totalSlides - 1 ? 0 : currentIndex + 1;
-              updateCarousel();
-            });
+          if (modal && modalImg) {
+            modal.classList.add("opacity-0");
+            modalImg.classList.remove("scale-100");
+            modalImg.classList.add("scale-95");
 
-            indicators.forEach((ind) => {
-              ind.addEventListener("click", (e) => {
-                currentIndex = parseInt(e.target.getAttribute("data-index"));
-                updateCarousel();
-              });
-            });
-
-            // Initialize
-            updateCarousel();
+            setTimeout(() => {
+              modal.classList.add("hidden");
+              modalImg.src = "";
+              document.body.style.overflow = "";
+            }, 300);
           }
-
-          // New Logic for Hi-Fi Flow Carousels
-          function setupHiFiCarousel(carouselId, prevBtnId, nextBtnId) {
-            const carousel = document.getElementById(carouselId);
-            const prevBtn = document.getElementById(prevBtnId);
-            const nextBtn = document.getElementById(nextBtnId);
-            let index = 0;
-
-            if (!carousel || !prevBtn || !nextBtn) return;
-
-            const slides = carousel.children;
-            const totalSlides = slides.length;
-
-            function update() {
-              const isMobile = window.innerWidth < 768;
-              let translateX;
-
-              if (isMobile) {
-                translateX = -(index * 100);
-              } else {
-                // Center the active slide (w-1/3)
-                translateX = (1 - index) * (100 / 3);
-              }
-              carousel.style.transform = `translateX(${translateX}%)`;
-
-              Array.from(slides).forEach((slide, i) => {
-                if (i === index) {
-                  slide.classList.remove("opacity-40", "scale-90");
-                  slide.classList.add("opacity-100", "scale-100", "z-10");
-                } else {
-                  slide.classList.add("opacity-40", "scale-90");
-                  slide.classList.remove("opacity-100", "scale-100", "z-10");
-                }
-              });
-            }
-
-            prevBtn.addEventListener("click", () => {
-              index = index === 0 ? totalSlides - 1 : index - 1;
-              update();
-            });
-
-            nextBtn.addEventListener("click", () => {
-              index = index === totalSlides - 1 ? 0 : index + 1;
-              update();
-            });
-
-            window.addEventListener("resize", update);
-
-            // Initialize
-            update();
-          }
-
-          setupHiFiCarousel(
-            "carousel-flow1",
-            "prev-flow1-btn",
-            "next-flow1-btn",
-          );
-          setupHiFiCarousel(
-            "carousel-flow2",
-            "prev-flow2-btn",
-            "next-flow2-btn",
-          );
-        });
+        };
       })();
     </script>
   </body>

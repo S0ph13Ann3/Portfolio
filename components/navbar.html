@@ -1,43 +1,140 @@
-<nav class="bg-white/90 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
+<nav
+  class="bg-white/90 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm"
+>
   <div class="w-full px-2 sm:px-6">
     <div class="relative flex items-center h-20">
-      <a href="../Homepage/homepage.html" class="font-bold text-xl text-black no-underline ml-2">SOPHIE ANNE</a>
+      <a
+        href="../Homepage/homepage.html"
+        class="font-bold text-xl text-black no-underline ml-2"
+        >SOPHIE ANNE</a
+      >
       <div class="flex-grow"></div>
+
+      <!-- Email Copy Section -->
+      <div
+        class="hidden md:flex items-center gap-2 mr-6 bg-gray-50 px-4 py-1.5 rounded-full border border-gray-100 shadow-sm"
+      >
+        <span id="emailAddress" class="text-sm font-medium text-gray-600"
+          >zednan863@gmail.com</span
+        >
+        <div class="relative flex items-center">
+          <img
+            src="../images/copy.png"
+            alt="Copy"
+            class="w-4 h-4 cursor-pointer hover:scale-110 transition-transform duration-200 opacity-60 hover:opacity-100"
+            onclick="copyEmailToClipboard()"
+          />
+          <div
+            id="copiedPopup"
+            class="absolute hidden bg-stone-800 text-white text-[10px] px-2 py-1 rounded-full shadow-md left-1/2 -translate-x-1/2 top-full mt-2 whitespace-nowrap z-50 opacity-0 transition-opacity duration-300 pointer-events-none"
+          >
+            Copied!
+          </div>
+        </div>
+      </div>
+
       <div class="relative flex items-center space-x-2 mr-2 sm:mr-6">
-        
         <!-- This is the main menu container -->
-        <div id="mobile-menu" class="transform translate-x-0 opacity-0 scale-95 transition-all duration-300 ease-in-out absolute top-full right-10 bg-white px-6 py-4 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 flex flex-row items-center space-x-6 pointer-events-none z-40">
-          
-          <a href="../Homepage/homepage.html" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline">Home</a>
-          
+        <div
+          id="mobile-menu"
+          class="transform translate-x-0 opacity-0 scale-95 transition-all duration-300 ease-in-out absolute top-full right-10 bg-white px-6 py-4 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 flex flex-row items-center space-x-6 pointer-events-none z-40"
+        >
+          <a
+            href="../Homepage/homepage.html"
+            class="text-lg font-semibold text-gray-800 hover:text-black hover:underline"
+            >Home</a
+          >
+
           <!-- Projects link and dropdown container -->
           <div class="relative flex items-center" id="projects-container">
             <!-- This is now a direct link to a main projects page -->
-            <a href="../Projects/projects.html" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline">Projects</a>
-            
+            <a
+              href="../Projects/projects.html"
+              class="text-lg font-semibold text-gray-800 hover:text-black hover:underline"
+              >Projects</a
+            >
+
             <!-- This button now only contains the arrow to toggle the dropdown -->
-            <button id="projects-dropdown-button" class="ml-1 p-1 focus:outline-none">
-              <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            <button
+              id="projects-dropdown-button"
+              class="ml-1 p-1 focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 transition-transform duration-200"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
             </button>
 
             <!-- The dropdown menu itself remains the same -->
-            <div id="projects-dropdown-menu" class="hidden absolute top-full left-1/2 -translate-x-1/2 mt-3 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 py-2 z-50">
-              <a href="../Pantry Co Pilot/pantry_co_pilot.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">Pantry Co-Pilot</a>
-              <a href="../SpotifyReplica/spotifyreplica.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">Spotify Replica</a>
-              <a href="../Quilly/quilly.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">Quilly</a>
-              <a href="../FT Removal/ft.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">FT Removal</a>
-              <a href="../bookTessera/booktessera.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">BookTessera</a>
-              <a href="../CareRoute/careroute.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">CareRoute</a>
-              <a href="../WebApp/webapp.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">Additional Websites</a>
+            <div
+              id="projects-dropdown-menu"
+              class="hidden absolute top-full left-1/2 -translate-x-1/2 mt-3 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 py-2 z-50"
+            >
+              <a
+                href="../Pantry Co Pilot/pantry_co_pilot.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                >Pantry Co-Pilot</a
+              >
+              <a
+                href="../SpotifyReplica/spotifyreplica.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                >Spotify Replica</a
+              >
+              <a
+                href="../Quilly/quilly.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                >Quilly</a
+              >
+              <a
+                href="../FT Removal/ft.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                >FT Removal</a
+              >
+              <a
+                href="../bookTessera/booktessera.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                >BookTessera</a
+              >
+              <a
+                href="../CareRoute/careroute.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                >CareRoute</a
+              >
+              <a
+                href="../WebApp/webapp.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                >Additional Websites</a
+              >
             </div>
           </div>
-          
-          <a href="../About/about.html" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline">About</a>
-          <a href="#contact" class="text-lg font-semibold text-gray-800 hover:text-black hover:underline">Contact</a>
+
+          <a
+            href="../About/about.html"
+            class="text-lg font-semibold text-gray-800 hover:text-black hover:underline"
+            >About</a
+          >
+          <a
+            href="#contact"
+            class="text-lg font-semibold text-gray-800 hover:text-black hover:underline"
+            >Contact</a
+          >
         </div>
-        
+
         <button id="mobile-menu-button" class="focus:outline-none z-50">
-          <img src="../images/square.png" alt="Menu" class="h-8 w-8" />
+          <img
+            src="../images/square.png"
+            alt="Menu"
+            class="h-8 w-8 transition-transform duration-200 hover:scale-110"
+          />
         </button>
       </div>
     </div>

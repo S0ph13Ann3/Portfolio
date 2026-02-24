@@ -62,13 +62,15 @@ if(menu){
 
 // --- Email Clipboard Function ---
 function copyEmailToClipboard() {
-  const email = document.getElementById('emailAddress').textContent;
+  const emailElement = document.getElementById('emailAddress');
   const copiedPopup = document.getElementById('copiedPopup');
 
-  if (!email || !copiedPopup) {
+  if (!emailElement || !copiedPopup) {
     console.error('Email address or popup element not found.');
     return;
   }
+
+  const email = emailElement.textContent.trim();
   navigator.clipboard.writeText(email)
     .then(() => {
       copiedPopup.classList.remove('hidden');
