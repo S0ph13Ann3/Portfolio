@@ -69,7 +69,7 @@
     <main class="w-full pt-20">
       <header class="w-full p-4 flex items-center justify-center">
         <div
-          class="banner-container relative bg-safety-bg rounded-3xl h-[28rem] w-full max-w-6xl overflow-hidden shadow-2xl"
+          class="banner-container relative bg-safety-bg rounded-2xl h-64 w-full max-w-6xl overflow-hidden shadow-xl"
         >
           <div
             class="absolute inset-0 flex items-center justify-center -rotate-12 scale-125 opacity-60"
@@ -136,14 +136,14 @@
             class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4"
           >
             <div
-              class="bg-black/30 backdrop-blur-md p-10 rounded-3xl shadow-2xl border border-white/10"
+              class="bg-black bg-opacity-25 backdrop-blur-sm p-6 rounded-xl shadow-lg"
             >
-              <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-2">
+              <h1 class="text-4xl font-bold tracking-wide">
                 GOOGLE MAPS SAFETY ROUTING
               </h1>
               <a
                 href=""
-                class="inline-block mt-6 px-8 py-3 bg-white text-safety-primary font-bold rounded-full shadow-lg transition-all hover:scale-105 hover:shadow-xl"
+                class="inline-block mt-4 px-6 py-2 bg-white text-safety-primary font-semibold rounded-lg shadow-md transition-transform hover:scale-105"
               >
                 App Prototype
               </a>
@@ -153,23 +153,75 @@
       </header>
 
       <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 mt-4">
-        <div class="flex items-center justify-end flex-wrap gap-2 text-right">
-          <span
-            class="text-xs font-bold text-safety-primary bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full"
+        <div class="flex flex-wrap items-center justify-end gap-4">
+          <!-- Role Widget -->
+          <div
+            class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
           >
-            Duration: January 2026 - Present
-          </span>
-          <span
-            class="text-xs font-bold text-orange-600 bg-orange-50 border border-orange-100 px-4 py-1.5 rounded-full"
+            <div class="p-2 bg-purple-50 rounded-full text-purple-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col text-left">
+              <span
+                class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                >Role</span
+              >
+              <span class="text-sm font-medium text-gray-800">UX Designer</span>
+            </div>
+          </div>
+
+          <!-- Timeline Widget -->
+          <div
+            class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
           >
-            Tool: Figma
-          </span>
+            <div class="p-2 bg-blue-50 rounded-full text-blue-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+            </div>
+            <div class="flex flex-col text-left">
+              <span
+                class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                >Timeline</span
+              >
+              <span class="text-sm font-medium text-gray-800">Jan 2026 - Present</span>
+            </div>
+          </div>
+
+          <!-- Tools Widget -->
+          <div
+            class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
+          >
+            <div class="p-2 bg-orange-50 rounded-full text-orange-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+              </svg>
+            </div>
+            <div class="flex flex-col text-left">
+              <span
+                class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                >Tools</span
+              >
+              <span class="text-sm font-medium text-gray-800">Figma</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <hr class="border-neutral-200 w-full my-12 md:my-16" />
-
-      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 mt-12">
         <section>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
@@ -181,7 +233,7 @@
                   class="w-9 h-9 -scale-x-100 -rotate-45"
                 />
               </div>
-              <p class="text-xl text-gray-800 leading-relaxed text-pretty">
+              <p class="text-xl text-gray-800 leading-relaxed">
                 Google Maps is one of the top leading navigation tool in the
                 world, but its core algorithm is optimized for efficiency. It
                 frequently fails at finding the safest or most accessible one.
@@ -234,8 +286,7 @@
           <h3 class="text-2xl font-semibold mb-4">
             The shortcut that felt like a wrong turn…
           </h3>
-          <div class="bg-blue-50/50 p-8 rounded-2xl border-l-4 border-safety-primary mb-12">
-          <p class="text-xl text-gray-800 leading-relaxed text-pretty italic">
+          <p class="text-xl text-gray-800 leading-relaxed mb-12">
             In 2025, my sister and I were navigating Tokyo at night. Google Maps
             promised us a 4-minute shortcut back to the hotel. That 'shortcut'
             led us away from the main road and into a series of pitch-black,
@@ -257,7 +308,6 @@
               Tolls'?</strong
             >
           </p>
-          </div>
           <figure class="text-center">
             <div class="flex justify-center mb-4">
               <!-- <img
@@ -272,7 +322,7 @@
           </figure>
 
           <h3 class="text-2xl font-semibold mt-12 mb-4">Intial Research:</h3>
-          <p class="text-xl text-gray-800 leading-relaxed mb-6 text-pretty">
+          <p class="text-xl text-gray-800 leading-relaxed mb-6">
             Google Maps is excellent for "point-to-point" navigation, however,
             its algorithms often ignore environmental factors like lighting and
             visibility, leading users into "sketchy" or uncomfortable areas.
@@ -289,7 +339,7 @@
               <h4 class="text-2xl font-bold mb-4 text-gray-900">
                 The "Walking Fear" Data (2025)
               </h4>
-              <p class="text-xl text-gray-800 leading-relaxed mb-6 text-pretty">
+              <p class="text-xl text-gray-800 leading-relaxed mb-6">
                 A national survey commissioned in August 2025 revealed a
                 staggering gap in how different demographics experience
                 navigation:
@@ -322,7 +372,7 @@
               <h4 class="text-2xl font-bold mb-6 text-gray-900">
                 Direct User Requests (2025–2026)
               </h4>
-              <p class="text-xl text-gray-800 leading-relaxed mb-8 text-pretty">
+              <p class="text-xl text-gray-800 leading-relaxed mb-8">
                 On public forums and community boards, users have been vocal
                 about the lack of "Safe Routing" options:
               </p>
@@ -617,7 +667,7 @@
                   </div>
                 </div>
               </div>
-              <p class="text-xl text-gray-800 leading-relaxed mt-12 text-pretty">
+              <p class="text-xl text-gray-800 leading-relaxed mt-12">
                 My own research confirmed that my experience in the alleys of
                 Japan wasn't an isolated incident; it's a recurring pain point
                 for urban navigators using Google Maps.
@@ -644,7 +694,7 @@
             />
           </div>
 
-          <p class="text-xl text-gray-800 leading-relaxed mb-12 text-pretty">
+          <p class="text-xl text-gray-800 leading-relaxed mb-12">
             After conducting my own research, I realized that my experience in
             Japan was a widespread pain point, which allowed me to build
             data-driven personas that reflect the real safety needs of everyday
@@ -730,7 +780,7 @@
           </div>
 
           <h3 class="text-3xl font-semibold mt-12 mb-6">User Flow:</h3>
-          <p class="text-xl text-gray-800 leading-relaxed mb-8 text-pretty">
+          <p class="text-xl text-gray-800 leading-relaxed mb-8">
             By mapping the specific frustrations of Elena and Marcus against the
             existing Google Maps architecture, I developed a user flow that
             integrates safety naturally into the current navigation and
