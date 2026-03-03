@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,76 +40,106 @@
           />
         </header>
 
-        <section class="intro mb-16 mt-[-70px]">
+        <section class="intro mb-24">
           <div class="section-header flex items-center mb-4">
-            <div class="svg-title-container h-16 w-auto">
-              <svg
-                width="200"
-                height="60"
-                viewBox="0 0 200 60"
-                xmlns="http://www.w3.org/2000/svg"
-              ></svg>
-            </div>
-
             <div class="flex-item ml-auto">
               <a
                 href="https://drive.google.com/file/d/1zYNBT-7WrjxCP3sVMJ7QOVvLMBamTMaq/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="learn-more inline-block px-5 py-2.5 bg-[#ededed] text-black font-medium text-xl no-underline rounded transition-colors duration-300 hover:bg-[#d0d0d0]"
-                >Resume</a
+                class="learn-more relative inline-block px-8 py-3 bg-black text-white font-medium text-lg no-underline rounded-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 active:scale-95 group"
+              >
+                <span
+                  class="absolute inset-0 bg-stone-800 -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"
+                ></span>
+                <span class="relative z-10">Resume</span></a
               >
             </div>
           </div>
 
-          <div
-            class="bio grid grid-cols-1 md:grid-cols-12 gap-x-12 items-start"
-          >
-            <img
-              class="md:col-span-5 w-full h-auto object-cover rounded-lg shadow-lg"
-              src="../images/google.jpeg"
-              alt="Sophie Anne Hernandez"
-            />
+          <div class="bio grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <!-- Left Column: Image & Stats -->
+            <div class="lg:col-span-5 flex flex-col gap-8">
+              <div class="relative group">
+                <div
+                  class="absolute -inset-1 bg-gradient-to-r from-gray-200 to-gray-100 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"
+                ></div>
+                <img
+                  class="relative w-full h-auto object-cover rounded-2xl shadow-md transition-transform duration-500 group-hover:scale-[1.01]"
+                  src="../images/google.jpeg"
+                  alt="Sophie Anne Hernandez"
+                />
+              </div>
+            </div>
 
-            <p class="md:col-span-6 text-2xl leading-relaxed">
-              I have always loved arts &amp; crafts ever since a young age, this
-              creative side of me has guided me throughout my time as a coder
-              and as a designer. <br /><br />Whenever I was a part of a group
-              project in college, I would always volunteer to lead the front end
-              development since I felt that was where my creative side can be
-              unleashed while also bringing to life my group's design.
-              <br /><br />My main goal as a UX designer is to create technical
-              designs that can be achieved through code that embodies both the
-              user's needs and the main goals of the product while also
-              including a personal artistic touch. <br /><br />I am excited to
-              embark on this new career journey and I can not wait to bring you
-              all along with me!!
-            </p>
+            <!-- Right Column: Bio Text -->
+            <div class="lg:col-span-7 space-y-6">
+              <p class="text-xl leading-relaxed text-gray-800 font-light">
+                I have always loved arts &amp; crafts ever since a young age.
+                This creative side of me has guided me throughout my time as a
+                coder and as a designer.
+              </p>
+              <p class="text-xl leading-relaxed text-gray-800 font-light">
+                Whenever I was a part of a group project in college, I would
+                always volunteer to lead the front-end development since I felt
+                that was where my creative side could be unleashed while also
+                bringing to life my group's design.
+              </p>
+              <p class="text-xl leading-relaxed text-gray-800 font-light">
+                My main goal as a UX designer is to create technical designs
+                that can be achieved through code that embodies both the user's
+                needs and the main goals of the product while also including a
+                personal artistic touch.
+              </p>
+              <p class="text-xl leading-relaxed text-gray-800 font-medium">
+                I am excited to embark on this new career journey and I can not
+                wait to bring you all along with me!!
+              </p>
 
-            <dl
-              class="md:col-span-5 font-medium text-md leading-relaxed -mt-20"
-            >
-              <dt class="font-bold">👩🏻‍🎓 College &amp; Major:</dt>
-              <dd class="ml-5">
-                University of California - Santa Cruz, majored in Computer
-                Science
-              </dd>
-
-              <dt class="font-bold mt-5">💼 Current Job:</dt>
-              <dd class="ml-5">Level 2 Data Center Technician at Google</dd>
-
-              <dt class="font-bold mt-5">🧸 Hobbies:</dt>
-              <dd class="ml-5">
-                Traveling, reading, playing video games, playing volleyball,
-                baking, cooking, collecting blind boxes, &amp; drawing
-              </dd>
-
-              <dt class="font-bold mt-5">🖍️ UX Specialization:</dt>
-              <dd class="ml-5">
-                I blend UX designs with front-end code and personal, hand-drawn
-                visuals.
-              </dd>
-            </dl>
+              <div
+                class="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-sm"
+              >
+                <dl
+                  class="font-medium text-gray-700 text-md leading-relaxed space-y-4"
+                >
+                  <div>
+                    <dt class="font-bold text-black flex items-center gap-2">
+                      👩🏻‍🎓 College &amp; Major
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      University of California - Santa Cruz, B.S. Computer
+                      Science
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="font-bold text-black flex items-center gap-2">
+                      💼 Current Job
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      Level 2 Data Center Technician at Google
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="font-bold text-black flex items-center gap-2">
+                      🧸 Hobbies
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      Traveling, reading, video games, volleyball, baking,
+                      cooking, blind boxes &amp; drawing
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="font-bold text-black flex items-center gap-2">
+                      🖍️ UX Specialization
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      Blending UX design with front-end code and hand-drawn
+                      visuals.
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -132,10 +162,10 @@
           </div>
 
           <div
-            class="experience-item flex flex-col md:flex-row gap-12 items-start my-16"
+            class="experience-item flex flex-col md:flex-row gap-12 items-start my-20"
           >
             <div class="md:w-1/2">
-              <p class="text-xl leading-relaxed">
+              <p class="text-xl leading-relaxed text-gray-800">
                 Spoke at the 2024 RSA Conference on The Female Quotient x Kode
                 with Klossy panel about women in cybersecurity and tech.
               </p>
@@ -158,19 +188,24 @@
               </div>
             </div>
             <div class="md:w-1/2">
-              <img
-                class="w-full h-auto object-cover rounded-lg shadow-lg"
-                src="../images/rsa.jpeg"
-                alt="RSA Conference panel"
-              />
+              <div class="relative group">
+                <div
+                  class="absolute -inset-1 bg-gradient-to-r from-pink-200 to-purple-200 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"
+                ></div>
+                <img
+                  class="relative w-full h-auto object-cover rounded-2xl shadow-md transition-transform duration-500 group-hover:scale-[1.01]"
+                  src="../images/rsa.jpeg"
+                  alt="RSA Conference panel"
+                />
+              </div>
             </div>
           </div>
 
           <div
-            class="experience-item flex flex-col md:flex-row-reverse gap-12 items-start my-16"
+            class="experience-item flex flex-col md:flex-row-reverse gap-12 items-start my-20"
           >
             <div class="md:w-1/2">
-              <p class="text-xl leading-relaxed">
+              <p class="text-xl leading-relaxed text-gray-800">
                 As an alumni of Kode with Klossy, I became a Data Science
                 Instructor Assistant for their summer program, where I delivered
                 lessons, provided technical support, and built an empowering
@@ -185,19 +220,24 @@
               </div>
             </div>
             <div class="md:w-1/2">
-              <img
-                class="w-full h-auto object-cover rounded-lg shadow-lg"
-                src="../images/kwk.jpg"
-                alt="Kode with Klossy group photo"
-              />
+              <div class="relative group">
+                <div
+                  class="absolute -inset-1 bg-gradient-to-r from-blue-200 to-cyan-200 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"
+                ></div>
+                <img
+                  class="relative w-full h-auto object-cover rounded-2xl shadow-md transition-transform duration-500 group-hover:scale-[1.01]"
+                  src="../images/kwk.jpg"
+                  alt="Kode with Klossy group photo"
+                />
+              </div>
             </div>
           </div>
 
           <div
-            class="experience-item flex flex-col md:flex-row gap-12 items-start my-16"
+            class="experience-item flex flex-col md:flex-row gap-12 items-start my-20"
           >
             <div class="md:w-1/2">
-              <p class="text-xl leading-relaxed">
+              <p class="text-xl leading-relaxed text-gray-800">
                 During my time as a Residential Network Technician at UCSC
                 Information Technology Services, I increased in-office visits by
                 ∼30% through initiating merchandise &amp; social media
@@ -217,16 +257,20 @@
               </div>
             </div>
             <div class="md:w-1/2 flex gap-4">
-              <img
-                class="w-1/2 h-auto object-cover rounded-lg shadow-lg"
-                src="../images/ucsc-merch.jpg"
-                alt="ResNet merchandise"
-              />
-              <img
-                class="w-3/5 h-auto object-cover rounded-lg shadow-lg"
-                src="../images/resnet-insta.png"
-                alt="ResNet social media campaign"
-              />
+              <div class="w-1/2 relative group">
+                <img
+                  class="w-full h-auto object-cover rounded-2xl shadow-md transition-transform duration-500 group-hover:scale-[1.02]"
+                  src="../images/ucsc-merch.jpg"
+                  alt="ResNet merchandise"
+                />
+              </div>
+              <div class="w-1/2 relative group mt-8">
+                <img
+                  class="w-full h-auto object-cover rounded-2xl shadow-md transition-transform duration-500 group-hover:scale-[1.02]"
+                  src="../images/resnet-insta.png"
+                  alt="ResNet social media campaign"
+                />
+              </div>
             </div>
           </div>
         </section>

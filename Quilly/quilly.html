@@ -486,44 +486,117 @@
               Phase 1: Initial Concepts
             </h3>
             <p class="text-lg text-gray-700 leading-relaxed">
-              In our first design iteration, we used house colors as the primary
-              theme throughout the app, based on each user's assigned house.
-              While this added a fun, personalized touch, the house colors often
-              felt overpowering and didn't align with the clean, minimal
-              aesthetic we were aiming for.
+              In our first design iteration, we experimented with using 'house
+              colors' as the primary theme to add a personalized, immersive
+              touch. However, we quickly found the colors felt overpowering and
+              clashed with the clean, minimal aesthetic we wanted to achieve.
+              <br />
+              <br />
+              This initial phase was also a major testing ground for our
+              information architecture; while we knew we wanted
+              <strong> Home, Calendar, and Profile</strong> as our anchors, we
+              used this iteration to pulse-check the placement of other
+              high-priority features.
+              <br />
+              <br />
+              We developed several versions of the navigation bar to debate the
+              inclusion of a safety feature, a messaging system, or a standalone
+              icon for the discussion board, allowing us to see how different
+              layouts impacted the overall user flow from the very start.
             </p>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-            <img
-              src="./v1/home1.png"
-              alt="Initial screen design 1"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v1/discover.png"
-              alt="Initial screen design 2"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v1/profile.png"
-              alt="Initial screen design 3"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v1/onboard.png"
-              alt="Initial screen design 4"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v1/message.png"
-              alt="Initial screen design 5"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v1/board.png"
-              alt="Initial screen design 6"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
+          <div
+            class="bg-gray-50 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 mt-6"
+          >
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 items-center">
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('./newv1/My House V1.png')"
+              >
+                <div class="aspect-[9/16] w-full p-4">
+                  <img
+                    src="./newv1/My House V1.png"
+                    alt="Initial screen design of My House page"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500">Home page</span>
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('./newv1/Discover V2.png')"
+              >
+                <div class="aspect-[9/16] w-full p-4">
+                  <img
+                    src="./newv1/Discover V2.png"
+                    alt="Initial screen design of Discover page"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Discover page</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('./newv1/Main Profile (Final P1).png')"
+              >
+                <div class="aspect-[9/16] w-full p-4">
+                  <img
+                    src="./newv1/Main Profile (Final P1).png"
+                    alt="Initial screen design of user profile"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500">Profile</span>
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('./newv1/House Messages.png')"
+              >
+                <div class="aspect-[9/16] w-full p-4">
+                  <img
+                    src="./newv1/House Messages.png"
+                    alt="Initial screen design of house messages"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >House Messages</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="
+                  openModal('./newv1/Tentative FINAL SCREEN (10.04).png')
+                "
+              >
+                <div class="aspect-[9/16] w-full p-4">
+                  <img
+                    src="./newv1/Tentative FINAL SCREEN (10.04).png"
+                    alt="Initial screen design of main feed"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Safety Feature</span
+                >
+              </div>
+
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('./newv1/nav2.svg')"
+              >
+                <div class="aspect-[9/16] w-full p-4">
+                  <img
+                    src="./newv1/nav1.svg"
+                    alt="Navigation bar design iterations"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500">Nav Bars</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -536,44 +609,108 @@
               Phase 2: The Pivot
             </h3>
             <p class="text-lg text-gray-700 leading-relaxed">
-              After user feedback, we realized many comments were about the
-              color scheme. We decided to tone down the house colors and go for
-              a more minimal and clean look. We also discussed adding a feature
-              similar to Instagram's "Close Friends," where users can see what
-              their besties are up to.
+              Early user feedback revealed that our initial "house" color
+              palette was visually overwhelming, often distracting from core
+              content. To address this, we pivoted to a minimalist, "clean"
+              aesthetic, transitioning our bold brand colors into supportive
+              accents that highlight key interactions rather than dominating the
+              screen.
+              <br />
+              <br />
+              We also faced a strategic decision regarding the navigation bar.
+              Testing showed a 50/50 split in user priority between safety
+              features and messaging. To balance these needs, we reorganized the
+              interface: <strong>Messaging</strong> was integrated into the
+              primary navigation bar for high-frequency access, while
+              <strong>Safety</strong> features were relocated to a persistent
+              utility icon in the top-right corner. This ensured the tools
+              remained accessible without cluttering the daily social flow.
+              <br />
+              <br />
+              Additionally, we began conceptualizing a
+              <strong>"Close Friends"</strong>
+              feature—designed to foster more intimate sharing—to further deepen
+              user engagement.
             </p>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-            <img
-              src="./v2/home2.png"
-              alt="First redesign screen 1"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v2/discover.png"
-              alt="First redesign screen 2"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v2/menu.png"
-              alt="First redesign screen 3"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v2/mates.png"
-              alt="First redesign screen 4"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v2/pin.png"
-              alt="First redesign screen 5"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v2/profile.png"
-              alt="First redesign screen 5"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
+          <div
+            class="bg-gray-50 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 mt-6"
+          >
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('./newv2/Home screen 6.png')"
+              >
+                <div class="aspect-[9/16] w-full">
+                  <img
+                    src="./newv2/Home screen 6.png"
+                    alt="First redesign screen 1"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Home Screen</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('./newv2/Home screen 7.png')"
+              >
+                <div class="aspect-[9/16] w-full">
+                  <img
+                    src="./newv2/Home screen 7.png"
+                    alt="First redesign screen 2"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Side-bar Nav</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('./newv2/Home screen 8.png')"
+              >
+                <div class="aspect-[9/16] w-full">
+                  <img
+                    src="./newv2/Home screen 8.png"
+                    alt="First redesign screen 3"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Discussion</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('./newv2/Home screen 9.png')"
+              >
+                <div class="aspect-[9/16] w-full">
+                  <img
+                    src="./newv2/Home screen 9.png"
+                    alt="First redesign screen 4"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Unpin a "Close Friend"</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('./newv2/Housemates 4.png')"
+              >
+                <div class="aspect-[9/16] w-full">
+                  <img
+                    src="./newv2/Housemates 4.png"
+                    alt="First redesign screen 5"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500">Profile</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -593,37 +730,103 @@
               truly simple, intuitive UI that prioritizes ample white space.
             </p>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-            <img
-              src="./v3/home3.png"
-              alt="Final homescreen design"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v3/discover.png"
-              alt="Final discussion screen design"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v3/profile.png"
-              alt="Final post interaction design"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="./v3/notify.png"
-              alt="Final profile screen design"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="v3/post.png"
-              alt="Final notifications screen design"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
-            <img
-              src="v3/mates.png"
-              alt="Final housemates screen design"
-              class="rounded-xl w-full h-auto shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
-            />
+          <div
+            class="bg-gray-50 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 mt-6"
+          >
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="
+                  openModal('./newv3/homescreen + house chores ver 4.png')
+                "
+              >
+                <div class="aspect-[9/16] w-full">
+                  <img
+                    src="./newv3/homescreen + house chores ver 4.png"
+                    alt="Final homescreen design"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Events Tab</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('./newv3/homescreen-discussion-vicky.png')"
+              >
+                <div class="aspect-[9/16] w-full">
+                  <img
+                    src="./newv3/homescreen-discussion-vicky.png"
+                    alt="Final discussion screen design"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Discussion Tab</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="
+                  openModal('./newv3/homescreen-discussion-click in post.png')
+                "
+              >
+                <div class="aspect-[9/16] w-full">
+                  <img
+                    src="./newv3/homescreen-discussion-click in post.png"
+                    alt="Final post interaction design"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Discussion Post Comments</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('./newv3/view comments.png')"
+              >
+                <div class="aspect-[9/16] w-full">
+                  <img
+                    src="./newv3/view comments.png"
+                    alt="Final profile screen design"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Event Details + Comments</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('newv3/Housemates-vicky.png')"
+              >
+                <div class="aspect-[9/16] w-full">
+                  <img
+                    src="newv3/Housemates-vicky.png"
+                    alt="Final notifications screen design"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Housemates</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 group cursor-pointer transition-all hover:scale-[1.02]"
+                onclick="openModal('newv3/Profile-vicky.png')"
+              >
+                <div class="aspect-[9/16] w-full">
+                  <img
+                    src="newv3/Profile-vicky.png"
+                    alt="Final housemates screen design"
+                    class="w-full h-full object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <span class="text-sm font-medium text-gray-500">Profile</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -654,6 +857,43 @@
     </main>
 
     <div id="footer-placeholder" class="w-full"></div>
+
+    <!-- Image Modal -->
+    <div
+      id="image-modal"
+      class="fixed inset-0 z-[100] hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 md:p-10 cursor-zoom-out transition-opacity duration-300 opacity-0"
+      onclick="closeModal()"
+    >
+      <div
+        class="relative max-w-full max-h-full flex items-center justify-center"
+      >
+        <img
+          id="modal-image"
+          src=""
+          alt="Full screen view"
+          class="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl transform scale-95 transition-transform duration-300"
+        />
+        <button
+          class="absolute -top-12 right-0 text-white/70 hover:text-white transition-colors p-2"
+          onclick="closeModal()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <script src="../components/loader.js"></script>
     <script src="../components/loader_footer.js"></script>
@@ -710,6 +950,58 @@
             column.style.animationDelay = `${randomDelay}s`;
           });
         });
+
+        // Modal Logic
+        window.openModal = function (src) {
+          const modal = document.getElementById("image-modal");
+          const modalImg = document.getElementById("modal-image");
+
+          if (modal && modalImg) {
+            modalImg.src = src;
+
+            // Reset styles
+            modalImg.style.backgroundColor = "";
+            modalImg.style.padding = "";
+
+            // Force width for SVGs if they appear blank
+            if (src.endsWith(".svg")) {
+              modalImg.style.width = "80vw";
+            } else {
+              modalImg.style.width = "auto";
+            }
+
+            // Add white background for nav2.svg for better visibility
+            if (src.includes("nav2.svg")) {
+              modalImg.style.backgroundColor = "white";
+              modalImg.style.padding = "20px";
+            }
+
+            modal.classList.remove("hidden");
+            setTimeout(() => {
+              modal.classList.remove("opacity-0");
+              modalImg.classList.remove("scale-95");
+              modalImg.classList.add("scale-100");
+            }, 10);
+            document.body.style.overflow = "hidden";
+          }
+        };
+
+        window.closeModal = function () {
+          const modal = document.getElementById("image-modal");
+          const modalImg = document.getElementById("modal-image");
+
+          if (modal && modalImg) {
+            modal.classList.add("opacity-0");
+            modalImg.classList.remove("scale-100");
+            modalImg.classList.add("scale-95");
+
+            setTimeout(() => {
+              modal.classList.add("hidden");
+              modalImg.src = "";
+              document.body.style.overflow = "";
+            }, 300);
+          }
+        };
       })();
     </script>
   </body>
