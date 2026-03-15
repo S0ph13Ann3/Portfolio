@@ -1193,7 +1193,9 @@
             <div
               class="bg-white rounded-2xl p-8 border border-gray-200 flex flex-col items-center text-center shadow-sm"
             >
-              <span class="text-4xl font-bold text-gray-900 mb-4">95%</span>
+              <span class="text-4xl font-bold text-gray-900 mb-4"
+                ><span class="count-up" data-target="95">0</span>%</span
+              >
               <p class="text-lg text-gray-600">
                 of users found the UI simple and easy to navigate.
               </p>
@@ -1211,7 +1213,9 @@
             <div
               class="bg-white rounded-2xl p-8 border border-gray-200 flex flex-col items-center text-center shadow-sm"
             >
-              <span class="text-4xl font-bold text-gray-900 mb-4">100%</span>
+              <span class="text-4xl font-bold text-gray-900 mb-4"
+                ><span class="count-up" data-target="100">0</span>%</span
+              >
               <p class="text-lg text-gray-600">
                 Completion rate for critical tasks like requesting stock.
               </p>
@@ -1446,6 +1450,53 @@
             const animationDuration = 60; // Must match CSS
             const randomDelay = -Math.random() * animationDuration;
             column.style.animationDelay = `${randomDelay}s`;
+          });
+        });
+
+        // Number Counter Animation
+        document.addEventListener("DOMContentLoaded", function () {
+          const counters = document.querySelectorAll(".count-up");
+          const counterOptions = {
+            threshold: 0.5,
+            rootMargin: "0px",
+          };
+
+          const counterObserver = new IntersectionObserver(function (
+            entries,
+            observer,
+          ) {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute("data-target"));
+                const duration = 2000; // Animation duration in ms
+                const startTime = performance.now();
+
+                const updateCounter = (currentTime) => {
+                  const elapsed = currentTime - startTime;
+                  const progress = Math.min(elapsed / duration, 1);
+
+                  // Easing function (easeOutExpo) for smoother effect
+                  const ease =
+                    progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+
+                  counter.innerText = Math.floor(ease * target);
+
+                  if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                  } else {
+                    counter.innerText = target;
+                  }
+                };
+
+                requestAnimationFrame(updateCounter);
+                observer.unobserve(counter);
+              }
+            });
+          }, counterOptions);
+
+          counters.forEach((counter) => {
+            counterObserver.observe(counter);
           });
         });
 
