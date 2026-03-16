@@ -29,17 +29,14 @@
     transform: rotate(0deg) translateX(0px);
 }
 
-/* SCROLL STATE: Slightly more fan-out when viewed */
-.photo-strip-wrapper.is-scrolled .strip-bottom {
-    transform: rotate(-8deg) translateX(-40px) translateY(10px);
-}
-
-/* HOVER STATE: Tighter fan-out to the left */
+/* SCROLL AND HOVER STATE: Tighter fan-out to the left */
+.photo-strip-wrapper.is-scrolled .strip-bottom,
 .photo-strip-wrapper:hover .strip-bottom {
     transform: rotate(-15deg) translateX(-80px) translateY(30px);
     /* Reduced from -200px */
 }
 
+.photo-strip-wrapper.is-scrolled .strip-top,
 .photo-strip-wrapper:hover .strip-top {
     transform: rotate(6deg) translateX(20px);
 }
