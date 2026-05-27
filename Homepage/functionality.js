@@ -87,3 +87,13 @@ function copyEmailToClipboard() {
       alert('Failed to copy email. Please copy it manually: ' + email);
     });
 }
+
+// --- Fun Fact Banner Dismiss ---
+const funFactBanner = document.getElementById('fun-fact-banner');
+const closeBannerBtn = document.getElementById('close-banner-btn');
+
+if (funFactBanner && closeBannerBtn) {
+  closeBannerBtn.addEventListener('click', () => {
+    funFactBanner.classList.add('hidden');
+  });
+}
