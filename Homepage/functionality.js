@@ -97,3 +97,69 @@ if (funFactBanner && closeBannerBtn) {
     funFactBanner.classList.add('hidden');
   });
 }
+
+// --- Project Modal Functionality ---
+window.openProjectModal = function(event, url) {
+  if (event) event.preventDefault();
+  
+  const modal = document.getElementById('project-modal');
+  const iframe = document.getElementById('project-iframe');
+  const expandBtn = document.getElementById('project-modal-expand');
+  const modalContent = document.getElementById('project-modal-content');
+  
+  if (modal && iframe && expandBtn && modalContent) {
+    // Add ?modal=true to hide navbar inside the iframe
+    const iframeUrl = new URL(url, window.location.href);
+    iframeUrl.searchParams.set('modal', 'true');
+    iframe.src = iframeUrl.toString();
+    
+    expandBtn.href = url;
+    
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    
+    // Allow display:block to apply before animating opacity/scale
+    setTimeout(() => {
+      modal.classList.remove('opacity-0');
+      modalContent.classList.remove('scale-95');
+      modalContent.classList.add('scale-100');
+    }, 10);
+  }
+};
+
+window.closeProjectModal = function() {
+  const modal = document.getElementById('project-modal');
+  const iframe = document.getElementById('project-iframe');
+  const modalContent = document.getElementById('project-modal-content');
+  
+  if (modal && iframe && modalContent) {
+    modal.classList.add('opacity-0');
+    modalContent.classList.remove('scale-100');
+    modalContent.classList.add('scale-95');
+    
+    setTimeout(() => {
+      modal.classList.add('hidden');
+      iframe.src = ''; // Clear iframe to stop playback/loading
+      document.body.style.overflow = ''; // Restore background scrolling
+    }, 300);
+  }
+};
+
+function initProjectModal() {
+  const modal = document.getElementById('project-modal');
+  
+  if (modal) {
+    modal.addEventListener('click', (event) => {
+      // Close if clicking outside the modal content
+      if (event.target === modal) {
+        window.closeProjectModal();
+      }
+    });
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initProjectModal);
+} else {
+  initProjectModal();
+}

@@ -1,12 +1,19 @@
 // components/footer-loader.js
 
 document.addEventListener("DOMContentLoaded", function() {
+  const isModal = new URLSearchParams(window.location.search).get('modal') === 'true';
+
   // 1. Define the path to your footer HTML file.
   //    Make sure this path is correct based on your project structure.
   const footerPath = '../components/footer.html'; 
 
   // 2. Find the placeholder element in your main HTML.
   const footerPlaceholder = document.getElementById('footer-placeholder');
+
+  if (isModal && footerPlaceholder) {
+    footerPlaceholder.style.display = 'none';
+    return; // Do not fetch or load the footer inside the modal
+  }
 
   // 3. Check if the placeholder exists on the page before trying to load the footer.
   if (footerPlaceholder) {

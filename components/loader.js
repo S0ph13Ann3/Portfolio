@@ -1,22 +1,40 @@
 // components/loader.js
 document.addEventListener("DOMContentLoaded", function() {
+  const isModal = new URLSearchParams(window.location.search).get('modal') === 'true';
   const navbarPath = '../components/navbar.html'; 
 
-  fetch(navbarPath)
-    .then(response => response.text())
-    .then(data => {
-      // 1. Inject the navbar HTML.
-      document.getElementById('navbar-placeholder').innerHTML = data;
-      
-      // 2. Highlight the active link.
-      highlightActiveLink();
+  if (isModal) {
+    // Hide the navbar placeholder
+    const navPlaceholder = document.getElementById('navbar-placeholder');
+    if (navPlaceholder) navPlaceholder.style.display = 'none';
 
-      // 3. Load the functionality script AFTER the navbar is on the page.
-      const script = document.createElement('script');
-      script.src = '../Homepage/functionality.js'; // Corrected path assuming a common js folder
-      document.body.appendChild(script);
-    })
-    .catch(error => console.error('Error loading the navbar:', error));
+    // Remove top padding from the main tag so content is flush in the modal
+    const mainContent = document.querySelector('main');
+    if (mainContent) {
+      mainContent.classList.remove('pt-20');
+    }
+
+    // Load the functionality script directly without the navbar
+    const script = document.createElement('script');
+    script.src = '../Homepage/functionality.js';
+    document.body.appendChild(script);
+  } else {
+    fetch(navbarPath)
+      .then(response => response.text())
+      .then(data => {
+        // 1. Inject the navbar HTML.
+        document.getElementById('navbar-placeholder').innerHTML = data;
+        
+        // 2. Highlight the active link.
+        highlightActiveLink();
+
+        // 3. Load the functionality script AFTER the navbar is on the page.
+        const script = document.createElement('script');
+        script.src = '../Homepage/functionality.js'; // Corrected path assuming a common js folder
+        document.body.appendChild(script);
+      })
+      .catch(error => console.error('Error loading the navbar:', error));
+  }
 });
 
 function highlightActiveLink() {
