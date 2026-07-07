@@ -98,6 +98,15 @@ if (funFactBanner && closeBannerBtn) {
   });
 }
 
+// --- Pause Animations Style ---
+const pauseAnimationsStyle = document.createElement('style');
+pauseAnimationsStyle.textContent = `
+  body.modal-open-pause-animations * {
+    animation-play-state: paused !important;
+  }
+`;
+document.head.appendChild(pauseAnimationsStyle);
+
 // --- Project Modal Functionality ---
 window.openProjectModal = function(event, url) {
   if (event) event.preventDefault();
@@ -117,6 +126,7 @@ window.openProjectModal = function(event, url) {
     
     modal.classList.remove('hidden');
     document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    document.body.classList.add('modal-open-pause-animations'); // Pause background animations
     
     // Allow display:block to apply before animating opacity/scale
     setTimeout(() => {
@@ -141,6 +151,7 @@ window.closeProjectModal = function() {
       modal.classList.add('hidden');
       iframe.src = ''; // Clear iframe to stop playback/loading
       document.body.style.overflow = ''; // Restore background scrolling
+      document.body.classList.remove('modal-open-pause-animations'); // Resume background animations
     }, 300);
   }
 };

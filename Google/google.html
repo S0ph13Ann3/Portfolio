@@ -52,34 +52,49 @@
     <div id="navbar-placeholder"></div>
 
     <main class="w-full pt-20 pb-20">
+      <!-- Confidentiality Warning -->
+      <div
+        class="w-full bg-yellow-50 border-b border-yellow-200 py-3 px-5 text-center text-yellow-800 font-medium text-sm flex justify-center items-center gap-2"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="w-5 h-5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+          />
+        </svg>
+        Designs are blurred due to confidentiality.
+      </div>
+
       <!-- Header / Banner -->
       <header class="w-full p-4 flex items-center justify-center">
         <div
-          class="relative bg-google-blue-bg rounded-2xl h-64 w-full max-w-6xl overflow-hidden shadow-xl flex items-center justify-center"
+          class="relative bg-gray-100 rounded-2xl h-64 w-full max-w-6xl overflow-hidden shadow-xl flex items-center justify-center"
         >
-          <!-- Decorative Background Elements -->
-          <div class="absolute inset-0 opacity-30">
-            <div
-              class="absolute top-[-50%] left-[-10%] w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"
-            ></div>
-            <div
-              class="absolute top-[-50%] right-[-10%] w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"
-            ></div>
-            <div
-              class="absolute bottom-[-50%] left-[20%] w-96 h-96 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"
-            ></div>
-          </div>
+          <!-- Background Image -->
+          <img
+            src="../Google/_.jpeg"
+            alt="Google Background"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-black/20"></div>
 
-          <div class="relative z-10 text-center p-6">
+          <div
+            class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-6"
+          >
             <div
-              class="bg-white/40 backdrop-blur-md p-8 rounded-2xl shadow-lg border border-white/50"
+              class="bg-black bg-opacity-25 backdrop-blur-sm p-8 rounded-2xl shadow-lg"
             >
-              <h1
-                class="text-3xl md:text-5xl font-bold tracking-wide text-gray-900"
-              >
+              <h1 class="text-3xl md:text-5xl font-bold tracking-wide">
                 GOOGLE
               </h1>
-              <p class="mt-3 text-lg font-medium text-gray-800">20% Project</p>
             </div>
           </div>
         </div>
@@ -87,169 +102,387 @@
 
       <!-- Project Details -->
       <div class="w-full max-w-6xl mx-auto px-5 sm:px-10 mt-12">
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          <!-- Left Column: Project Info -->
-          <div>
-            <div class="flex items-center gap-3 mb-6">
-              <h2 class="text-4xl font-bold">Art of Reliability Pilot</h2>
-              <img
-                src="../images/Heart.png"
-                alt="Decorative icon"
-                class="w-9 h-9 -rotate-12 opacity-80"
-              />
-            </div>
-
-            <div class="flex flex-wrap items-center justify-start gap-4 mb-8">
-              <!-- Role Widget -->
-              <div
-                class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
-              >
-                <div class="p-2 bg-blue-50 rounded-full text-blue-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-5 h-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-col text-left">
-                  <span
-                    class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
-                    >Role</span
-                  >
-                  <span class="text-sm font-medium text-gray-800"
-                    >UX Designer</span
-                  >
-                </div>
-              </div>
-
-              <!-- Team Widget -->
-              <div
-                class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
-              >
-                <div class="p-2 bg-purple-50 rounded-full text-purple-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-5 h-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-col text-left">
-                  <span
-                    class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
-                    >Team</span
-                  >
-                  <span class="text-sm font-medium text-gray-800"
-                    >GCP/TI Education</span
-                  >
-                </div>
-              </div>
-
-              <!-- Status Widget -->
-              <div
-                class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
-              >
-                <div class="p-2 bg-green-50 rounded-full text-green-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-5 h-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-col text-left">
-                  <span
-                    class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
-                    >Status</span
-                  >
-                  <span class="text-sm font-medium text-gray-800">Ongoing</span>
-                </div>
-              </div>
-            </div>
-
-            <p class="text-xl text-gray-800 leading-relaxed mb-6">
-              I am currently working on a <strong>20% project</strong> with the
-              <span class="font-semibold text-google-blue-accent"
-                >GCP/TI Education Team (GET)</span
-              >
-              on their pilot training module called
-              <span class="font-semibold">Art of Reliability (ART)</span>.
-            </p>
-            <p class="text-xl text-gray-800 leading-relaxed mb-6">
-              The <strong>ART program</strong> is a new initiative focused on
-              increasing the adoption of AI tools among Site Reliability
-              Engineers (SREs) to enhance reliability practices.
-            </p>
-            <p class="text-xl text-gray-800 leading-relaxed">
-              This is a strategic <strong>multi-year project</strong> with an
-              initial focus on <span class="italic">AI-Driven Operations</span>,
-              aiming to transform how reliability is maintained at scale.
-            </p>
+        <!-- Project Header Info -->
+        <div class="mb-10">
+          <div class="flex items-center gap-4 mb-6">
+            <h2 class="text-4xl font-bold">Trust UX</h2>
+            <img
+              src="../Google/trust_logo_192.svg"
+              alt="UX Trust Logo"
+              class="w-12 h-12 object-contain"
+            />
           </div>
 
-          <!-- Right Column: Contact -->
-          <div class="flex flex-col justify-center h-full">
-            <div class="bg-google-blue-bg/20 rounded-3xl p-10 text-center">
-              <h2 class="text-3xl font-bold mb-4">
-                Interested in learning more?
-              </h2>
-              <p
-                class="text-xl text-gray-700 leading-relaxed mb-8 max-w-2xl mx-auto"
-              >
-                If you are interested in seeing my internal portfolio, please
-                feel free to reach out.
-              </p>
-
-              <a
-                href="mailto:sophie.anne.hernandez@google.com"
-                class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-black text-white text-base font-semibold rounded-full hover:bg-gray-800 transition-transform hover:scale-105 shadow-lg w-full md:w-auto"
-              >
+          <div class="flex flex-wrap items-center justify-start gap-4">
+            <!-- Role Widget -->
+            <div
+              class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
+            >
+              <div class="p-2 bg-blue-50 rounded-full text-blue-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6 flex-shrink-0"
+                  class="w-5 h-5"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
                   />
                 </svg>
-                <span class="break-all md:break-normal"
-                  >sophie.anne.hernandez@google.com</span
+              </div>
+              <div class="flex flex-col text-left">
+                <span
+                  class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                  >Role</span
                 >
-              </a>
+                <span class="text-sm font-medium text-gray-800"
+                  >UX Designer</span
+                >
+              </div>
+            </div>
+
+            <!-- Team Widget -->
+            <div
+              class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
+            >
+              <div class="p-2 bg-purple-50 rounded-full text-purple-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                  />
+                </svg>
+              </div>
+              <div class="flex flex-col text-left">
+                <span
+                  class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                  >Team</span
+                >
+                <span class="text-sm font-medium text-gray-800"
+                  >Jadie Oh, Agnès Giannaros, Maxim Kachurovskiy
+                </span>
+              </div>
+            </div>
+
+            <!-- Duration Widget -->
+            <div
+              class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
+            >
+              <div class="p-2 bg-green-50 rounded-full text-green-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0h18M5 21h14a2 2 0 0 0 2-2V7.5a2.25 2.25 0 0 0-2.25-2.25H5A2.25 2.25 0 0 0 2.75 7.5v11.25c0 1.105.895 2 2 2Z"
+                  />
+                </svg>
+              </div>
+              <div class="flex flex-col text-left">
+                <span
+                  class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                  >Duration</span
+                >
+                <span class="text-sm font-medium text-gray-800"
+                  >2026-Present</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <!-- Left Column: Project Info -->
+          <div class="lg:col-span-7">
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Mission</h3>
+            <p class="text-xl text-gray-800 leading-relaxed mb-6">
+              Translating complex policy and privacy workflows into intuitive,
+              human-centered UX standards to deliver compliant, age-appropriate
+              experiences that empower user agency over their data.
+            </p>
+
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">
+              My Work & Impact
+            </h3>
+            <p class="text-xl text-gray-800 leading-relaxed mb-6">
+              I spearheaded the end-to-end design of a scalable review template
+              adopted by <strong>20+ designers</strong> and championed a
+              customized dark-mode Figma library. By collaborating with Product
+              and Privacy teams, I translated complex backend workflows into
+              conversational interfaces. This streamlined alignment ahead of
+              deadlines, driving team efficiency and securing highly polished,
+              user-centered standards across Google.
+            </p>
+
+            <a
+              href="https://policies.google.com/privacy/teens?color_scheme=dark"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 mt-4 text-google-blue-accent font-semibold hover:underline transition-all text-lg"
+            >
+              If you want to see my illustrations live click here
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Right Column: Image -->
+          <div class="lg:col-span-5 relative flex justify-center mt-8 lg:mt-0">
+            <div
+              class="relative w-full rounded-1xl overflow-hidden shadow-xl border border-gray-100 bg-gray-50"
+            >
+              <img
+                src="../Google/trust.png"
+                alt="Trust UX Design"
+                class="w-full h-auto object-cover"
+              />
             </div>
           </div>
         </section>
+      </div>
+
+      <hr
+        class="border-neutral-200 w-full my-16 md:my-24 border-t max-w-6xl mx-auto"
+      />
+
+      <!-- Project Details: ART of Reliability Training Hub -->
+      <div class="w-full max-w-6xl mx-auto px-5 sm:px-10">
+        <!-- Project Header Info -->
+        <div class="mb-10">
+          <div class="flex items-center gap-4 mb-6">
+            <h2 class="text-4xl font-bold">ART of Reliability Training Hub</h2>
+            <img
+              src="../Google/Advanced Reliability Logo v5.svg"
+              alt="ART Logo"
+              class="w-10 h-10 object-contain -rotate-12 opacity-80"
+            />
+          </div>
+
+          <div class="flex flex-wrap items-center justify-start gap-4">
+            <!-- Role Widget -->
+            <div
+              class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
+            >
+              <div class="p-2 bg-blue-50 rounded-full text-blue-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                  />
+                </svg>
+              </div>
+              <div class="flex flex-col text-left">
+                <span
+                  class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                  >Role</span
+                >
+                <span class="text-sm font-medium text-gray-800"
+                  >UX Designer</span
+                >
+              </div>
+            </div>
+
+            <!-- Team Widget -->
+            <div
+              class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
+            >
+              <div class="p-2 bg-purple-50 rounded-full text-purple-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                  />
+                </svg>
+              </div>
+              <div class="flex flex-col text-left">
+                <span
+                  class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                  >Team</span
+                >
+                <span class="text-sm font-medium text-gray-800"
+                  >Rachel Wu, Jenny Fandrianto, Laura Unal, Preston
+                  Yoshioka</span
+                >
+              </div>
+            </div>
+
+            <!-- Duration Widget -->
+            <div
+              class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-gray-100 shadow-sm"
+            >
+              <div class="p-2 bg-green-50 rounded-full text-green-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0h18M5 21h14a2 2 0 0 0 2-2V7.5a2.25 2.25 0 0 0-2.25-2.25H5A2.25 2.25 0 0 0 2.75 7.5v11.25c0 1.105.895 2 2 2Z"
+                  />
+                </svg>
+              </div>
+              <div class="flex flex-col text-left">
+                <span
+                  class="text-xs text-gray-400 font-semibold uppercase tracking-wide"
+                  >Duration</span
+                >
+                <span class="text-sm font-medium text-gray-800"
+                  >2025-Present</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <!-- Left Column: Project Info -->
+          <div class="lg:col-span-7">
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Mission</h3>
+            <p class="text-xl text-gray-800 leading-relaxed mb-6">
+              Transform how reliability is maintained at scale by increasing the
+              adoption of AI tools among Site Reliability Engineers (SREs)
+              through a strategic, multi-year training initiative.
+            </p>
+
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">
+              My Work & Impact
+            </h3>
+            <p class="text-xl text-gray-800 leading-relaxed mb-6">
+              During the ART pilot, I designed a high-engagement learning
+              experience that activated <strong>2,559 unique users</strong> and
+              achieved a <strong>28.8% completion rate</strong>. By optimizing
+              the landing page and core training flows, I drove
+              <strong>4,809 sessions</strong> with a strong average engagement
+              time of <strong>21:07 minutes</strong>, ultimately exceeding the
+              AI study participation goal by <strong>64%</strong>. These results
+              validated the platform’s scalability and successfully converted
+              user interest into measurable educational growth.
+            </p>
+          </div>
+
+          <!-- Right Column: Blurred Images -->
+          <div
+            class="lg:col-span-5 relative flex flex-col gap-6 justify-center mt-8 lg:mt-0"
+          >
+            <div
+              class="relative w-full rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-gray-50"
+            >
+              <img
+                src="../Google/learning.png"
+                alt="Blurred Confidential Design 1"
+                class="w-full h-auto object-cover filter blur-sm scale-100 opacity-100"
+              />
+            </div>
+            <div
+              class="relative w-full rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-gray-50"
+            >
+              <img
+                src="../Google/teaserpage.png"
+                alt="Blurred Confidential Design 2"
+                class="w-full h-auto object-cover filter blur-sm scale-100 opacity-120"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Contact Section at Bottom -->
+      <div class="w-full max-w-4xl mx-auto px-5 sm:px-10 mt-24">
+        <div
+          class="bg-google-blue-bg/20 rounded-3xl p-10 text-center shadow-sm border border-google-blue-bg/30"
+        >
+          <h2 class="text-3xl font-bold mb-4">Interested in learning more?</h2>
+          <p
+            class="text-xl text-gray-700 leading-relaxed mb-8 max-w-2xl mx-auto"
+          >
+            If you are interested in seeing my internal portfolio, please feel
+            free to reach out.
+          </p>
+
+          <button
+            onclick="
+              navigator.clipboard.writeText('sophie.anne.hernandez@google.com');
+              const t = document.getElementById('google-copy-toast');
+              t.classList.remove('opacity-0');
+              setTimeout(() => t.classList.add('opacity-0'), 2000);
+            "
+            class="relative inline-flex items-center justify-center gap-2 px-6 py-4 bg-black text-white text-base font-semibold rounded-full hover:bg-gray-800 transition-transform hover:scale-105 shadow-lg w-full md:w-auto cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 flex-shrink-0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"
+              />
+            </svg>
+            <span class="break-all md:break-normal"
+              >sophie.anne.hernandez@google.com</span
+            >
+            <div
+              id="google-copy-toast"
+              class="absolute -top-12 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-3 py-1.5 rounded-lg opacity-0 transition-opacity duration-300 pointer-events-none whitespace-nowrap shadow-md"
+            >
+              Email Copied!
+            </div>
+          </button>
+        </div>
       </div>
     </main>
 
